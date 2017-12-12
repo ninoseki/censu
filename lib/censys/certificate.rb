@@ -21,7 +21,7 @@ module CenSys
     # @return [Boolean]
     #
     def valid_nss
-      @attributes['valid_nss']
+      @attributes['validation']['nss']['valid']
     end
 
     # @return [Time]

@@ -21,7 +21,7 @@ module CenSys
     end
 
     def to_s
-      address
+      ip
     end
 
   end
