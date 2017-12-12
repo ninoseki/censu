@@ -9,7 +9,7 @@ module CenSys
       end
 
       def alexa_rank
-        @alexa_rank ||= @attributes['alexa_rank'].first
+        @attributes['alexa_rank']
       end
 
       alias to_s domain
