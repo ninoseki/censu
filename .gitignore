@@ -5,3 +5,4 @@
 /doc/
 /pkg/
 /vendor/cache/*.gem
+/vendor/bundle
