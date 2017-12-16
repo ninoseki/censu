@@ -1,5 +1,5 @@
 require 'dotenv/load'
 require 'rspec'
-require 'censys'
+require 'Censys'
 
-include CenSys
+include Censys

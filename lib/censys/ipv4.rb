@@ -5,7 +5,7 @@ require 'censys/document/has_asn'
 
 require 'time'
 
-module CenSys
+module Censys
   class IPv4 < Document
 
     include HasServices

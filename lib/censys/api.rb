@@ -8,7 +8,7 @@ require 'censys/certificate'
 require 'net/https'
 require 'json'
 
-module CenSys
+module Censys
   class API
 
     VERSION = 1
@@ -85,7 +85,7 @@ module CenSys
     #   Either `id` or `secret` was `nil` or empty.
     #
     # @see https://censys.io/account
-    #   CenSys - My Account
+    #   Censys - My Account
     #
     def initialize(id=ENV['CENSYS_ID'],secret=ENV['CENSYS_SECRET'])
       if (id.nil? || id.empty?)

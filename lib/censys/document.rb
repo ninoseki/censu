@@ -1,4 +1,4 @@
-module CenSys
+module Censys
   class Document
 
     #

@@ -1,6 +1,6 @@
 require 'censys/location'
 
-module CenSys
+module Censys
   class Document
     module HasLocation
       #

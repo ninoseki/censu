@@ -1,6 +1,6 @@
 require 'censys/autonomous_system'
 
-module CenSys
+module Censys
   class Document
     module HasASN
       #

@@ -1,18 +1,16 @@
-# -*- encoding: utf-8 -*-
-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'censys/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "censys"
-  gem.version       = CenSys::VERSION
+  gem.name          = "censu"
+  gem.version       = Censys::VERSION
   gem.summary       = %q{API client for censys.io}
-  gem.description   = %q{Ruby API client for the CenSys Internet search engine.}
+  gem.description   = %q{Ruby API client for the Censys Internet search engine.}
   gem.license       = "MIT"
-  gem.authors       = ["Hal Brodigan"]
-  gem.email         = "hal@trailofbits.com"
-  gem.homepage      = "https://github.com/trailofbits/censys-ruby#readme"
+  gem.authors       = ["Manabu Niseki"]
+  gem.email         = "manabu.niseki@gmail.com"
+  gem.homepage      = "https://github.com/ninoseki/censu"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

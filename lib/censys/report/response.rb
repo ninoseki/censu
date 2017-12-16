@@ -1,6 +1,6 @@
 require 'censys/report/metadata'
 
-module CenSys
+module Censys
   module Report
     class Response
 

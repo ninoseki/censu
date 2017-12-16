@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe CenSys::API do
+describe Censys::API do
   before(:context) do
-    @api = CenSys::API.new
+    @api = Censys::API.new
   end
 
   describe "#search" do

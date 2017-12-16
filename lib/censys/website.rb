@@ -3,7 +3,7 @@ require 'censys/document/has_services'
 require 'censys/document/has_location'
 require 'censys/document/has_asn'
 
-module CenSys
+module Censys
   class Website < Document
 
     include HasServices

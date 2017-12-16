@@ -1,6 +1,6 @@
 require 'censys/search/result'
 
-module CenSys
+module Censys
   module Search
     class Certificate < Result
 

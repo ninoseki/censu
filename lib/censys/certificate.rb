@@ -1,6 +1,6 @@
 require 'time'
 
-module CenSys
+module Censys
   class Certificate < Document
 
     #

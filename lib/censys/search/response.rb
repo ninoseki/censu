@@ -3,7 +3,7 @@ require 'censys/search/ipv4'
 require 'censys/search/website'
 require 'censys/search/certificate'
 
-module CenSys
+module Censys
   module Search
     class Response
 
