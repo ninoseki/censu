@@ -1,12 +1,11 @@
-# CenSys
+# Censu
 
-* [Homepage](https://github.com/trailofbits/censys-ruby#readme)
-* [Issues](https://github.com/trailofbits/censys-ruby/issues)
-* [Documentation](http://rubydoc.info/gems/censys/frames)
+* [Homepage](https://github.com/ninoseki/censu)
+* [Issues](https://github.com/ninoseki/censu/issues)
 
 ## Description
 
-Ruby API client to the [CenSys] internet search engine.
+Ruby API client to the [Censys] internet search engine.
 
 ## Features
 
@@ -15,12 +14,12 @@ Ruby API client to the [CenSys] internet search engine.
 Initialize the API:
 
     require 'censys'
-    api = CenSys::API.new(uid,secret)
+    api = Censys::API.new(uid,secret)
 
 Initialize the API using `$CENSYS_ID` and `$CENSYS_SECRET` environment
 variables:
 
-    api = CenSys::API.new
+    api = Censys::API.new
 
 Search for IPv4 addresses:
 
@@ -62,13 +61,13 @@ Generate aggregate reports:
 
 ## Install
 
-    $ gem install censys
+    $ gem install censu
 
-## Copyright
-
-Copyright (c) 2016 Hal Brodigan
+## License
 
 See {file:LICENSE.txt} for details.
 
+Note:: This gem is forked from [trailofbits/censys-ruby](https://github.com/trailofbits/censys-ruby).
+
 [ruby]: http://www.ruby-lang.org/
-[CenSys]: https://censys.io/
+[Cens:qys]: https://censys.io/
