@@ -17,6 +17,7 @@ module Censys
     def dig(*keys)
       @attributes.dig(*keys)
     end
+
     #
     # Tags.
     #

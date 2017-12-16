@@ -8,7 +8,7 @@ module Censys
       #
       # @param [API] api
       #
-      def initialize(attributes,api)
+      def initialize(attributes, api)
         @attributes = attributes
         @api        = api
       end

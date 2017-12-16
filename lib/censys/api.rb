@@ -10,13 +10,12 @@ require 'json'
 
 module Censys
   class API
-    VERSION = 1.freeze
+    VERSION = 1
     HOST = 'www.censys.io'.freeze
     URL = "https://#{HOST}/api/v#{VERSION}".freeze
 
     class Resource
-
-      def initialize(type,api)
+      def initialize(type, api)
         @type = type
         @api  = api
       end
@@ -24,22 +23,22 @@ module Censys
       #
       # @see API#search
       #
-      def search(params={})
-        @api.search(@type,params)
+      def search(params = {})
+        @api.search(@type, params)
       end
 
       #
       # @see API#view
       #
       def [](id)
-        @api.view(@type,id)
+        @api.view(@type, id)
       end
 
       #
       # @see API#report
       #
       def report(params)
-        @api.report(@type,params)
+        @api.report(@type, params)
       end
     end
 
@@ -83,15 +82,15 @@ module Censys
     # @see https://censys.io/account
     #   Censys - My Account
     #
-    def initialize(id=ENV['CENSYS_ID'],secret=ENV['CENSYS_SECRET'])
-      raise(ArgumentError,"'id' argument required") if (id.nil? || id.empty?)
-      raise(ArgumentError,"'secret' argument required") if (secret.nil? || secret.empty?)
+    def initialize(id = ENV['CENSYS_ID'], secret = ENV['CENSYS_SECRET'])
+      raise(ArgumentError, "'id' argument required") if id.nil? || id.empty?
+      raise(ArgumentError, "'secret' argument required") if secret.nil? || secret.empty?
 
       @id, @secret = id, secret
 
-      @ipv4         = Resource.new(:ipv4,self)
-      @websites     = Resource.new(:websites,self)
-      @certificates = Resource.new(:certificates,self)
+      @ipv4         = Resource.new(:ipv4, self)
+      @websites     = Resource.new(:websites, self)
+      @certificates = Resource.new(:certificates, self)
     end
 
     #
@@ -113,9 +112,9 @@ module Censys
     #
     # @api private
     #
-    def search(resource,params={})
-      post("/search/#{resource}",params) do |json|
-        Search::Response.new(self,resource,params,json)
+    def search(resource, params = {})
+      post("/search/#{resource}", params) do |json|
+        Search::Response.new(self, resource, params, json)
       end
     end
 
@@ -123,7 +122,7 @@ module Censys
       ipv4:         IPv4,
       websites:     Website,
       certificates: Certificate
-    }
+    }.freeze
 
     #
     # Requests the document of the given type.
@@ -134,7 +133,7 @@ module Censys
     #
     # @api private
     #
-    def view(resource,id)
+    def view(resource, id)
       document_class = DOCUMENTS.fetch(resource)
 
       get("/view/#{resource}/#{id}") do |attributes|
@@ -160,11 +159,11 @@ module Censys
     #
     # @option params
     #
-    def report(resource,params)
-      raise(ArgumentError,"must specify the :query param") unless params[:query]
-      raise(ArgumentError,"must specify the :field param") unless params[:field]
+    def report(resource, params)
+      raise(ArgumentError, "must specify the :query param") unless params[:query]
+      raise(ArgumentError, "must specify the :field param") unless params[:field]
 
-      post("/report/#{resource}",params) do |response|
+      post("/report/#{resource}", params) do |response|
         Report::Response.new(response)
       end
     end
@@ -206,12 +205,12 @@ module Censys
 
         case response.code
         when '200' then yield JSON.parse(response.body)
-        when '302' then raise(AuthenticationError,response.body)
-        when '404' then raise(NotFound,"#{req.uri} not found")
-        when '429' then raise(RateLimited,"rate limit exceeded")
-        when '500' then raise(InternalServerError,response.body)
+        when '302' then raise(AuthenticationError, response.body)
+        when '404' then raise(NotFound, "#{req.uri} not found")
+        when '429' then raise(RateLimited, "rate limit exceeded")
+        when '500' then raise(InternalServerError, response.body)
         else
-          raise(ResponseError,"unsupported response code returned: #{response.code}")
+          raise(ResponseError, "unsupported response code returned: #{response.code}")
         end
       end
     end
@@ -223,11 +222,11 @@ module Censys
     #
     # @see #request
     #
-    def get(path,&block)
+    def get(path, &block)
       get = Net::HTTP::Get.new(url_for(path))
       get.basic_auth @id, @secret
 
-      request(get,&block)
+      request(get, &block)
     end
 
     #
@@ -239,17 +238,17 @@ module Censys
     #
     # @see #request
     #
-    def post(path,json,&block)
+    def post(path, json, &block)
       post = Net::HTTP::Post.new(url_for(path))
       post.basic_auth @id, @secret
       post.content_type = 'application/json'
       post.body = json.to_json
 
-      request(post,&block)
+      request(post, &block)
     end
 
     def validate_index!(index)
-      raise(ArgumentError,"unsupported index type: #{index}") unless INDEXES.include?(index)
+      raise(ArgumentError, "unsupported index type: #{index}") unless INDEXES.include?(index)
     end
   end
 end

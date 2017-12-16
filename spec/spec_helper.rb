@@ -7,7 +7,8 @@ include Censys
 
 def authorization_field
   require 'base64'
-  "Basic #{Base64.strict_encode64(ENV["CENSYS_ID"] + ":" + ENV["CENSYS_SECRET"])}"
+  token = "#{ENV['CENSYS_ID']}:#{ENV['CENSYS_SECRET']}"
+  "Basic #{Base64.strict_encode64(token)}"
 end
 
 VCR.configure do |config|

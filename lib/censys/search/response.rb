@@ -12,7 +12,7 @@ module Censys
         ipv4:         IPv4,
         websites:     Website,
         certificates: Certificate
-      }
+      }.freeze
 
       attr_reader :status
 
@@ -33,7 +33,7 @@ module Censys
       # @param [Hash{String => Object}] response
       #   Response JSON Hash.
       #
-      def initialize(api,result_type,params,response)
+      def initialize(api, result_type, params, response)
         @api         = api
         @result_type = result_type
         @params      = params
@@ -42,11 +42,11 @@ module Censys
         @metadata = Metadata.new(response['metadata'])
 
         unless (result_class = RESULTS[@result_type])
-          raise(ArgumentError,"invalid result type: #{@result_type}")
+          raise(ArgumentError, "invalid result type: #{@result_type}")
         end
 
-        @results  = response['results'].map do |result|
-          result_class.new(result,@api)
+        @results = response['results'].map do |result|
+          result_class.new(result, @api)
         end
       end
 
@@ -82,7 +82,7 @@ module Censys
       #   The next page of results or `nil` if there are no more pages.
       #
       def next_page
-        @api.search(@result_type,@params.merge(page: @metadata.page + 1)) if @metadata.page < @metadata.pages
+        @api.search(@result_type, @params.merge(page: @metadata.page + 1)) if @metadata.page < @metadata.pages
       end
 
       alias next next_page

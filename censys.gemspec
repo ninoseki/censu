@@ -5,8 +5,8 @@ require 'censys/version'
 Gem::Specification.new do |gem|
   gem.name          = "censu"
   gem.version       = Censys::VERSION
-  gem.summary       = %q{API client for censys.io}
-  gem.description   = %q{Ruby API client for the Censys Internet search engine.}
+  gem.summary       = "API client for censys.io"
+  gem.description   = "Ruby API client for the Censys Internet search engine."
   gem.license       = "MIT"
   gem.authors       = ["Manabu Niseki"]
   gem.email         = "manabu.niseki@gmail.com"
@@ -23,6 +23,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rspec', '~> 3.7'
   gem.add_development_dependency 'rubygems-tasks', '~> 0.2'
   gem.add_development_dependency 'vcr', '~> 4.0'
-  gem.add_development_dependency 'yard', '~> 0.9'
   gem.add_development_dependency 'webmock', '~> 3.1'
+  gem.add_development_dependency 'yard', '~> 0.9'
 end
