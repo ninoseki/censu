@@ -7,7 +7,7 @@ module Censys
       # @return [Hash{String => Hash}]
       #
       def ports
-        @ports ||= Hash[@attributes.select { |key,value| key =~ /\A\d+\z/ }]
+        @ports ||= Hash[@attributes.select { |key, _| key =~ /\A\d+\z/ }]
       end
 
       #

@@ -10,6 +10,14 @@ module Censys
     end
 
     #
+    # Dig attributes
+    #
+    # @return [Object]
+    #
+    def dig(*keys)
+      @attributes.dig(*keys)
+    end
+    #
     # Tags.
     #
     # @return [Array<String>]

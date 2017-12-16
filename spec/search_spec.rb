@@ -10,6 +10,9 @@ describe Censys::API do
       it "should return IPv4 response" do
         res = @api.ipv4.search(query: "dropbox.com")
         expect(res).to be_a(Search::Response)
+        expect(res.metadata).to be_a(Search::Metadata)
+        expect(res.each).to be_a(Enumerator)
+        expect(res.pages).to be_a(Enumerator)
 
         first = res.results.first
         expect(first).to be_a(Search::IPv4)

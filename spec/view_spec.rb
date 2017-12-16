@@ -10,6 +10,14 @@ describe Censys::API do
       it "should return IPv4 response" do
         view = @api.view(:ipv4, "8.8.8.8")
         expect(view).to be_a(Censys::IPv4)
+        expect(view.tags).to be_a(Array)
+        expect(view.updated_at).to be_a(Time)
+        expect(view.autonomous_system).to be_a(AutonomousSystem)
+        expect(view.location).to be_a(Location)
+        expect(view.ports).to be_a(Hash)
+        expect(view.protocols).to be_a(Array)
+        expect(view.dig("location", "city")).to eq("Mountain View")
+
         expect(view.ip).to eq("8.8.8.8")
         expect(view.to_s).to eq("8.8.8.8")
         expect(view.protocols).to be_a(Array)
