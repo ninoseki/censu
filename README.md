@@ -1,5 +1,8 @@
 # Censu
 
+[![Build Status](https://travis-ci.org/ninoseki/censu.svg?branch=master)](https://travis-ci.org/ninoseki/censu)
+[![Maintainability](https://api.codeclimate.com/v1/badges/39e77d63ce6a7d89b4dc/maintainability)](https://codeclimate.com/github/ninoseki/censu/maintainability)
+
 * [Homepage](https://github.com/ninoseki/censu)
 * [Issues](https://github.com/ninoseki/censu/issues)
 
