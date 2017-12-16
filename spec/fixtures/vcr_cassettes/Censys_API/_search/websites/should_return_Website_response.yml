@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.censys.io/api/v1/search/websites
+    body:
+      encoding: UTF-8
+      string: '{"query":"dropbox.com"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - de011346d2368024fae8b4c94960cb9f
+      Date:
+      - Sat, 16 Dec 2017 04:00:40 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '5393'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "results": [{"domain": "dropbox.com", "alexa_rank":
+        89}, {"domain": "overleaf.com", "alexa_rank": 4161}, {"domain": "tensorflow.org",
+        "alexa_rank": 4916}, {"domain": "naukrigulf.com", "alexa_rank": 6745}, {"domain":
+        "isitdownrightnow.com", "alexa_rank": 16520}, {"domain": "odir.org", "alexa_rank":
+        16633}, {"domain": "odir.us", "alexa_rank": 27748}, {"domain": "ui8.net",
+        "alexa_rank": 45708}, {"domain": "mybrowserpage.com", "alexa_rank": 46668},
+        {"domain": "cordcuttersnews.com", "alexa_rank": 48620}, {"domain": "krebsonsecurity.com",
+        "alexa_rank": 57003}, {"domain": "dropbox.jp", "alexa_rank": 58417}, {"domain":
+        "videojs.com", "alexa_rank": 76217}, {"domain": "filediva.com", "alexa_rank":
+        84683}, {"domain": "exrapidleech.info", "alexa_rank": 90065}, {"domain": "gpsvisualizer.com",
+        "alexa_rank": 90098}, {"domain": "websitelists.in", "alexa_rank": 96212},
+        {"domain": "etilaatroz.com", "alexa_rank": 96466}, {"domain": "blue1000.com",
+        "alexa_rank": 97133}, {"domain": "barracudacentral.org", "alexa_rank": 103045},
+        {"domain": "hofficeworksuite.com", "alexa_rank": 105162}, {"domain": "wponlinesupport.com",
+        "alexa_rank": 107649}, {"domain": "phacility.com", "alexa_rank": 123500},
+        {"domain": "hallaminternet.com", "alexa_rank": 129301}, {"domain": "sharedir.com",
+        "alexa_rank": 129725}, {"domain": "websitelist.in", "alexa_rank": 134221},
+        {"domain": "careersitemanager.com", "alexa_rank": 135119}, {"domain": "grabfrom.com",
+        "alexa_rank": 155269}, {"domain": "pspdfkit.com", "alexa_rank": 158203}, {"domain":
+        "musicastorrent.com", "alexa_rank": 159199}, {"domain": "cica.es", "alexa_rank":
+        159476}, {"domain": "hackpad.com", "alexa_rank": 159500}, {"domain": "giroditalia.it",
+        "alexa_rank": 172147}, {"domain": "leechlisting.com", "alexa_rank": 183489},
+        {"domain": "shortstatusquotes.com", "alexa_rank": 184461}, {"domain": "pannative.blogspot.com",
+        "alexa_rank": 188149}, {"domain": "plugandplaytechcenter.com", "alexa_rank":
+        188679}, {"domain": "adfreeposting.com", "alexa_rank": 197760}, {"domain":
+        "reactforbeginners.com", "alexa_rank": 216031}, {"domain": "publicleech.xyz",
+        "alexa_rank": 221187}, {"domain": "protect-url.net", "alexa_rank": 228047},
+        {"domain": "jumabu.com", "alexa_rank": 230920}, {"domain": "djiphotoacademy.com",
+        "alexa_rank": 232436}, {"domain": "baixarsomusica.com", "alexa_rank": 241912},
+        {"domain": "ikamai.in", "alexa_rank": 256216}, {"domain": "sellf.io", "alexa_rank":
+        257485}, {"domain": "leech3s.com", "alexa_rank": 259428}, {"domain": "lingvana.ru",
+        "alexa_rank": 260649}, {"domain": "wszystkookawie.pl", "alexa_rank": 265106},
+        {"domain": "handledmovie.com", "alexa_rank": 281656}, {"domain": "freegameplanet.com",
+        "alexa_rank": 281937}, {"domain": "wofanqiang.com", "alexa_rank": 284011},
+        {"domain": "aquariumcarebasics.com", "alexa_rank": 285262}, {"domain": "zoesylvia.com",
+        "alexa_rank": 298565}, {"domain": "musicyeah.net", "alexa_rank": 306811},
+        {"domain": "kleinesonne.de", "alexa_rank": 307221}, {"domain": "nacuz.com",
+        "alexa_rank": 308866}, {"domain": "liftingdiet.com", "alexa_rank": 316485},
+        {"domain": "huntingtoningalls.com", "alexa_rank": 320385}, {"domain": "christianperone.com",
+        "alexa_rank": 321643}, {"domain": "docucopies.com", "alexa_rank": 329171},
+        {"domain": "tips4pc.com", "alexa_rank": 343295}, {"domain": "downoruprightnow.com",
+        "alexa_rank": 354321}, {"domain": "amwalalghad.com", "alexa_rank": 370749},
+        {"domain": "xn--iphone-855jw637a.com", "alexa_rank": 388123}, {"domain": "kawahara.ca",
+        "alexa_rank": 394871}, {"domain": "draggo.com", "alexa_rank": 402855}, {"domain":
+        "daneden.me", "alexa_rank": 418511}, {"domain": "pannative.blogspot.co.id",
+        "alexa_rank": 427528}, {"domain": "lindal.com", "alexa_rank": 436131}, {"domain":
+        "casebriefsummary.com", "alexa_rank": 436473}, {"domain": "contactnumbers.buzz",
+        "alexa_rank": 438382}, {"domain": "textio.com", "alexa_rank": 438777}, {"domain":
+        "arb-silva.de", "alexa_rank": 440176}, {"domain": "csplague.com", "alexa_rank":
+        440913}, {"domain": "egpr.net", "alexa_rank": 450576}, {"domain": "spiderbeat.com",
+        "alexa_rank": 452043}, {"domain": "pannative.blogspot.ca", "alexa_rank": 453588},
+        {"domain": "odir.it", "alexa_rank": 458897}, {"domain": "smiley-bedeutung.de",
+        "alexa_rank": 461064}, {"domain": "indiatollfreenumber.in", "alexa_rank":
+        466585}, {"domain": "22slides.com", "alexa_rank": 483773}, {"domain": "limuras.com",
+        "alexa_rank": 496654}, {"domain": "damaruta.blogspot.co.id", "alexa_rank":
+        503947}, {"domain": "quehow.com", "alexa_rank": 505656}, {"domain": "ddlsearch.free.fr",
+        "alexa_rank": 506791}, {"domain": "tosdr.org", "alexa_rank": 510918}, {"domain":
+        "spanishpropertyinsight.com", "alexa_rank": 523326}, {"domain": "dropboxbusiness.com",
+        "alexa_rank": 542024}, {"domain": "apescout.com", "alexa_rank": 549512}, {"domain":
+        "lesenchanteursdenoel.fr", "alexa_rank": 553347}, {"domain": "cydiahacks.net",
+        "alexa_rank": 555088}, {"domain": "pannative.blogspot.my", "alexa_rank": 560738},
+        {"domain": "thaiexpress.ca", "alexa_rank": 563615}, {"domain": "hikinggfw.org",
+        "alexa_rank": 565813}, {"domain": "shuukankawasetenbou.com", "alexa_rank":
+        579883}, {"domain": "kansi.eu", "alexa_rank": 587695}, {"domain": "4article.ir",
+        "alexa_rank": 598261}, {"domain": "vk-book.ru", "alexa_rank": 605432}, {"domain":
+        "lord.io", "alexa_rank": 627369}], "metadata": {"count": 157, "query": "dropbox.com",
+        "backend_time": 1008, "page": 1, "pages": 2}}'
+    http_version: 
+  recorded_at: Sat, 16 Dec 2017 04:00:40 GMT
+recorded_with: VCR 4.0.0

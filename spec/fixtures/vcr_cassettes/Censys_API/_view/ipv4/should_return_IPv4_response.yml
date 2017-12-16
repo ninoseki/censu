@@ -1,0 +1,176 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.censys.io/api/v1/view/ipv4/8.8.8.8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - f8da8e0116d3898b11fdda41f36efdde
+      Date:
+      - Sat, 16 Dec 2017 04:00:42 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '12796'
+    body:
+      encoding: UTF-8
+      string: '{"tags": ["dns", "https"], "443": {"https": {"tls": {"server_key_exchange":
+        {"ecdh_params": {"curve_id": {"id": 23, "name": "secp256r1"}}}, "certificate":
+        {"parsed": {"tbs_noct_fingerprint": "aff357e4ef835a70f3b2d524ac43ec24088927cfbc4bde88a4ed7c519dc489f7",
+        "subject_dn": "C=US, ST=California, L=Mountain View, O=Google Inc, CN=*.c.docs.google.com",
+        "subject": {"common_name": ["*.c.docs.google.com"], "country": ["US"], "organization":
+        ["Google Inc"], "province": ["California"], "locality": ["Mountain View"]},
+        "signature_algorithm": {"oid": "1.2.840.113549.1.1.11", "name": "SHA256WithRSA"},
+        "redacted": false, "serial_number": "5174850456579837024", "validation_level":
+        "OV", "issuer_dn": "C=US, O=Google Inc, CN=Google Internet Authority G2",
+        "fingerprint_sha1": "77a84b5bacdb1ea4d447153d24ee3ea7eeab6879", "version":
+        3, "fingerprint_sha256": "654ebe0bf006a99fe171b8453f058a9602eb6f163c801ef4b559f6063f3ea865",
+        "names": ["*.c.bigcache.googleapis.com", "*.cache1.c.video.google.com", "*.cache5.c.docs.google.com",
+        "*.c.pack.google.com", "*.c.video.google.com", "*.cache2.c.video.google.com",
+        "*.cache3.c.docs.google.com", "*.cache6.c.video.google.com", "*.cache1.c.docs.google.com",
+        "*.cache2.c.docs.google.com", "*.cache6.c.docs.google.com", "*.c.2mdn.net",
+        "*.c.play.google.com", "*.cache2.c.youtube.com", "*.cache6.c.play.google.com",
+        "*.cache7.c.youtube.com", "*.c.doc-0-0-sj.sj.googleusercontent.com", "*.c.mail.google.com",
+        "*.cache8.c.video.google.com", "*.c.docs.google.com", "*.c.inbox.google.com",
+        "*.c.lh3.googleusercontent.com", "*.cache6.c.youtube.com", "*.c.youtube.com",
+        "*.cache7.c.docs.google.com", "*.cache8.c.play.google.com", "*.xn--ngstr-lra8j.com",
+        "*.cache4.c.youtube.com", "*.cache5.c.play.google.com", "*.cache5.c.video.google.com",
+        "*.c.audiobooks.play.google.com", "*.c.chat.google.com", "*.c.drive.google.com",
+        "*.c.offline.maps.google.com", "*.cache4.c.docs.google.com", "*.cache7.c.play.google.com",
+        "*.cache8.c.youtube.com", "*.cache4.c.video.google.com", "*.gvt1.com", "*.cache2.c.play.google.com",
+        "*.cache3.c.video.google.com", "*.cache7.c.video.google.com", "*.googlezip.net",
+        "*.cache5.c.youtube.com", "xn--ngstr-lra8j.com", "*.a1.googlevideo.com", "*.cache1.c.youtube.com",
+        "*.cache3.c.play.google.com", "*.cache3.c.youtube.com", "*.cache4.c.play.google.com",
+        "*.c.googlevideo.com", "*.cache8.c.docs.google.com", "*.cache1.c.play.google.com",
+        "*.googlevideo.com", "*.offline-maps.gvt1.com"], "tbs_fingerprint": "aff357e4ef835a70f3b2d524ac43ec24088927cfbc4bde88a4ed7c519dc489f7",
+        "validity": {"start": "2017-11-28T08:30:00Z", "length": 7257600, "end": "2018-02-20T08:30:00Z"},
+        "extensions": {"authority_key_id": "4add06161bbcf668b576f581b6bb621aba5a812f",
+        "certificate_policies": [{"id": "1.3.6.1.4.1.11129.2.5.1"}, {"id": "2.23.140.1.2.2"}],
+        "authority_info_access": {"ocsp_urls": ["http://clients1.google.com/ocsp"],
+        "issuer_urls": ["http://pki.google.com/GIAG2.crt"]}, "extended_key_usage":
+        {"server_auth": true}, "subject_alt_name": {"dns_names": ["*.c.docs.google.com",
+        "*.a1.googlevideo.com", "*.c.2mdn.net", "*.c.audiobooks.play.google.com",
+        "*.c.bigcache.googleapis.com", "*.c.chat.google.com", "*.c.doc-0-0-sj.sj.googleusercontent.com",
+        "*.c.drive.google.com", "*.c.googlevideo.com", "*.c.inbox.google.com", "*.c.lh3.googleusercontent.com",
+        "*.c.mail.google.com", "*.c.offline.maps.google.com", "*.c.pack.google.com",
+        "*.c.play.google.com", "*.c.video.google.com", "*.c.youtube.com", "*.cache1.c.docs.google.com",
+        "*.cache1.c.play.google.com", "*.cache1.c.video.google.com", "*.cache1.c.youtube.com",
+        "*.cache2.c.docs.google.com", "*.cache2.c.play.google.com", "*.cache2.c.video.google.com",
+        "*.cache2.c.youtube.com", "*.cache3.c.docs.google.com", "*.cache3.c.play.google.com",
+        "*.cache3.c.video.google.com", "*.cache3.c.youtube.com", "*.cache4.c.docs.google.com",
+        "*.cache4.c.play.google.com", "*.cache4.c.video.google.com", "*.cache4.c.youtube.com",
+        "*.cache5.c.docs.google.com", "*.cache5.c.play.google.com", "*.cache5.c.video.google.com",
+        "*.cache5.c.youtube.com", "*.cache6.c.docs.google.com", "*.cache6.c.play.google.com",
+        "*.cache6.c.video.google.com", "*.cache6.c.youtube.com", "*.cache7.c.docs.google.com",
+        "*.cache7.c.play.google.com", "*.cache7.c.video.google.com", "*.cache7.c.youtube.com",
+        "*.cache8.c.docs.google.com", "*.cache8.c.play.google.com", "*.cache8.c.video.google.com",
+        "*.cache8.c.youtube.com", "*.googlevideo.com", "*.googlezip.net", "*.gvt1.com",
+        "*.offline-maps.gvt1.com", "*.xn--ngstr-lra8j.com", "xn--ngstr-lra8j.com"]},
+        "basic_constraints": {"is_ca": false}, "crl_distribution_points": ["http://pki.google.com/GIAG2.crl"],
+        "subject_key_id": "c7f5fa6c273d65e1127ff2fdd0aa0bad1def634b"}, "fingerprint_md5":
+        "2843974ea0ce130fbe024598511bb954", "subject_key_info": {"fingerprint_sha256":
+        "d680abc45e5252a1468a8c28853d8648e755426327973b791f5b65929c33803d", "key_algorithm":
+        {"name": "RSA"}, "rsa_public_key": {"length": 2048, "modulus": "8qxnI0aQNpyN2ejhADxFh0IW6WjnOj7aGkOeeYNO8dMAhGMegGIvU6Cn8mw5BKQQ8nf9E6FtajvOC/tobTecgGo4U0d/ODyFo+ZunQgx2/mTT9IzAGl54G9qwLhxOZOv/rGgYtjJd3KsRjvzZtgi3WUWhWK3Ms//kawh76wR0D1gOfRK/RnKFdJtDs7QAdm053rwV9a2cqTpPlaDJS2v7s/Sd6XGut1etKsS5/mJtmsQtz79KKfCTa7Zuyj/DYIHm4TdukWV30Fq7WLNYD28yRiLh4pxbHTuV1BYkOteIW5O+nlw+Aa+ceJjKKWggQ+BG8Y1T+4BTLGWSZc1j9if8w==",
+        "exponent": 65537}}, "signature": {"self_signed": false, "valid": true, "value":
+        "lp9rTor0Br9JIepKudeUztHkRgf6urg1KdpOtaZ4TkjMbQ95mOgbJHDsk+AaNVhnssQlfkOleoOraB1dJXxjpPqEtBVsA93VslLORlnfAOi+HhVlXb1L9yUC1fEZadktZgzwsUZNw5w042OvC1t7RTrSKga+Kbx3S1nkpfEJ7wgvtLqWfKGGKQHJP1qgteXUKxK7V7LyovPtGeIDST2dJYT0LgsEw6aWT3dECD03KgVowBXo7AHZ6Ny9xVbtQKom45G1py8w5mhzaj4pJZFjQG9oBevCC5DSrShWF2GUuaNv/rx45XiLHAZiy8F58AvmAZQVEqELBerA8pFA3av0FA==",
+        "signature_algorithm": {"oid": "1.2.840.113549.1.1.11", "name": "SHA256WithRSA"}},
+        "spki_subject_fingerprint": "11429e26f792ee21b138584e9b9ce45bfc2342c543d8be3c4406e8e1a9275919",
+        "issuer": {"common_name": ["Google Internet Authority G2"], "country": ["US"],
+        "organization": ["Google Inc"]}}}, "chain": [{"parsed": {"tbs_noct_fingerprint":
+        "f25c6adc73978d79c27c9e8989089faae9e08b4c49fa6c789cd2158653061068", "subject_dn":
+        "C=US, O=Google Inc, CN=Google Internet Authority G2", "subject": {"common_name":
+        ["Google Internet Authority G2"], "country": ["US"], "organization": ["Google
+        Inc"]}, "signature_algorithm": {"oid": "1.2.840.113549.1.1.11", "name": "SHA256WithRSA"},
+        "redacted": false, "serial_number": "1329900289047763931211708866857674719",
+        "validation_level": "OV", "issuer_dn": "C=US, O=GeoTrust Inc., CN=GeoTrust
+        Global CA", "fingerprint_sha1": "a6120fc0b4664fad0b3b6ffd5f7a33e561ddb87d",
+        "version": 3, "fingerprint_sha256": "9b759d41e3de30f9d2f902027d792b65d950a98bbb6d6d56be7f2528453bf8e9",
+        "validity": {"start": "2017-05-22T11:32:37Z", "length": 50848042, "end": "2018-12-31T23:59:59Z"},
+        "tbs_fingerprint": "f25c6adc73978d79c27c9e8989089faae9e08b4c49fa6c789cd2158653061068",
+        "extensions": {"authority_key_id": "c07a98688d89fbab05640c117daa7d65b8cacc4e",
+        "certificate_policies": [{"id": "1.3.6.1.4.1.11129.2.5.1"}, {"id": "2.23.140.1.2.2"}],
+        "extended_key_usage": {"client_auth": true, "server_auth": true}, "authority_info_access":
+        {"ocsp_urls": ["http://g.symcd.com"]}, "basic_constraints": {"max_path_len":
+        0, "is_ca": true}, "crl_distribution_points": ["http://g.symcb.com/crls/gtglobal.crl"],
+        "key_usage": {"certificate_sign": true, "crl_sign": true, "value": 96}, "subject_key_id":
+        "4add06161bbcf668b576f581b6bb621aba5a812f"}, "fingerprint_md5": "17866ccbd224bd2ff9df48b95118f935",
+        "subject_key_info": {"fingerprint_sha256": "ec722969cb64200ab6638f68ac538e40abab5b19a6485661042a1061c4612776",
+        "key_algorithm": {"name": "RSA"}, "rsa_public_key": {"length": 2048, "modulus":
+        "nCoEd1zYUJE6BqOC4NhQSLyJP/EZcBqIRn7gj8Xxic4h7lr+YQ23MkSJoHQLU09VpM6CYpXu61lfxuEFgBLEXpQ/vFtIOPRT9yTm+5HpFcTP9FMN9Er8n1Tefb6ga2+HwNBQHygwA0DaCHNRbH//OjynNwaOvUsRBOt9JN7m+fwxcfuU1WDzLkqvQtLL6sRqGrLMU90VS4sfyBlhH82dqD5jK4Q1aWWEyBnFRiL4U5W+44BKEMYq7LqXIBHHOZkQBKDwYXqVJYxOUnXitu0IyhT8ziJqs07PRgOXlwN+wLHee69FM8+6PnG33vQlJcINNYmdnfsOEXmJHjfFr45yaQ==",
+        "exponent": 65537}}, "signature": {"self_signed": false, "valid": true, "value":
+        "yknlrNdkZHdbvnH6z/QeI8eaaWNUX+tM1hkoI2RmjhzHh4BkXwSLJq+Y3wpwvLwZPe57M6l/vfQF1HC7BSZ56prHmLkHGWU0zDzpP8UB+m8Mftt6cFxM/i0A8Mq+LY60qID7AROIy5w/5bt3yjpnNvPO1ScCckOgvW4C8UcFcT4BWekRnhrzhA+ApqJ4NS+2x6J/F3zhi1au7meIUScwYKViUsM31TvqhSoBOIeiz3CtpHrJxOfKxdq8IzLy/hjCe+DfOy/U0BDmlkz7RLchZA25AJQwEiaHWJg5BTgPzIJIDApHZu6/tF/E/3Co4X+LeSu4ZTKjubcx6Qr19h8y3A==",
+        "signature_algorithm": {"oid": "1.2.840.113549.1.1.11", "name": "SHA256WithRSA"}},
+        "spki_subject_fingerprint": "ec0c72ce7689150e4f62d04f51f0f19713f77cf27ff43cab4035e9e54e846aa9",
+        "issuer": {"common_name": ["GeoTrust Global CA"], "country": ["US"], "organization":
+        ["GeoTrust Inc."]}}}, {"parsed": {"tbs_noct_fingerprint": "d9a0cb9c4ccbb1b56bfa3be2b1e323d83ec692c44617543a19817903472bd9b7",
+        "subject_dn": "C=US, O=GeoTrust Inc., CN=GeoTrust Global CA", "subject": {"common_name":
+        ["GeoTrust Global CA"], "country": ["US"], "organization": ["GeoTrust Inc."]},
+        "signature_algorithm": {"oid": "1.2.840.113549.1.1.5", "name": "SHA1WithRSA"},
+        "redacted": false, "serial_number": "1227750", "validation_level": "unknown",
+        "issuer_dn": "C=US, O=Equifax, OU=Equifax Secure Certificate Authority", "fingerprint_sha1":
+        "7359755c6df9a0abc3060bce369564c8ec4542a3", "version": 3, "fingerprint_sha256":
+        "3c35cc963eb004451323d3275d05b353235053490d9cd83729a2faf5e7ca1cc0", "validity":
+        {"start": "2002-05-21T04:00:00Z", "length": 512870400, "end": "2018-08-21T04:00:00Z"},
+        "tbs_fingerprint": "d9a0cb9c4ccbb1b56bfa3be2b1e323d83ec692c44617543a19817903472bd9b7",
+        "extensions": {"authority_key_id": "48e668f92bd2b295d747d82320104f3398909fd4",
+        "certificate_policies": [{"cps": ["https://www.geotrust.com/resources/repository"],
+        "id": "2.5.29.32.0"}], "basic_constraints": {"is_ca": true}, "crl_distribution_points":
+        ["http://crl.geotrust.com/crls/secureca.crl"], "key_usage": {"certificate_sign":
+        true, "crl_sign": true, "value": 96}, "subject_key_id": "c07a98688d89fbab05640c117daa7d65b8cacc4e"},
+        "fingerprint_md5": "2e7db2a31d0e3da4b25f49b9542a2e1a", "subject_key_info":
+        {"fingerprint_sha256": "87af34d66fb3f2fdf36e09111e9aba2f6f44b207f3863f3d0b54b25023909aa5",
+        "key_algorithm": {"name": "RSA"}, "rsa_public_key": {"length": 2048, "modulus":
+        "2swYYzD99BcjGlZ+W988bDjkcbd4kdS8odhM+KhDtgPpTSEHCIjaWC9mOSm9BXiLnTjoBbdqfnGk5sRgprDvgOSJKA+eJdbtg/OtppHHmMlCGDUUna2YRpIuT8rxh0PBFpVXLVDviS2Aelet8u5fa9IAjbkU+BQVNdnARqN7csiRv8lVK83Qlz6cJmTM386DGXHKTubU1XupGc1V3sjs0l44U+VcT4wt/lAjNvxm5suOpDkZALeVAjmRCw7+OC7RHQWa9k0+bw8HHa8sHo9gOeL6NlMTOdReJivbPagUvTLrGAMoUgRx5aszPeE4uwc2hGKceeoWMPRfwCvocWvk+Q==",
+        "exponent": 65537}}, "signature": {"self_signed": false, "valid": true, "value":
+        "duESbk5LFhKGMAaygQjP8AjHx3F+Zu7C7dQ7H//w8MhO1kM4sLkwfRjQVYOiass2EZzoSGajbX+4E9RH/otaXHP8rtkbMhk4q5c0FKqW0uujHBQISba75ZHvgzbrHVZvytq8c2OQ5H97PiLLPQftXzh0nOMDUE6hr5juYfKEPxI=",
+        "signature_algorithm": {"oid": "1.2.840.113549.1.1.5", "name": "SHA1WithRSA"}},
+        "spki_subject_fingerprint": "9e5a774a418468af44637d1d9155bbe5d3f6a2c4517a84cbaf8b139efeda4982",
+        "issuer": {"country": ["US"], "organizational_unit": ["Equifax Secure Certificate
+        Authority"], "organization": ["Equifax"]}}}], "cipher_suite": {"id": "0xC02F",
+        "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"}, "version": "TLSv1.2", "session_ticket":
+        {"length": 164, "lifetime_hint": 100800}, "signature": {"hash_algorithm":
+        "sha256", "valid": true, "signature_algorithm": "rsa"}, "validation": {"browser_trusted":
+        true}, "ocsp_stapling": false, "metadata": {}}, "dhe": {"support": false,
+        "metadata": {}}, "dhe_export": {"support": false, "metadata": {}}, "rsa_export":
+        {"support": false, "metadata": {}}, "heartbleed": {"heartbeat_enabled": false,
+        "heartbleed_vulnerable": false, "metadata": {}}}}, "ip": "8.8.8.8", "updated_at":
+        "2017-12-14T23:25:06+00:00", "53": {"dns": {"lookup": {"resolves_correctly":
+        true, "support": true, "open_resolver": true, "answers": [{"type": "A", "name":
+        "c.afekv.com", "response": "192.150.186.1"}, {"type": "A", "name": "c.afekv.com",
+        "response": "173.194.91.79"}], "errors": false, "additionals": [], "questions":
+        [{"type": "A", "name": "c.afekv.com"}], "authorities": [], "metadata": {}}}},
+        "ports": ["443", "53"], "location": {"province": "California", "city": "Mountain
+        View", "country": "United States", "longitude": -122.0838, "registered_country":
+        "United States", "registered_country_code": "US", "postal_code": "94035",
+        "country_code": "US", "latitude": 37.386000000000003, "timezone": "America/Los_Angeles",
+        "continent": "North America"}, "autonomous_system": {"description": "GOOGLE
+        - Google LLC, US", "rir": "unknown", "routed_prefix": "8.8.8.0/24", "country_code":
+        "US", "path": [15169], "organization": "Google LLC", "asn": 15169, "name":
+        "GOOGLE"}, "protocols": ["443/https", "53/dns"]}'
+    http_version: 
+  recorded_at: Sat, 16 Dec 2017 04:00:42 GMT
+recorded_with: VCR 4.0.0

@@ -5,7 +5,7 @@ describe Censys::API do
     @api = Censys::API.new
   end
 
-  describe "#search" do
+  describe "#search", :vcr do
     context "ipv4" do
       it "should return IPv4 response" do
         res = @api.ipv4.search(query: "dropbox.com")

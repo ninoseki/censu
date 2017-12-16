@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.censys.io/api/v1/report/ipv4
+    body:
+      encoding: UTF-8
+      string: '{"query":"8.8.8.8","field":"ports","buckets":10}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - d14ea93172562f1bfea5b617660f61bc
+      Date:
+      - Sat, 16 Dec 2017 04:00:36 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '505'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "results": [{"key": 80, "doc_count": 4892}, {"key":
+        8080, "doc_count": 3848}, {"key": 443, "doc_count": 2456}, {"key": 8888, "doc_count":
+        797}, {"key": 22, "doc_count": 747}, {"key": 7547, "doc_count": 464}, {"key":
+        53, "doc_count": 459}, {"key": 21, "doc_count": 250}, {"key": 23, "doc_count":
+        184}, {"key": 2323, "doc_count": 140}], "metadata": {"count": 8655, "backend_time":
+        631, "nonnull_count": 14754, "other_result_count": 517, "buckets": 10, "error_bound":
+        0, "query": "8.8.8.8"}}'
+    http_version: 
+  recorded_at: Sat, 16 Dec 2017 04:00:36 GMT
+recorded_with: VCR 4.0.0

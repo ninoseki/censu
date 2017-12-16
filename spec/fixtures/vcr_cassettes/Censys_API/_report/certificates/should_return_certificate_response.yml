@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.censys.io/api/v1/report/certificates
+    body:
+      encoding: UTF-8
+      string: '{"query":"google.com","field":"precert","buckets":10}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 3b7dbedc7e59617ef35d71253866e260
+      Date:
+      - Sat, 16 Dec 2017 04:00:37 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '297'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "results": [{"key_as_string": "false", "key": 0, "doc_count":
+        85484}, {"key_as_string": "true", "key": 1, "doc_count": 102}], "metadata":
+        {"count": 85586, "backend_time": 842, "nonnull_count": 85586, "other_result_count":
+        0, "buckets": 2, "error_bound": 0, "query": "google.com"}}'
+    http_version: 
+  recorded_at: Sat, 16 Dec 2017 04:00:37 GMT
+recorded_with: VCR 4.0.0

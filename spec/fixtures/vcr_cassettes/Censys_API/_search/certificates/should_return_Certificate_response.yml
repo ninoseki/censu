@@ -1,0 +1,397 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.censys.io/api/v1/search/certificates
+    body:
+      encoding: UTF-8
+      string: '{"query":"dropbox.com"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 79b384bf39c1490dc18d26d2ddae1569
+      Date:
+      - Sat, 16 Dec 2017 04:00:39 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '30249'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "results": [{"parsed.fingerprint_sha256": "3f556808232d2d9b92c1ced119ee1c465e98d1429aea517614cd32730816d5c5",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA", "parsed.subject_dn": "C=US, ST=California,
+        L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=api.dropboxapi.com"},
+        {"parsed.fingerprint_sha256": "75d2fce7d0d971e32bca8278df9c4cfa14a1e6a5450ccc31053d427109898e8b",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA", "parsed.subject_dn": "C=US, ST=California,
+        L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=api.dropboxapi.com"},
+        {"parsed.fingerprint_sha256": "7050368f557d40777966a95fe7ad6964500de819a839559c127a4d626792e523",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA", "parsed.subject_dn": "C=US, ST=California,
+        L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=content.dropboxapi.com"},
+        {"parsed.fingerprint_sha256": "def55c4ec3265d87f7357aef10cbff449c55e0f96fea9fd505c099c9e29b194c",
+        "parsed.issuer_dn": "C=FR, ST=Paris, L=Paris, O=Gandi, CN=Gandi Standard SSL
+        CA 2", "parsed.subject_dn": "OU=Domain Control Validated, OU=Gandi Standard
+        SSL, CN=audit-dropbox.com"}, {"parsed.fingerprint_sha256": "dd822ad7821ec827a10982950b1f62bb4e52a754e9fb4ca347cb7ca682e6c9ec",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3",
+        "parsed.subject_dn": "CN=dropbox.com-id7846564788.ghfjjdlid4.filenam.dropboxru.ml"},
+        {"parsed.fingerprint_sha256": "9ff47da733344fc595e5af79eca95852b4bf60dd48e7bd7f7a45de737c735fa0",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2", "parsed.subject_dn": "OU=Domain Control Validated, CN=www.lead-dropbox.com"},
+        {"parsed.fingerprint_sha256": "a7e1982bee9d2e9ef3041d8374942dc944f18922e858cfebd22cff18fad001a4",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3",
+        "parsed.subject_dn": "CN=dropbox.com-secure-file-document.poetrybykhalidkhan.com"},
+        {"parsed.fingerprint_sha256": "18feb38975f8d9beb01733a117118ae79b89cd1a24012bceeb808595d314c980",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA", "parsed.subject_dn": "C=US, ST=California,
+        L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=*.dropbox.com"}, {"parsed.fingerprint_sha256":
+        "0a8aad735c1bb701f037fcff81397e5ec0b892f68b0aa17b4b1924e37850de94", "parsed.issuer_dn":
+        "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3", "parsed.subject_dn":
+        "CN=dropbox.com-sign-in-secure-cpress-files.onemindsoft.co.uk"}, {"parsed.fingerprint_sha256":
+        "47be6c4a0449aaefed2f20653e169666d41fc6b049581873ef7f4274f6595455", "parsed.issuer_dn":
+        "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3", "parsed.subject_dn":
+        "CN=dropbox.com-login-securefile-component.poetrybykhalidkhan.com"}, {"parsed.fingerprint_sha256":
+        "7416d06430e8c2d9c44d3579853d659766810a0c66649b7a00d4940739091252", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "9724a913bcf830de9c61a4c7258122f77ac0bf814eec32708ff0cfe6373935e0",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "63217b50173c8ec01eabe8a96eb8bce1d2d1f7274030cc35dc65678e5c7d1d93", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "d8cfd6c51eb7655c83026d00e80d91492123cad8fccae3e7c6333635260eefc0",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "95318359825fa7e9b6f48bf491762720c121a5ec0804f7af3701e5cc5d50bbbd", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "617b2af9bbc20d7d209108517984798652fdb6a700ac2b0d6336f0b07fcf37c9",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "d5f3889858d5e225f89937c999edc9ef74cbc7910ace3cbd91339a81b057f4d9", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "20e6f4d1236fd5d0b7a5a0bf6cbfb3b9a8edd5773b88ec39f44c9b61cb4be825",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3",
+        "parsed.subject_dn": "CN=dropbox.com-id7846564788.ghfjjdlid4.filenam.spin-keys.ru"},
+        {"parsed.fingerprint_sha256": "3f63523ae7ece228085af2fe239cc61c03a4240aab6c28a2a00e6f18e72399fb",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3",
+        "parsed.subject_dn": "CN=dropbox.com-sign-in-secure-cpress-files.poetrybykhalidkhan.com"},
+        {"parsed.fingerprint_sha256": "6d7b6b6eeeb02294d43a14040847cc0e73440c576659539b9b8575c19a0f2126",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "7686d502e7af3b9888884dd0291c120a8b1483c4b5ce42413a514c664f9a085a", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "143563083698b0bc7fa9176ac589611be7d7373621b6f960ef1a9b3eb10d9e1e",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3",
+        "parsed.subject_dn": "CN=dropbox.com-securefile-signin-sppn-php-doc.com.mob-rail.com.br"},
+        {"parsed.fingerprint_sha256": "7ff08b278d04bee2f6624af4cdc2ad0eaefb38d741a6bb054365783d95725218",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "b558294899f1f3041b47db408ef09b836611b571d10b782a7ae6ef73ec52d812", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "cb9e322c89d4ecae3a87980ec818eae3d1ca73d828e17ef4ed7c88a506228a6c",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "4d06349484bfe7f00a6610243b37f7c54f8b94d25e1f04fd0fb004f2134e8484", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "5d9431c2d77772e6c1f49a8a7ffa749cbb0a80d71a2127164237702f372fea5b",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni66257.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "8202384d6ce65773d892daf0d236ea2d0b97aecba4e5183abd1804beb34b74a6",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3",
+        "parsed.subject_dn": "CN=dropbox.com-signin-securefile-php-doc.com.supermotosmg.com.br"},
+        {"parsed.fingerprint_sha256": "b3d4b3ead72c988f54c73a4ef039cf2c0c6d743b93c170f31631c4f88dce6d3d",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3",
+        "parsed.subject_dn": "CN=dropbox.com-checkout-thefile.sellyourprestigecar.com"},
+        {"parsed.fingerprint_sha256": "d95e17925e2290752600338f6d1449ee77d5047ce1c7b6afd0253fd419a3499c",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3",
+        "parsed.subject_dn": "CN=dropbox.com-login-secure-cpress-files.onemindsoft.co.uk"},
+        {"parsed.fingerprint_sha256": "f81177c4073d132f61ac408944bee828abfe392266eeeef5f210260e85ed21f8",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "80ff62122dc4011496900970a3f34b0b351ce479c5a92806f528687d5758cb16", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "320d5e820a9cdb895b27fee4385f246dc43981e3affcc04864ab05bca586e3e6",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni66257.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "5430e2ee0608cc9983b86729792e4f186e7302c95d2edc6ecf950065c2d927f8",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "05c0884100d0ca56b160cb546e01eb49bbcf0ca37f19dd01a7dadfa793632ae7", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "8ecf2b7ed4f92b52ce92742b1380b7a75c5a78fb79c67921017670a4d6c1cbba",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "d8dacbd6758da991ee2c990eed75f354c953730fd8ec1a7dcc97f16b3550c845", "parsed.issuer_dn":
+        "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3", "parsed.subject_dn":
+        "CN=dropbox.com-signin-securefile-php-doc.com.daluamudancas.com.br"}, {"parsed.fingerprint_sha256":
+        "d4ae760d026a837f537063d5202f0543445785288bf2cae307d12f5a13d1a314", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "4ca96297055dd79cfdfbf5c3ac006209c012905b6e79c59208860eae38538939",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "759f587ff3fb37f68d8f95c4d579db3d2dc71a497be50683267c93534bceb694", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "180ebf1850fbd1bd78b712896185e639a4d9ee84e763c4d8aa2d4b7f061b2a9e",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "b2457f525b392418acd3977a274ac91ec389572e9a87de6c93bc1a501306a803", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "e90ff33a32c7ccc4c56b236603af180be52668669fd295377c0a55aeb7637ff2",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "a9b3bc86708e4b158c3df2eb5831fafb8016c96f7cf2c9ab2adbe1b1d960a467", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "b42cf2006fddd12deb6362089d7d4390dd9bbcc386657b78f9632652695a4eb6",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "d1f06170d17f47cb6a14f26430b49958a4603b9892673479700f2caef72c1b72", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "31035323fbb433621315b326a7e79f246756d2d17ed7e722de16ff672b2bd127",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "74684390df543af88be5a17ca06d27b49b36638e96aabf675fcf4867d3b46611", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "55196b1b89a0bd282d5b572a987cb47b4699953a630bb87d812978f76b20bd18",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "7b63f498cfb5eaea5b5a397a37f851f2de15e2826674eea549f22848413c7f6b", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "54e0d94398fbd51699c8d0430644fceb1249388585cb8a994769ecefb983be9d",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni66257.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "6a102dab9a14136a8148abfaa09f375f5f9d239fa20e999f6f16814a96bfd540",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "407d2c73a8ab651865ec9316c792434ecb4cb08a7f520b40f9071e08209b9164", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "6560c8cb1374de12d5f76b2d53bd77f6ff65007274195b804cf7a29480d3dfde",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "94b53e9d515ea8b90e3530561e1d1f3e4ef3076dc0a95fc63bbdbf6a0a391614", "parsed.issuer_dn":
+        "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC
+        Domain Validation Secure Server CA 2", "parsed.subject_dn": "OU=Domain Control
+        Validated, OU=PositiveSSL Multi-Domain, CN=sni66257.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "75ec9a1326f66ac064fb2b304ff76b021f9d6d7ae6de49d8f26ee8c13847ca0c", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "9b4e7063200ce82497fcd3fb2af4f9fc5267cad7c856dba0cb9b54edc3f8183d",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "5b173f31f3d619bda924b035f5d41bc6a6baad50a479b9fbd25abaabc7d0328c", "parsed.issuer_dn":
+        "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC
+        Domain Validation Secure Server CA 2", "parsed.subject_dn": "OU=Domain Control
+        Validated, OU=PositiveSSL Multi-Domain, CN=sni66257.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "29ebd74279e2accafbf5e0d711bb84ca6d6d1e784de1c1aac171dac00f542f53", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "f669acf1cd66b1d43065f892929b418b3ebf4878360e0fd94f5379acaf12b130",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "1a65da7938c46062f9ac1bad20256ace6a7c766a482de896b452200b57cd9cde", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "22fdc45e368ef76e38c3064a51aecba23df305141598d9ebc3c8b37b59704577",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "af9e61e062a3c431d687c220a74aaba20109e16a6c644298fd5c44dcea6185b1", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "4f2c97ca78901bf9a18c31da99eb8b592ae09fb76104cdac8e07120c381e76ae",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "c172cbb1a395a98b0d59b5a18d00802f5953a89a975ed40df53d036576bdaf74", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "070852b276696598065299a0c78f907b273652a0dfa5e259b493a2c648981e7a",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "af6a10cc29b228238eb449336dd0ea4d492e091b26bf918180c02292c85e73b9", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "b467f076c1c8f2ee865a0015c9aeac020f4e05bd06aa5c1e81cab93ac8dafecc",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni66257.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "91b809ec11b199fdbc9acbfe0983c5c41f466f3b2d551dd6bddaab374262b595",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "b7f42a956d7de9a2d507435aacd52e9e92bf2ba57abb250014665595ad361a79", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "b03c2a99d0016de736636ee89fffd0224922acbf07af5a47f9901e0cfbe7a25b",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "df05e2eb336eaefeaa03f9fa09b62a87fc9377857cad19d265f8b66d95a12f5f", "parsed.issuer_dn":
+        "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance
+        Server CA", "parsed.subject_dn": "C=US, ST=California, L=San Francisco, O=Dropbox,
+        Inc, CN=dropbox.com"}, {"parsed.fingerprint_sha256": "2b96ce2d1409c4becfaeed9f788c14abc3e35b0fca8d800d902200fe1942f2fc",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "d4bdcbf2b70bcf65aeb7bdfe78456fdf49f86373b07600ab58e351155a1b9abe", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "871d3911573f53d51f76a69cf3bc7c338c5077d0c330b64b54c05f7f027d5bed",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "24f813a51f83f8e8d4a7a181bb0cc7f30d2a0559295442e73220ca9bd6e348eb", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "7b501c5ad75dffbcfb2a40ae07e6e1d553a3f9e0d1f5235bd5f7bee968e680ef",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "c5f540d38f4caea4f705a58c732c5d9461fb88d935b6d12ace6601d6a67de8e2", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "c43a88d11fc4c3ad5ee736a8e82c003103c66bbee0195786ee1866227aee5b70",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "51b44d6a69378abe8b47b2d7fcc27cfbda52aec37d7133953ebaccc484d3c709", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "9abf62d6e58a9ff3a97b29c870d39306016e11fe88bf0f6adbf6053feaa393a7",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "fcca091ddf8606e8c5944154fba3b4db1d18bb561977fcc8f417f948c01d94e8", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "2aa1975d96e6d02ee65d04f5c58bbb37e701ebe1ce018003cd04a4bf7aea5e86",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "d54b5e8b3dbdf60ef7070c238bb4841ee65209f197d48423d9cd652f5f38d3c2", "parsed.issuer_dn":
+        "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC
+        Domain Validation Secure Server CA 2", "parsed.subject_dn": "OU=Domain Control
+        Validated, OU=PositiveSSL Multi-Domain, CN=sni66257.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "38ef917a6a262fc8ff8ef1a5c4d27c2f2c5700ff15f392599486f8cb8dc5bed4", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "a4b42b33f5bf24e2265a58de54cf713116f6163e1096d53b05094586cc36213c",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "c6442f16e75e09bdeddfa3e3670a0912fde1c5d601e9cb8d76bfe43273bff7ee", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "e5296734ce43af260d2b4a4f03ef8d1fbba87480ae05ca943040fdca0cdf0a37",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "3e00dbe51e468f8722096ad5a8587296cd376f77376b67079e19bdeb8f2d3e0e", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "afa5c7587033fe76e9e36c9e323f423846829b92f8ab365dbb20514ab007af23",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni66257.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "8799b37fefe358890ba617693f1db989b350c0458a065036803b02571601a651",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "b7090cd875eab1bc0552f75cc0dcd5834f1bc6c8ec1664a7d3611f7cfdcf9b2f", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "bee4d2c5a7ba8aac5892163cd192c48bf47a179e3ddf22652b5cccdf9010263f",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "66d16ac90efa9a0952d533a5301ccace6d851a26e7adf4c91ba391df3854924c", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "a4cc56d341aca8f450cd25711a594380d576373de7325ebcf2760cb3b3ebb876",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "394011413699e5a263a92bcae1c3a7d7724803ad5b9c74b0295d8eebdf390e0e", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "3f75547c6bfaa5f0af44aaacab9d43a50f4f2d1524662b946020d6b9c4ce5618",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "58eeeb986828378472c9b0fd4d4b36578af94be5a47b604ca723dc4aeae1e233", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"},
+        {"parsed.fingerprint_sha256": "95ef6e65fa0fc8b6e19f1df8c9aef071a7dcf33e86482516742722035bf5e464",
+        "parsed.issuer_dn": "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA -
+        SHA256 - G3", "parsed.subject_dn": "C=US, ST=California, L=San Francisco,
+        O=CloudFlare, Inc., CN=sni796046.cloudflaressl.com"}, {"parsed.fingerprint_sha256":
+        "a641b2ae4d16599914f641b8ee97cf8d09f0903be9db8a7bc629f9aa0ef1d0f1", "parsed.issuer_dn":
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign CloudSSL CA - SHA256 - G3", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=CloudFlare, Inc., CN=sni813156.cloudflaressl.com"}],
+        "metadata": {"count": 493, "query": "dropbox.com", "backend_time": 480, "page":
+        1, "pages": 5}}'
+    http_version: 
+  recorded_at: Sat, 16 Dec 2017 04:00:39 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.censys.io/api/v1/view/certificates/821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 3c659ec05ae8fbe072f5a24561daed53
+      Date:
+      - Sat, 16 Dec 2017 04:00:43 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '12942'
+    body:
+      encoding: UTF-8
+      string: '{"parent_spki_subject_fingerprint": "969827ada86ca3937fbd175b784348ac242e9d64d2caaafd2ff432b65201f05c",
+        "tags": ["unexpired", "leaf", "google-ct", "dv", "trusted", "ct"], "ct": {"google_argon_2017":
+        {"index": 5522912, "ct_to_censys_at": "2017-12-14T11:42:13+00:00", "added_to_ct_at":
+        "2017-10-30T10:00:35+00:00"}, "google_rocketeer": {"index": 160135819, "ct_to_censys_at":
+        "2017-10-29T21:06:23+00:00", "added_to_ct_at": "2017-10-29T20:07:20+00:00"},
+        "google_pilot": {"index": 165376697, "ct_to_censys_at": "2017-10-29T21:05:30+00:00",
+        "added_to_ct_at": "2017-10-29T19:41:09+00:00"}}, "raw": "MIIFaTCCBFGgAwIBAgIQR1ToFSF+oc4jJi1l9SEEizANBgkqhkiG9w0BAQsFADByMQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTATBgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTE3MTAwMjAwMDAwMFoXDTE3MTIzMTIzNTk1OVowGjEYMBYGA1UEAxMPaHR0cC1nb29nbGUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq3nra4qsXfbulsLB4gnOkAco/aTuptKGImNFqRXYnQ2thfYwpyUn2Jm+kBnHLafz2vjvqPM69a50hgggBTbYjuxoiE6qbrXBCBhgk+kI5kH+SGC2H902n2QUn7jtBzkFJct11geKWCVUwk13iRVqz2dZxpzDwfBj+RCBYSIFH8uN5SP4FxUmE6lClAYrzjtDZEWs12GXlBfYHRFiaxya71J4dk5q0jN88k40FdFGiir+F/qTRIH3qi1baS9Znw8vE0lwdVegQ0uwnHMNJdwNmXwTym+ACMsQ/Zw8fokoSxU2iwlbQUuEZlIoQEFCUBCufSPf5RbL/51mAEe5FLDtyQIDAQABo4ICUTCCAk0wHwYDVR0jBBgwFoAUfgNaZUFrp34K4bidCOodjh1qx2UwHQYDVR0OBBYEFHdpTdgk7P8qXeLGINzpwUvBeGl1MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBPBgNVHSAESDBGMDoGCysGAQQBsjEBAgI0MCswKQYIKwYBBQUHAgEWHWh0dHBzOi8vc2VjdXJlLmNvbW9kby5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGgP6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNybDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0dHA6Ly9jcnQuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3JpdHkuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wga8GA1UdEQSBpzCBpIIPaHR0cC1nb29nbGUuY29tghxhdXRvZGlzY292ZXIuaHR0cC1nb29nbGUuY29tghZjcGFuZWwuaHR0cC1nb29nbGUuY29tghRtYWlsLmh0dHAtZ29vZ2xlLmNvbYIXd2ViZGlzay5odHRwLWdvb2dsZS5jb22CF3dlYm1haWwuaHR0cC1nb29nbGUuY29tghN3d3cuaHR0cC1nb29nbGUuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQBlfU6G7mOVZTZthvVOccL4yzDvemXAj27VPswoo7GA9U7LJieQwKwJvJY/sHIkvCyLI4Wmn52oTAQp7Yb31ZIs72Ay0OmzXp0GY0Iltbx6KLCaQ0TXFvDzO2Lyyh/ilN9AFhYHU/ySg0GewYpbmhZZYNmzjIf3dTaRBi+H7wnjWnPwL00shFOOPy5W/WHe3s0PoXj5LIjpOvewl4v72Og3zxLwAFGzobH2D2YURDlRyL5daN739SMjkxX8KGv11jqSRBEVH5l7NOhd4aDLydf7do1cInZKtwxvq4xxfZdtRh3UOK2nvjJi0oV6Lcsxnah422j+EwFb5eifJH1F3V0g",
+        "parents": ["821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba"],
+        "zlint": {"version": 3, "errors_present": false, "fatals_present": false,
+        "warnings_present": false, "lints": {"n_subject_common_name_included": true},
+        "notices_present": true}, "precert": false, "validation": {"google_ct_primary":
+        {"paths": [["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba", "52f0e1c4e58ec629291b60317f074671b85d7ea80d5b07273463534b32b40234"],
+        ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59", "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba",
+        "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da", "687fa451382278fff0c8b11f8d43d576671c6eb2bceab413fb83d965d06d2ff2"],
+        ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59", "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba",
+        "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da", "cd9987eaaeb446853a9d6b0c69a19a9aa25546676de72e921154fbe067cfe1ab",
+        "6ea54741d004667eed1b4816634aa3a79e6e4b96950f8279dafc8d9bd8812137"], ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba", "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da",
+        "abc566bed75e481f8681c4408113eccf9f7b8e79091688c0b139d55058622311", "6ea54741d004667eed1b4816634aa3a79e6e4b96950f8279dafc8d9bd8812137"],
+        ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59", "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba",
+        "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da", "6b87d15f4c5992c934b58a0ddfd5b75fd7d37e130982787ac250f633dcb26ffb",
+        "85fb2f91dd12275a0145b636534f84024ad68b69b8ee88684ff711375805b348"]], "blacklisted":
+        false, "had_trusted_path": true, "whitelisted": false, "in_revocation_set":
+        false, "was_valid": true, "valid": true, "parents": ["821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba"],
+        "trusted_path": true, "type": "leaf"}, "nss": {"paths": [["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba", "52f0e1c4e58ec629291b60317f074671b85d7ea80d5b07273463534b32b40234"],
+        ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59", "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba",
+        "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da", "abc566bed75e481f8681c4408113eccf9f7b8e79091688c0b139d55058622311",
+        "6ea54741d004667eed1b4816634aa3a79e6e4b96950f8279dafc8d9bd8812137"], ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba", "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da",
+        "cd9987eaaeb446853a9d6b0c69a19a9aa25546676de72e921154fbe067cfe1ab", "6ea54741d004667eed1b4816634aa3a79e6e4b96950f8279dafc8d9bd8812137"],
+        ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59", "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba",
+        "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da", "687fa451382278fff0c8b11f8d43d576671c6eb2bceab413fb83d965d06d2ff2"]],
+        "blacklisted": false, "had_trusted_path": true, "whitelisted": false, "in_revocation_set":
+        false, "was_valid": true, "valid": true, "parents": ["821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba"],
+        "trusted_path": true, "type": "leaf"}, "apple": {"paths": [["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba", "52f0e1c4e58ec629291b60317f074671b85d7ea80d5b07273463534b32b40234"],
+        ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59", "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba",
+        "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da", "687fa451382278fff0c8b11f8d43d576671c6eb2bceab413fb83d965d06d2ff2"],
+        ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59", "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba",
+        "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da", "925e4b372ba32e5e87302284b2d7c9dfbf8200ffcba0d16603a1a06ff76cd353",
+        "85fb2f91dd12275a0145b636534f84024ad68b69b8ee88684ff711375805b348"], ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba", "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da",
+        "6b87d15f4c5992c934b58a0ddfd5b75fd7d37e130982787ac250f633dcb26ffb", "85fb2f91dd12275a0145b636534f84024ad68b69b8ee88684ff711375805b348"],
+        ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59", "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba",
+        "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da", "abc566bed75e481f8681c4408113eccf9f7b8e79091688c0b139d55058622311",
+        "6ea54741d004667eed1b4816634aa3a79e6e4b96950f8279dafc8d9bd8812137"]], "blacklisted":
+        false, "had_trusted_path": true, "whitelisted": false, "in_revocation_set":
+        false, "was_valid": true, "valid": true, "parents": ["821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba"],
+        "trusted_path": true, "type": "leaf"}, "microsoft": {"paths": [["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba", "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da",
+        "cd9987eaaeb446853a9d6b0c69a19a9aa25546676de72e921154fbe067cfe1ab", "6ea54741d004667eed1b4816634aa3a79e6e4b96950f8279dafc8d9bd8812137"],
+        ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59", "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba",
+        "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da", "abc566bed75e481f8681c4408113eccf9f7b8e79091688c0b139d55058622311",
+        "6ea54741d004667eed1b4816634aa3a79e6e4b96950f8279dafc8d9bd8812137"], ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba", "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da",
+        "687fa451382278fff0c8b11f8d43d576671c6eb2bceab413fb83d965d06d2ff2"], ["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba", "52f0e1c4e58ec629291b60317f074671b85d7ea80d5b07273463534b32b40234"]],
+        "blacklisted": false, "had_trusted_path": true, "whitelisted": false, "in_revocation_set":
+        false, "was_valid": true, "valid": true, "parents": ["821cc55ce7ec5c74febb42f624eb6a36c478215a31ed67e3cf723a67e8c75eba"],
+        "trusted_path": true, "type": "leaf"}}, "parsed": {"fingerprint_sha256": "821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59",
+        "subject_key_info": {"fingerprint_sha256": "b5b5d8c5b848eaa398f61224a306a5d3dbd22ddda32863d51c6b18b0163d5042",
+        "key_algorithm": {"name": "RSA"}, "rsa_public_key": {"length": 2048, "modulus":
+        "q3nra4qsXfbulsLB4gnOkAco/aTuptKGImNFqRXYnQ2thfYwpyUn2Jm+kBnHLafz2vjvqPM69a50hgggBTbYjuxoiE6qbrXBCBhgk+kI5kH+SGC2H902n2QUn7jtBzkFJct11geKWCVUwk13iRVqz2dZxpzDwfBj+RCBYSIFH8uN5SP4FxUmE6lClAYrzjtDZEWs12GXlBfYHRFiaxya71J4dk5q0jN88k40FdFGiir+F/qTRIH3qi1baS9Znw8vE0lwdVegQ0uwnHMNJdwNmXwTym+ACMsQ/Zw8fokoSxU2iwlbQUuEZlIoQEFCUBCufSPf5RbL/51mAEe5FLDtyQ==",
+        "exponent": 65537}}, "tbs_fingerprint": "8ef52f25f9225852bb7fa87c1ed1037de60e48c7fb309c1a3f7f14de9878860e",
+        "subject_dn": "CN=http-google.com", "subject": {"common_name": ["http-google.com"]},
+        "redacted": false, "signature": {"self_signed": false, "valid": false, "value":
+        "ZX1Ohu5jlWU2bYb1TnHC+Msw73plwI9u1T7MKKOxgPVOyyYnkMCsCbyWP7ByJLwsiyOFpp+dqEwEKe2G99WSLO9gMtDps16dBmNCJbW8eiiwmkNE1xbw8zti8sof4pTfQBYWB1P8koNBnsGKW5oWWWDZs4yH93U2kQYvh+8J41pz8C9NLIRTjj8uVv1h3t7ND6F4+SyI6Tr3sJeL+9joN88S8ABRs6Gx9g9mFEQ5Uci+XWje9/UjI5MV/Chr9dY6kkQRFR+ZezToXeGgy8nX+3aNXCJ2SrcMb6uMcX2XbUYd1Ditp74yYtKFei3LMZ2oeNto/hMBW+XonyR9Rd1dIA==",
+        "signature_algorithm": {"oid": "1.2.840.113549.1.1.11", "name": "SHA256WithRSA"}},
+        "__expanded_names": ["www.http-google.com", "http-google.com", "autodiscover.http-google.com",
+        "webdisk.http-google.com", "webmail.http-google.com", "cpanel.http-google.com",
+        "com", "mail.http-google.com"], "validity": {"start": "2017-10-02T00:00:00Z",
+        "length": 7862399, "end": "2017-12-31T23:59:59Z"}, "issuer_dn": "C=US, ST=TX,
+        L=Houston, O=cPanel, Inc., CN=cPanel, Inc. Certification Authority", "fingerprint_sha1":
+        "46b50a4ebfb8ef2bfd23db167690f422b52c88d8", "version": 3, "extensions": {"authority_key_id":
+        "7e035a65416ba77e0ae1b89d08ea1d8e1d6ac765", "certificate_policies": [{"cps":
+        ["https://secure.comodo.com/CPS"], "id": "1.3.6.1.4.1.6449.1.2.2.52"}, {"id":
+        "2.23.140.1.2.1"}], "authority_info_access": {"ocsp_urls": ["http://ocsp.comodoca.com"],
+        "issuer_urls": ["http://crt.comodoca.com/cPanelIncCertificationAuthority.crt"]},
+        "extended_key_usage": {"client_auth": true, "server_auth": true}, "subject_alt_name":
+        {"dns_names": ["http-google.com", "autodiscover.http-google.com", "cpanel.http-google.com",
+        "mail.http-google.com", "webdisk.http-google.com", "webmail.http-google.com",
+        "www.http-google.com"]}, "basic_constraints": {"is_ca": false}, "crl_distribution_points":
+        ["http://crl.comodoca.com/cPanelIncCertificationAuthority.crl"], "key_usage":
+        {"key_encipherment": true, "value": 5, "digital_signature": true}, "subject_key_id":
+        "77694dd824ecff2a5de2c620dce9c14bc1786975"}, "names": ["mail.http-google.com",
+        "webmail.http-google.com", "http-google.com", "autodiscover.http-google.com",
+        "www.http-google.com", "cpanel.http-google.com", "webdisk.http-google.com"],
+        "signature_algorithm": {"oid": "1.2.840.113549.1.1.11", "name": "SHA256WithRSA"},
+        "validation_level": "DV", "serial_number": "94816047830031506564997921695628067979",
+        "fingerprint_md5": "5ee6f4eadb1965da4850ac55d3a63787", "tbs_noct_fingerprint":
+        "8ef52f25f9225852bb7fa87c1ed1037de60e48c7fb309c1a3f7f14de9878860e", "spki_subject_fingerprint":
+        "9b4eeb0920792a8f384692a39458bb7f8845027ce4f7ac7f5a54294a957be37e", "issuer":
+        {"common_name": ["cPanel, Inc. Certification Authority"], "country": ["US"],
+        "organization": ["cPanel, Inc."], "province": ["TX"], "locality": ["Houston"]}},
+        "metadata": {"post_processed_at": "2017-12-14T11:42:15+00:00", "post_processed":
+        true, "parse_status": "success", "updated_at": "2017-12-14T07:40:28", "added_at":
+        "2017-10-29T21:05:30+00:00", "source": "ct", "seen_in_scan": false, "parse_version":
+        1}}'
+    http_version: 
+  recorded_at: Sat, 16 Dec 2017 04:00:43 GMT
+recorded_with: VCR 4.0.0

@@ -5,7 +5,7 @@ describe Censys::API do
     @api = Censys::API.new
   end
 
-  describe "#report" do
+  describe "#report", :vcr do
     context "ipv4" do
       it "should return ipv4 response" do
         params = {

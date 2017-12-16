@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.censys.io/api/v1/report/websites
+    body:
+      encoding: UTF-8
+      string: '{"query":"google.com","field":"ports","buckets":10}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 4bd9f1d55b58ea31c5b5fec3abeb51eb
+      Date:
+      - Sat, 16 Dec 2017 04:00:31 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '316'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "results": [{"key": 80, "doc_count": 21259}, {"key":
+        443, "doc_count": 19443}, {"key": 0, "doc_count": 18119}, {"key": 25, "doc_count":
+        13823}], "metadata": {"count": 21329, "backend_time": 413, "nonnull_count":
+        72644, "other_result_count": 0, "buckets": 4, "error_bound": 0, "query": "google.com"}}'
+    http_version: 
+  recorded_at: Sat, 16 Dec 2017 04:00:31 GMT
+recorded_with: VCR 4.0.0
