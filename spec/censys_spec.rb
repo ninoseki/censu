@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'Censys'
+require 'censys'
 
 describe Censys do
   it "should have a VERSION constant" do
