@@ -2,7 +2,6 @@ require 'time'
 
 module Censys
   class Certificate < Document
-
     #
     # @return [String]
     #
@@ -28,6 +27,5 @@ module Censys
     def validation_timestamp
       @validation_timestamp ||= Time.parse(@attributes['validation_timestamp'])
     end
-
   end
 end

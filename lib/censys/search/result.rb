@@ -1,7 +1,6 @@
 module Censys
   module Search
     class Result
-
       #
       # Initializes the search result.
       #
@@ -31,7 +30,7 @@ module Censys
       # @return [Boolean]
       #
       def field?(name)
-        @attributes.has_key?(name)
+        @attributes.key?(name)
       end
 
       #
@@ -45,7 +44,6 @@ module Censys
       def [](name)
         @attributes[name]
       end
-
     end
   end
 end

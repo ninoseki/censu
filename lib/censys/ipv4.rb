@@ -7,7 +7,6 @@ require 'time'
 
 module Censys
   class IPv4 < Document
-
     include HasServices
     include HasLocation
     include HasASN
@@ -23,6 +22,5 @@ module Censys
     def to_s
       ip
     end
-
   end
 end

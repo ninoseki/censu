@@ -3,7 +3,6 @@ require 'censys/report/metadata'
 module Censys
   module Report
     class Response
-
       include Enumerable
 
       # Response status.
@@ -50,7 +49,6 @@ module Censys
       def each(&block)
         @results.each(&block)
       end
-
     end
   end
 end

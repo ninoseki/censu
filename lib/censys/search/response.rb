@@ -6,7 +6,6 @@ require 'censys/search/certificate'
 module Censys
   module Search
     class Response
-
       include Enumerable
 
       RESULTS = {
@@ -83,9 +82,7 @@ module Censys
       #   The next page of results or `nil` if there are no more pages.
       #
       def next_page
-        if @metadata.page < @metadata.pages
-          @api.search(@result_type,@params.merge(page: @metadata.page + 1))
-        end
+        @api.search(@result_type,@params.merge(page: @metadata.page + 1)) if @metadata.page < @metadata.pages
       end
 
       alias next next_page
@@ -122,7 +119,6 @@ module Censys
       def pages
         enum_for(:each_page)
       end
-
     end
   end
 end

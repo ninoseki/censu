@@ -16,7 +16,6 @@ module Censys
       def protocols
         @attributes['protocols']
       end
-
     end
   end
 end

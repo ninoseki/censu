@@ -3,7 +3,6 @@ require 'censys/search/result'
 module Censys
   module Search
     class Certificate < Result
-
       def fingerprint_sha256
         @attributes['parsed.fingerprint_sha256']
       end
@@ -15,7 +14,6 @@ module Censys
       def issuer_dn
         @attributes['parsed.issuer_dn']
       end
-
     end
   end
 end

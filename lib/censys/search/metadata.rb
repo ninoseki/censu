@@ -1,7 +1,6 @@
 module Censys
   module Search
     class Metadata
-
       # @return [Integer]
       attr_reader :count
 
@@ -30,7 +29,6 @@ module Censys
         @page  = metadata['page']
         @pages = metadata['pages']
       end
-
     end
   end
 end

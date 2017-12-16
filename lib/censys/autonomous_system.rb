@@ -1,6 +1,5 @@
 module Censys
   class AutonomousSystem
-
     # @return [String]
     attr_reader :name
 
@@ -40,6 +39,5 @@ module Censys
       @asn           = attributes['asn']
       @description   = attributes['description']
     end
-
   end
 end

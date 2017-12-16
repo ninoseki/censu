@@ -1,7 +1,6 @@
 module Censys
   module Report
     class Metadata
-
       # @return [Fixnum]
       attr_reader :count
 
@@ -37,7 +36,6 @@ module Censys
         @error_bound        = attributes['error_bound']
         @query              = attributes['query']
       end
-
     end
   end
 end

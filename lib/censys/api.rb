@@ -10,12 +10,9 @@ require 'json'
 
 module Censys
   class API
-
-    VERSION = 1
-
-    HOST = 'www.censys.io'
-
-    URL = "https://#{HOST}/api/v#{VERSION}"
+    VERSION = 1.freeze
+    HOST = 'www.censys.io'.freeze
+    URL = "https://#{HOST}/api/v#{VERSION}".freeze
 
     class Resource
 
@@ -44,7 +41,6 @@ module Censys
       def report(params)
         @api.report(@type,params)
       end
-
     end
 
     # API UID.
@@ -88,13 +84,8 @@ module Censys
     #   Censys - My Account
     #
     def initialize(id=ENV['CENSYS_ID'],secret=ENV['CENSYS_SECRET'])
-      if (id.nil? || id.empty?)
-        raise(ArgumentError,"'id' argument required")
-      end
-
-      if (secret.nil? || secret.empty?)
-        raise(ArgumentError,"'secret' argument required")
-      end
+      raise(ArgumentError,"'id' argument required") if (id.nil? || id.empty?)
+      raise(ArgumentError,"'secret' argument required") if (secret.nil? || secret.empty?)
 
       @id, @secret = id, secret
 
@@ -170,13 +161,8 @@ module Censys
     # @option params
     #
     def report(resource,params)
-      unless params[:query]
-        raise(ArgumentError,"must specify the :query param")
-      end
-
-      unless params[:field]
-        raise(ArgumentError,"must specify the :field param")
-      end
+      raise(ArgumentError,"must specify the :query param") unless params[:query]
+      raise(ArgumentError,"must specify the :field param") unless params[:field]
 
       post("/report/#{resource}",params) do |response|
         Report::Response.new(response)
@@ -263,10 +249,7 @@ module Censys
     end
 
     def validate_index!(index)
-      unless INDEXES.include?(index)
-        raise(ArgumentError,"unsupported index type: #{index}")
-      end
+      raise(ArgumentError,"unsupported index type: #{index}") unless INDEXES.include?(index)
     end
-
   end
 end

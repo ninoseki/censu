@@ -1,6 +1,5 @@
 module Censys
   class Location
-
     # @return [String]
     attr_reader :postal_code
 
@@ -51,6 +50,5 @@ module Censys
       @latitude  = attributes['latitude']
       @longitude = attributes['longitude']
     end
-
   end
 end

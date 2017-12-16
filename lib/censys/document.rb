@@ -1,6 +1,5 @@
 module Censys
   class Document
-
     #
     # Initializes the document.
     #
@@ -36,6 +35,5 @@ module Censys
     def metadata
       @attributes['metadata']
     end
-
   end
 end

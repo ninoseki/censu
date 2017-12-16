@@ -5,7 +5,6 @@ require 'censys/document/has_asn'
 
 module Censys
   class Website < Document
-
     include HasServices
     include HasLocation
     include HasASN
@@ -27,6 +26,5 @@ module Censys
     def to_s
       domain
     end
-
   end
 end
