@@ -1,0 +1,454 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.censys.io/api/v1/data
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - b078497d92c2bcdb818e8c092dc764d4
+      Date:
+      - Sun, 17 Dec 2017 13:29:17 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '35691'
+    body:
+      encoding: UTF-8
+      string: '{"primary_series": {"Alexa Top 1 Million Snapshots": {"description":
+        "This dataset contains the latest information we know about each domain the
+        Alexa Top 1 Million. Each record describes a single Alexa domain and matches
+        the data that is available in the Top Million Websites search index. All protocols
+        are updated daily.", "details_url": "https://www.censys.io/api/v1/data/domain",
+        "latest_result": {"timestamp": "20171217T000306", "name": "20171217T0003",
+        "details_url": "https://www.censys.io/api/v1/data/domain/20171217T0003"},
+        "id": "domain", "name": "Alexa Top 1 Million Snapshots"}, "IPv4 Snapshots":
+        {"description": "This dataset contains the latest information we know about
+        each public host in the IPv4 address space. Each record describes a single
+        host and matches the data that is available in the IPv4 search index. All
+        protocols are updated at least weekly.", "details_url": "https://www.censys.io/api/v1/data/ipv4",
+        "latest_result": {"timestamp": "20171216T063143", "name": "20171216T0631",
+        "details_url": "https://www.censys.io/api/v1/data/ipv4/20171216T0631"}, "id":
+        "ipv4", "name": "IPv4 Snapshots"}, "All X.509 Certificates": {"description":
+        "This datasets consists of the X.509 certificates we''ve seen in Censys. Each
+        record contains the raw certificate and parsed data (from ZGrab). Records
+        are identical to what is found in the certificate search index.", "details_url":
+        "https://www.censys.io/api/v1/data/certificates", "latest_result": {"timestamp":
+        "20171215T133617", "name": "20171215T1336", "details_url": "https://www.censys.io/api/v1/data/certificates/20171215T1336"},
+        "id": "certificates", "name": "All X.509 Certificates"}}, "raw_series": {"22-ssh-banner-full_ipv4":
+        {"port": 22, "subprotocol": "banner", "protocol": "ssh", "name": "22-ssh-banner-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4",
+        "latest_result": {"timestamp": "20170705T001914", "name": "20170705T0019",
+        "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170705T0019"},
+        "destination": "full_ipv4", "id": "22-ssh-banner-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 22 and a ZGrab SSH
+        Banner Grab\r\nfor the for responsive hosts. The connection is terminated
+        after a banner has been\r\nreceived. We do not currently capture SSH host
+        keys, but we are planning to add this\r\nfunctionality in the future."}, "25-smtp-starttls-alexa_top1mil":
+        {"port": 25, "subprotocol": "starttls", "protocol": "smtp", "name": "25-smtp-starttls-alexa_top1mil",
+        "details_url": "https://www.censys.io/api/v1/data/25-smtp-starttls-alexa_top1mil",
+        "latest_result": {"timestamp": "20171216T124315", "name": "20171216T1243",
+        "details_url": "https://www.censys.io/api/v1/data/25-smtp-starttls-alexa_top1mil/20171216T1243"},
+        "destination": "alexa_top1mil", "id": "25-smtp-starttls-alexa_top1mil", "description":
+        "This dataset is composed of the MX dns lookups for each domain on the Alexa
+        Top Million and an SMTP and StartTLS handshake with those servers. Data is
+        keyed by Alexa domain."}, "110-pop3-starttls-full_ipv4": {"port": 110, "subprotocol":
+        "starttls", "protocol": "pop3", "name": "110-pop3-starttls-full_ipv4", "details_url":
+        "https://www.censys.io/api/v1/data/110-pop3-starttls-full_ipv4", "latest_result":
+        {"timestamp": "20171217T001643", "name": "20171217T0016", "details_url": "https://www.censys.io/api/v1/data/110-pop3-starttls-full_ipv4/20171217T0016"},
+        "destination": "full_ipv4", "id": "110-pop3-starttls-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 110 against the public\r\nIPv4
+        address space and a POP3 banner grab, STARTTLS initiation, and normal TLS\r\nhandshake.
+        This is our priamry scan for finding POP3 servers and measuring STARTTLS\r\nadoption."},
+        "2323-telnet-banner-full_ipv4": {"port": 2323, "subprotocol": "banner", "protocol":
+        "telnet", "name": "2323-telnet-banner-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/2323-telnet-banner-full_ipv4",
+        "latest_result": {"timestamp": "20171213T223111", "name": "20171213T2231",
+        "details_url": "https://www.censys.io/api/v1/data/2323-telnet-banner-full_ipv4/20171213T2231"},
+        "destination": "full_ipv4", "id": "2323-telnet-banner-full_ipv4", "description":
+        null}, "443-https-ssl_3-full_ipv4": {"port": 443, "subprotocol": "ssl_3",
+        "protocol": "https", "name": "443-https-ssl_3-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/443-https-ssl_3-full_ipv4",
+        "latest_result": {"timestamp": "20171213T225405", "name": "20171213T2254",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-ssl_3-full_ipv4/20171213T2254"},
+        "destination": "full_ipv4", "id": "443-https-ssl_3-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 443 against the public\r\nIPv4
+        address space and an SSLv3 handshake with responsive hosts."}, "443-https-heartbleed-full_ipv4":
+        {"port": 443, "subprotocol": "heartbleed", "protocol": "https", "name": "443-https-heartbleed-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-heartbleed-full_ipv4",
+        "latest_result": {"timestamp": "20171213T004144", "name": "20171213T0041",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-heartbleed-full_ipv4/20171213T0041"},
+        "destination": "full_ipv4", "id": "443-https-heartbleed-full_ipv4", "description":
+        "This dataset is composed of TCP SYN scan on port 443 against the public\r\nIPv4
+        address space and a typical looking TLS handshake and safe check for whether
+        the host\r\nis vulnerable to the Heartbleed attack. Details on our Heartbleed
+        check can be found at \r\nhttps://jhalderm.com/pub/papers/heartbleed-imc14.pdf."},
+        "1911-fox-device_id-full_ipv4": {"port": 1911, "subprotocol": "device_id",
+        "protocol": "fox", "name": "1911-fox-device_id-full_ipv4", "details_url":
+        "https://www.censys.io/api/v1/data/1911-fox-device_id-full_ipv4", "latest_result":
+        {"timestamp": "20171211T120101", "name": "20171211T1201", "details_url": "https://www.censys.io/api/v1/data/1911-fox-device_id-full_ipv4/20171211T1201"},
+        "destination": "full_ipv4", "id": "1911-fox-device_id-full_ipv4", "description":
+        "This dataset is composed of a TCP SYN scan on port 1911 and then Niagara
+        Tridium Fox handshake."}, "443-https-dhe-full_ipv4": {"port": 443, "subprotocol":
+        "dhe", "protocol": "https", "name": "443-https-dhe-full_ipv4", "details_url":
+        "https://www.censys.io/api/v1/data/443-https-dhe-full_ipv4", "latest_result":
+        {"timestamp": "20171210T231706", "name": "20171210T2317", "details_url": "https://www.censys.io/api/v1/data/443-https-dhe-full_ipv4/20171210T2317"},
+        "destination": "full_ipv4", "id": "443-https-dhe-full_ipv4", "description":
+        "This dataset is composed of TCP SYN scan on port 443 against the public\r\nIPv4
+        address space and a TLS handshake that only offers Diffie-Hellman \r\ncipher
+        suites."}, "0-icmp-echo_request-full_ipv4": {"port": null, "subprotocol":
+        "echo_request", "protocol": "icmp", "name": "0-icmp-echo_request-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/0-icmp-echo_request-full_ipv4",
+        "latest_result": {"timestamp": "20171215T231608", "name": "20171215T2316",
+        "details_url": "https://www.censys.io/api/v1/data/0-icmp-echo_request-full_ipv4/20171215T2316"},
+        "destination": "full_ipv4", "id": "0-icmp-echo_request-full_ipv4", "description":
+        "Raw ZMap output from ICMP echo request scan of the public IPv4 address space.\r\n"},
+        "465-smtps-ssl_2-full_ipv4": {"port": 465, "subprotocol": "ssl_2", "protocol":
+        "smtps", "name": "465-smtps-ssl_2-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/465-smtps-ssl_2-full_ipv4",
+        "latest_result": {"timestamp": "20160706T222426", "name": "20160706T2224",
+        "details_url": "https://www.censys.io/api/v1/data/465-smtps-ssl_2-full_ipv4/20160706T2224"},
+        "destination": "full_ipv4", "id": "465-smtps-ssl_2-full_ipv4", "description":
+        null}, "22-ssh-v2-full_ipv4": {"port": 22, "subprotocol": "v2", "protocol":
+        "ssh", "name": "22-ssh-v2-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/22-ssh-v2-full_ipv4",
+        "latest_result": {"timestamp": "20171213T001607", "name": "20171213T0016",
+        "details_url": "https://www.censys.io/api/v1/data/22-ssh-v2-full_ipv4/20171213T0016"},
+        "destination": "full_ipv4", "id": "22-ssh-v2-full_ipv4", "description": null},
+        "20000-dnp3-status-full_ipv4": {"port": 20000, "subprotocol": "status", "protocol":
+        "dnp3", "name": "20000-dnp3-status-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/20000-dnp3-status-full_ipv4",
+        "latest_result": {"timestamp": "20171216T133249", "name": "20171216T1332",
+        "details_url": "https://www.censys.io/api/v1/data/20000-dnp3-status-full_ipv4/20171216T1332"},
+        "destination": "full_ipv4", "id": "20000-dnp3-status-full_ipv4", "description":
+        "This dataset is composed of a DNP3 scan on port on port 20000 that detects
+        whether a device speaks the DNP3 protocol. "}, "102-s7-szl-full_ipv4": {"port":
+        102, "subprotocol": "szl", "protocol": "s7", "name": "102-s7-szl-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/102-s7-szl-full_ipv4", "latest_result":
+        {"timestamp": "20171213T123907", "name": "20171213T1239", "details_url": "https://www.censys.io/api/v1/data/102-s7-szl-full_ipv4/20171213T1239"},
+        "destination": "full_ipv4", "id": "102-s7-szl-full_ipv4", "description": null},
+        "110-pop3-ssl_2-full_ipv4": {"port": 110, "subprotocol": "ssl_2", "protocol":
+        "pop3", "name": "110-pop3-ssl_2-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/110-pop3-ssl_2-full_ipv4",
+        "latest_result": {"timestamp": "20160728T222721", "name": "20160728T2227",
+        "details_url": "https://www.censys.io/api/v1/data/110-pop3-ssl_2-full_ipv4/20160728T2227"},
+        "destination": "full_ipv4", "id": "110-pop3-ssl_2-full_ipv4", "description":
+        null}, "25-smtp-dhe_export-1%_sample_ipv4": {"port": 25, "subprotocol": "dhe_export",
+        "protocol": "smtp", "name": "25-smtp-dhe_export-1%_sample_ipv4", "details_url":
+        "https://www.censys.io/api/v1/data/25-smtp-dhe_export-1%_sample_ipv4", "latest_result":
+        {"timestamp": "20171216T141506", "name": "20171216T1415", "details_url": "https://www.censys.io/api/v1/data/25-smtp-dhe_export-1%_sample_ipv4/20171216T1415"},
+        "destination": "1%_sample_ipv4", "id": "25-smtp-dhe_export-1%_sample_ipv4",
+        "description": "This dataset is composed of a ZMap TCP SYN scan on port 25
+        against a random 1% sample\r\nof the IPv4 address space and an SMTP Banner
+        Grab, STARTTLS handshake, and a \r\nTLS handshake in which we only offer Export
+        Diffie-Hellman cipher suites.\r\nA different 1% random sample is generated
+        for each scan. This series can be used\r\nto track how well mail servers are
+        patching to protect against the Logjam attack."}, "25-smtp-ssl_2-full_ipv4":
+        {"port": 25, "subprotocol": "ssl_2", "protocol": "smtp", "name": "25-smtp-ssl_2-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/25-smtp-ssl_2-full_ipv4",
+        "latest_result": {"timestamp": "20160725T222738", "name": "20160725T2227",
+        "details_url": "https://www.censys.io/api/v1/data/25-smtp-ssl_2-full_ipv4/20160725T2227"},
+        "destination": "full_ipv4", "id": "25-smtp-ssl_2-full_ipv4", "description":
+        null}, "443-https-heartbleed-1%_sample_ipv4": {"port": 443, "subprotocol":
+        "heartbleed", "protocol": "https", "name": "443-https-heartbleed-1%_sample_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-heartbleed-1%_sample_ipv4",
+        "latest_result": {"timestamp": "20160127T041744", "name": "20160127T0417",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-heartbleed-1%_sample_ipv4/20160127T0417"},
+        "destination": "1%_sample_ipv4", "id": "443-https-heartbleed-1%_sample_ipv4",
+        "description": "This dataset is composed of a ZMap TCP SYN scan on port 443
+        against a random 1% sample\r\nof the IPv4 address space a TLS handshake and
+        safe check for whether the host\r\nis vulnerable to the Heartbleed attack.
+        Details on our Heartbleed check can be found at \r\nhttps://jhalderm.com/pub/papers/heartbleed-imc14.pdf.
+        "}, "80-http-get-full_ipv4": {"port": 80, "subprotocol": "get", "protocol":
+        "http", "name": "80-http-get-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/80-http-get-full_ipv4",
+        "latest_result": {"timestamp": "20171214T081504", "name": "20171214T0815",
+        "details_url": "https://www.censys.io/api/v1/data/80-http-get-full_ipv4/20171214T0815"},
+        "destination": "full_ipv4", "id": "80-http-get-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 80 against the public\r\nIPv4
+        address space and a GET / HTTP request for the root page (e.g., http://google.com).\r\nNote:
+        this scan does not currently follow HTTP redirects. However, we plan to add
+        this \r\nfunctionality moving forward. The ZGrab output includes any HTTP
+        headers and the first\r\n64 kb of the HTTP page."}, "993-imaps-ssl_2-full_ipv4":
+        {"port": 993, "subprotocol": "ssl_2", "protocol": "imaps", "name": "993-imaps-ssl_2-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/993-imaps-ssl_2-full_ipv4",
+        "latest_result": {"timestamp": "20160728T222714", "name": "20160728T2227",
+        "details_url": "https://www.censys.io/api/v1/data/993-imaps-ssl_2-full_ipv4/20160728T2227"},
+        "destination": "full_ipv4", "id": "993-imaps-ssl_2-full_ipv4", "description":
+        null}, "995-pop3s-rsa_export-full_ipv4": {"port": 995, "subprotocol": "rsa_export",
+        "protocol": "pop3s", "name": "995-pop3s-rsa_export-full_ipv4", "details_url":
+        "https://www.censys.io/api/v1/data/995-pop3s-rsa_export-full_ipv4", "latest_result":
+        {"timestamp": "20160426T150810", "name": "20160426T1508", "details_url": "https://www.censys.io/api/v1/data/995-pop3s-rsa_export-full_ipv4/20160426T1508"},
+        "destination": "full_ipv4", "id": "995-pop3s-rsa_export-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 995 against the public\r\nIPv4
+        address space and TLS handshake with responsive hosts that only offer\r\nexport-grade
+        RSA ciphers."}, "1900-upnp-discovery-full_ipv4": {"port": 1900, "subprotocol":
+        "discovery", "protocol": "upnp", "name": "1900-upnp-discovery-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/1900-upnp-discovery-full_ipv4",
+        "latest_result": {"timestamp": "20171211T020656", "name": "20171211T0206",
+        "details_url": "https://www.censys.io/api/v1/data/1900-upnp-discovery-full_ipv4/20171211T0206"},
+        "destination": "full ipv4", "id": "1900-upnp-discovery-full_ipv4", "description":
+        null}, "993-imaps-dhe_export-full_ipv4": {"port": 993, "subprotocol": "dhe_export",
+        "protocol": "imaps", "name": "993-imaps-dhe_export-full_ipv4", "details_url":
+        "https://www.censys.io/api/v1/data/993-imaps-dhe_export-full_ipv4", "latest_result":
+        {"timestamp": "20171217T041452", "name": "20171217T0414", "details_url": "https://www.censys.io/api/v1/data/993-imaps-dhe_export-full_ipv4/20171217T0414"},
+        "destination": "full_ipv4", "id": "993-imaps-dhe_export-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 993 against the public\r\nIPv4
+        address space and TLS handshake with responsive hosts in which we only\r\noffer
+        Diffie-Hellman export cipher suites."}, "443-https-dhe_export-alexa_top1mil":
+        {"port": 443, "subprotocol": "dhe_export", "protocol": "https", "name": "443-https-dhe_export-alexa_top1mil",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-dhe_export-alexa_top1mil",
+        "latest_result": {"timestamp": "20171216T110837", "name": "20171216T1108",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-dhe_export-alexa_top1mil/20171216T1108"},
+        "destination": "alexa_top1mil", "id": "443-https-dhe_export-alexa_top1mil",
+        "description": "This dataset is composed of the DNS lookups for each domain
+        on the Alexa Top\r\nMillion and a TLS handshake with responsive hosts that
+        only offers export-grade Diffie-Hellman \r\ncipher suites."}, "25-smtp-rsa_export-full_ipv4":
+        {"port": 25, "subprotocol": "rsa_export", "protocol": "smtp", "name": "25-smtp-rsa_export-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/25-smtp-rsa_export-full_ipv4",
+        "latest_result": {"timestamp": "20160425T130732", "name": "20160425T1307",
+        "details_url": "https://www.censys.io/api/v1/data/25-smtp-rsa_export-full_ipv4/20160425T1307"},
+        "destination": "full_ipv4", "id": "25-smtp-rsa_export-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 25 against the public\r\nIPv4
+        address space and an SMTP Banner Grab, STARTTLS handshake, and complete\r\nTLS
+        handshake in which we only offer RSA Export cipher suites. This scan measures\r\nwhether
+        mail servers are vulneable to the FREAK attack."}, "80-http-open_proxy-full_ipv4":
+        {"port": 80, "subprotocol": "open_proxy", "protocol": "http", "name": "80-http-open_proxy-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/80-http-open_proxy-full_ipv4",
+        "latest_result": {"timestamp": "20160108T005110", "name": "20160108T0051",
+        "details_url": "https://www.censys.io/api/v1/data/80-http-open_proxy-full_ipv4/20160108T0051"},
+        "destination": "full_ipv4", "id": "80-http-open_proxy-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 80 against the public\r\nIPv4
+        address space and a HTTP CONNECT to a test service and GET / of our test site."},
+        "80-http-get-alexa_top1mil": {"port": 80, "subprotocol": "get", "protocol":
+        "http", "name": "80-http-get-alexa_top1mil", "details_url": "https://www.censys.io/api/v1/data/80-http-get-alexa_top1mil",
+        "latest_result": {"timestamp": "20171216T131604", "name": "20171216T1316",
+        "details_url": "https://www.censys.io/api/v1/data/80-http-get-alexa_top1mil/20171216T1316"},
+        "destination": "alexa_top1mil", "id": "80-http-get-alexa_top1mil", "description":
+        "This dataset is composed of the DNS lookups for each domain on the Alexa
+        Top\r\nMillion and a ZGrab GET / HTTP request for the root page (e.g., http://google.com).\r\nNote:
+        this scan does not currently follow HTTP redirects. However, we plan to add
+        this \r\nfunctionality moving forward. The ZGrab output includes any HTTP
+        headers and the first\r\n64 kb of the HTTP page."}, "143-imap-ssl_2-full_ipv4":
+        {"port": 143, "subprotocol": "ssl_2", "protocol": "imap", "name": "143-imap-ssl_2-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/143-imap-ssl_2-full_ipv4",
+        "latest_result": {"timestamp": "20160725T222739", "name": "20160725T2227",
+        "details_url": "https://www.censys.io/api/v1/data/143-imap-ssl_2-full_ipv4/20160725T2227"},
+        "destination": "full_ipv4", "id": "143-imap-ssl_2-full_ipv4", "description":
+        null}, "443-https-ssl_2-full_ipv4": {"port": 443, "subprotocol": "ssl_2",
+        "protocol": "https", "name": "443-https-ssl_2-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/443-https-ssl_2-full_ipv4",
+        "latest_result": {"timestamp": "20160723T224229", "name": "20160723T2242",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-ssl_2-full_ipv4/20160723T2242"},
+        "destination": "full_ipv4", "id": "443-https-ssl_2-full_ipv4", "description":
+        null}, "993-imaps-rsa_export-full_ipv4": {"port": 993, "subprotocol": "rsa_export",
+        "protocol": "imaps", "name": "993-imaps-rsa_export-full_ipv4", "details_url":
+        "https://www.censys.io/api/v1/data/993-imaps-rsa_export-full_ipv4", "latest_result":
+        {"timestamp": "20160425T133521", "name": "20160425T1335", "details_url": "https://www.censys.io/api/v1/data/993-imaps-rsa_export-full_ipv4/20160425T1335"},
+        "destination": "full_ipv4", "id": "993-imaps-rsa_export-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 993 against the public\r\nIPv4
+        address space and TLS handshake with responsive hosts that only offer\r\nexport-grade
+        RSA ciphers."}, "443-https-heartbleed-alexa_top1mil": {"port": 443, "subprotocol":
+        "heartbleed", "protocol": "https", "name": "443-https-heartbleed-alexa_top1mil",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-heartbleed-alexa_top1mil",
+        "latest_result": {"timestamp": "20171216T141542", "name": "20171216T1415",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-heartbleed-alexa_top1mil/20171216T1415"},
+        "destination": "alexa_top1mil", "id": "443-https-heartbleed-alexa_top1mil",
+        "description": "This dataset is composed of the DNS lookups for each domain
+        on the Alexa Top\r\nMillion and a safe check for whether the host\r\nis vulnerable
+        to the Heartbleed attack. Details on our Heartbleed check can be found at\r\nhttps://jhalderm.com/pub/papers/heartbleed-imc14.pdf."},
+        "443-https-rsa_export-alexa_top1mil": {"port": 443, "subprotocol": "rsa_export",
+        "protocol": "https", "name": "443-https-rsa_export-alexa_top1mil", "details_url":
+        "https://www.censys.io/api/v1/data/443-https-rsa_export-alexa_top1mil", "latest_result":
+        {"timestamp": "20171216T140827", "name": "20171216T1408", "details_url": "https://www.censys.io/api/v1/data/443-https-rsa_export-alexa_top1mil/20171216T1408"},
+        "destination": "alexa_top1mil", "id": "443-https-rsa_export-alexa_top1mil",
+        "description": "This dataset is composed of the DNS lookups for each domain
+        on the Alexa Top\r\nMillion and a TLS handshake with responsive hosts that
+        only offers\r\nexport-grade RSA ciphers."}, "443-https-tls-full_ipv4": {"port":
+        443, "subprotocol": "tls", "protocol": "https", "name": "443-https-tls-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-tls-full_ipv4",
+        "latest_result": {"timestamp": "20171215T100527", "name": "20171215T1005",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-tls-full_ipv4/20171215T1005"},
+        "destination": "full_ipv4", "id": "443-https-tls-full_ipv4", "description":
+        "This dataset is composed of TCP SYN scan on port 443 against the public\r\nIPv4
+        address space and a typical looking TLS handshake that offers Chrome cipher
+        suites.\r\nThis is our primary scan finding HTTPS sites."}, "47808-bacnet-device_id-full_ipv4":
+        {"port": 47808, "subprotocol": "device_id", "protocol": "bacnet", "name":
+        "47808-bacnet-device_id-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/47808-bacnet-device_id-full_ipv4",
+        "latest_result": {"timestamp": "20171215T120056", "name": "20171215T1200",
+        "details_url": "https://www.censys.io/api/v1/data/47808-bacnet-device_id-full_ipv4/20171215T1200"},
+        "destination": "full_ipv4", "id": "47808-bacnet-device_id-full_ipv4", "description":
+        "This dataset is composed of a BACNET UDP scan on port on port 47808 and then
+        queries for additional information."}, "143-imap-starttls-full_ipv4": {"port":
+        143, "subprotocol": "starttls", "protocol": "imap", "name": "143-imap-starttls-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/143-imap-starttls-full_ipv4",
+        "latest_result": {"timestamp": "20171210T224754", "name": "20171210T2247",
+        "details_url": "https://www.censys.io/api/v1/data/143-imap-starttls-full_ipv4/20171210T2247"},
+        "destination": "full_ipv4", "id": "143-imap-starttls-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 143 against the public\r\nIPv4
+        address space and a POP3 banner grab, STARTTLS initiation, and normal TLS\r\nhandshake."},
+        "53-dns-lookup-full_ipv4": {"port": 53, "subprotocol": "lookup", "protocol":
+        "dns", "name": "53-dns-lookup-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/53-dns-lookup-full_ipv4",
+        "latest_result": {"timestamp": "20171214T230425", "name": "20171214T2304",
+        "details_url": "https://www.censys.io/api/v1/data/53-dns-lookup-full_ipv4/20171214T2304"},
+        "destination": "full_ipv4", "id": "53-dns-lookup-full_ipv4", "description":
+        null}, "465-smtps-tls-full_ipv4": {"port": 465, "subprotocol": "tls", "protocol":
+        "smtps", "name": "465-smtps-tls-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/465-smtps-tls-full_ipv4",
+        "latest_result": {"timestamp": "20171212T225232", "name": "20171212T2252",
+        "details_url": "https://www.censys.io/api/v1/data/465-smtps-tls-full_ipv4/20171212T2252"},
+        "destination": "full_ipv4", "id": "465-smtps-tls-full_ipv4", "description":
+        null}, "443-https_www-tls-alexa_top1mil": {"port": 443, "subprotocol": "tls",
+        "protocol": "https_www", "name": "443-https_www-tls-alexa_top1mil", "details_url":
+        "https://www.censys.io/api/v1/data/443-https_www-tls-alexa_top1mil", "latest_result":
+        {"timestamp": "20171216T113140", "name": "20171216T1131", "details_url": "https://www.censys.io/api/v1/data/443-https_www-tls-alexa_top1mil/20171216T1131"},
+        "destination": "alexa_top1mil", "id": "443-https_www-tls-alexa_top1mil", "description":
+        null}, "993-imaps-tls-full_ipv4": {"port": 993, "subprotocol": "tls", "protocol":
+        "imaps", "name": "993-imaps-tls-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/993-imaps-tls-full_ipv4",
+        "latest_result": {"timestamp": "20171214T001814", "name": "20171214T0018",
+        "details_url": "https://www.censys.io/api/v1/data/993-imaps-tls-full_ipv4/20171214T0018"},
+        "destination": "full_ipv4", "id": "993-imaps-tls-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 993 against the public\r\nIPv4
+        address space and a TLS handshake and IMAP banner grab with responsive hosts.\r\nThis
+        is our primary scan for measuring IMAPS deployment."}, "25-smtp-starttls-full_ipv4":
+        {"port": 25, "subprotocol": "starttls", "protocol": "smtp", "name": "25-smtp-starttls-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/25-smtp-starttls-full_ipv4",
+        "latest_result": {"timestamp": "20171217T001304", "name": "20171217T0013",
+        "details_url": "https://www.censys.io/api/v1/data/25-smtp-starttls-full_ipv4/20171217T0013"},
+        "destination": "full_ipv4", "id": "25-smtp-starttls-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 25 against the public\r\nIPv4
+        address space and an SMTP Banner Grab, STARTTLS handshake, and complete\r\nTLS
+        handshake. This scan is our primary approach for finding SMTP servers\r\nand
+        measuring the adoption of STARTTLS."}, "21-ftp-banner-full_ipv4": {"port":
+        21, "subprotocol": "banner", "protocol": "ftp", "name": "21-ftp-banner-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/21-ftp-banner-full_ipv4",
+        "latest_result": {"timestamp": "20171211T223147", "name": "20171211T2231",
+        "details_url": "https://www.censys.io/api/v1/data/21-ftp-banner-full_ipv4/20171211T2231"},
+        "destination": "full_ipv4", "id": "21-ftp-banner-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan of the IPv4 address space\r\non
+        port 21 and a ZGrab FTP Banner Grab for the for responsive hosts.\r\nThe connection
+        is terminated after a banner has been received."}, "443-https-dhe_export-1%_sample_ipv4":
+        {"port": 443, "subprotocol": "dhe_export", "protocol": "https", "name": "443-https-dhe_export-1%_sample_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-dhe_export-1%_sample_ipv4",
+        "latest_result": {"timestamp": "20171217T041458", "name": "20171217T0414",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-dhe_export-1%_sample_ipv4/20171217T0414"},
+        "destination": "1%_sample_ipv4", "id": "443-https-dhe_export-1%_sample_ipv4",
+        "description": "This dataset is composed of a ZMap TCP SYN scan on port 443
+        against a random 1% sample\r\nof the IPv4 address space and a TLS handshake
+        with responsive hosts that\r\nonly offers export-grade Diffie-Hellman cipher
+        suites."}, "443-https-rsa_export-1%_sample_ipv4": {"port": 443, "subprotocol":
+        "rsa_export", "protocol": "https", "name": "443-https-rsa_export-1%_sample_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-rsa_export-1%_sample_ipv4",
+        "latest_result": {"timestamp": "20171217T041459", "name": "20171217T0414",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-rsa_export-1%_sample_ipv4/20171217T0414"},
+        "destination": "1%_sample_ipv4", "id": "443-https-rsa_export-1%_sample_ipv4",
+        "description": "This dataset is composed of a ZMap TCP SYN scan on port 443
+        against a random 1% sample\r\nof the IPv4 address space and a TLS handshake
+        with responsive hosts that only offers\r\nexport-grade RSA ciphers."}, "502-modbus-device_id-full_ipv4":
+        {"port": 502, "subprotocol": "device_id", "protocol": "modbus", "name": "502-modbus-device_id-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/502-modbus-device_id-full_ipv4",
+        "latest_result": {"timestamp": "20171217T080113", "name": "20171217T0801",
+        "details_url": "https://www.censys.io/api/v1/data/502-modbus-device_id-full_ipv4/20171217T0801"},
+        "destination": "full_ipv4", "id": "502-modbus-device_id-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 502 against the public\r\nIPv4
+        address space and a modbus MEI DEVICE ID query with responsive hosts."}, "445-smb-banner-full_ipv4":
+        {"port": 445, "subprotocol": "banner", "protocol": "smb", "name": "445-smb-banner-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/445-smb-banner-full_ipv4",
+        "latest_result": {"timestamp": "20171213T210120", "name": "20171213T2101",
+        "details_url": "https://www.censys.io/api/v1/data/445-smb-banner-full_ipv4/20171213T2101"},
+        "destination": "full_ipv4", "id": "445-smb-banner-full_ipv4", "description":
+        null}, "995-pop3s-tls-full_ipv4": {"port": 995, "subprotocol": "tls", "protocol":
+        "pop3s", "name": "995-pop3s-tls-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/995-pop3s-tls-full_ipv4",
+        "latest_result": {"timestamp": "20171216T001637", "name": "20171216T0016",
+        "details_url": "https://www.censys.io/api/v1/data/995-pop3s-tls-full_ipv4/20171216T0016"},
+        "destination": "full_ipv4", "id": "995-pop3s-tls-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 995 against the public\r\nIPv4
+        address space and a TLS handshake and POP3 banner grab.\r\nThis is our primary
+        scan for measuring POP3S deployment."}, "443-https-rsa_export-full_ipv4":
+        {"port": 443, "subprotocol": "rsa_export", "protocol": "https", "name": "443-https-rsa_export-full_ipv4",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-rsa_export-full_ipv4",
+        "latest_result": {"timestamp": "20171214T223729", "name": "20171214T2237",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-rsa_export-full_ipv4/20171214T2237"},
+        "destination": "full_ipv4", "id": "443-https-rsa_export-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 80 against the public\r\nIPv4
+        address space and TLS handshake with responsive hosts that only offers\r\nexport-grade
+        RSA ciphers."}, "443-https-ssl_3-alexa_top1mil": {"port": 443, "subprotocol":
+        "ssl_3", "protocol": "https", "name": "443-https-ssl_3-alexa_top1mil", "details_url":
+        "https://www.censys.io/api/v1/data/443-https-ssl_3-alexa_top1mil", "latest_result":
+        {"timestamp": "20171216T150904", "name": "20171216T1509", "details_url": "https://www.censys.io/api/v1/data/443-https-ssl_3-alexa_top1mil/20171216T1509"},
+        "destination": "alexa_top1mil", "id": "443-https-ssl_3-alexa_top1mil", "description":
+        "This dataset is composed of the DNS lookups for each domain on the Alexa
+        Top\r\nMillion and an SSLv3 handshake with responsive hosts."}, "80-http_www-get-alexa_top1mil":
+        {"port": 80, "subprotocol": "get", "protocol": "http_www", "name": "80-http_www-get-alexa_top1mil",
+        "details_url": "https://www.censys.io/api/v1/data/80-http_www-get-alexa_top1mil",
+        "latest_result": {"timestamp": "20171216T160533", "name": "20171216T1605",
+        "details_url": "https://www.censys.io/api/v1/data/80-http_www-get-alexa_top1mil/20171216T1605"},
+        "destination": "alexa_top1mil", "id": "80-http_www-get-alexa_top1mil", "description":
+        null}, "443-https-dhe_export-full_ipv4": {"port": 443, "subprotocol": "dhe_export",
+        "protocol": "https", "name": "443-https-dhe_export-full_ipv4", "details_url":
+        "https://www.censys.io/api/v1/data/443-https-dhe_export-full_ipv4", "latest_result":
+        {"timestamp": "20171214T223715", "name": "20171214T2237", "details_url": "https://www.censys.io/api/v1/data/443-https-dhe_export-full_ipv4/20171214T2237"},
+        "destination": "full_ipv4", "id": "443-https-dhe_export-full_ipv4", "description":
+        "This dataset is composed of TCP SYN scan on port 443 against the public\r\nIPv4
+        address space and a TLS handshake with responsive hosts that only offers export-grade
+        Diffie-Hellman \r\ncipher suites."}, "443-https-dhe-alexa_top1mil": {"port":
+        443, "subprotocol": "dhe", "protocol": "https", "name": "443-https-dhe-alexa_top1mil",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-dhe-alexa_top1mil",
+        "latest_result": {"timestamp": "20171216T123943", "name": "20171216T1239",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-dhe-alexa_top1mil/20171216T1239"},
+        "destination": "alexa_top1mil", "id": "443-https-dhe-alexa_top1mil", "description":
+        "This dataset is composed of the DNS lookups for each domain on the Alexa
+        Top\r\nMillion and a TLS handshake (on port 443) that only offers Diffie-Hellman
+        cipher suites."}, "23-telnet-banner-full_ipv4": {"port": 23, "subprotocol":
+        "banner", "protocol": "telnet", "name": "23-telnet-banner-full_ipv4", "details_url":
+        "https://www.censys.io/api/v1/data/23-telnet-banner-full_ipv4", "latest_result":
+        {"timestamp": "20171213T000150", "name": "20171213T0001", "details_url": "https://www.censys.io/api/v1/data/23-telnet-banner-full_ipv4/20171213T0001"},
+        "destination": "full_ipv4", "id": "23-telnet-banner-full_ipv4", "description":
+        null}, "8080-http-get-full_ipv4": {"port": 8080, "subprotocol": "get", "protocol":
+        "http", "name": "8080-http-get-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/8080-http-get-full_ipv4",
+        "latest_result": {"timestamp": "20171215T225328", "name": "20171215T2253",
+        "details_url": "https://www.censys.io/api/v1/data/8080-http-get-full_ipv4/20171215T2253"},
+        "destination": "full_ipv4", "id": "8080-http-get-full_ipv4", "description":
+        null}, "443-https-tls-alexa_top1mil": {"port": 443, "subprotocol": "tls",
+        "protocol": "https", "name": "443-https-tls-alexa_top1mil", "details_url":
+        "https://www.censys.io/api/v1/data/443-https-tls-alexa_top1mil", "latest_result":
+        {"timestamp": "20171216T103132", "name": "20171216T1031", "details_url": "https://www.censys.io/api/v1/data/443-https-tls-alexa_top1mil/20171216T1031"},
+        "destination": "alexa_top1mil", "id": "443-https-tls-alexa_top1mil", "description":
+        "This dataset is composed of the DNS lookups for each domain on the Alexa
+        Top\r\nMillion and a typical looking TLS handshake that offers Chrome cipher
+        suites.\r\nThis is our primary scan for determining whether a website supports
+        HTTPS."}, "995-pop3s-ssl_2-full_ipv4": {"port": 995, "subprotocol": "ssl_2",
+        "protocol": "pop3s", "name": "995-pop3s-ssl_2-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/995-pop3s-ssl_2-full_ipv4",
+        "latest_result": {"timestamp": "20160727T144541", "name": "20160727T1445",
+        "details_url": "https://www.censys.io/api/v1/data/995-pop3s-ssl_2-full_ipv4/20160727T1445"},
+        "destination": "full_ipv4", "id": "995-pop3s-ssl_2-full_ipv4", "description":
+        null}, "7547-cwmp-get-full_ipv4": {"port": 7547, "subprotocol": "get", "protocol":
+        "cwmp", "name": "7547-cwmp-get-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/7547-cwmp-get-full_ipv4",
+        "latest_result": {"timestamp": "20171213T223618", "name": "20171213T2236",
+        "details_url": "https://www.censys.io/api/v1/data/7547-cwmp-get-full_ipv4/20171213T2236"},
+        "destination": "full_ipv4", "id": "7547-cwmp-get-full_ipv4", "description":
+        "This dataset is composed of a ZMap TCP SYN scan on port 7457 against the
+        public\r\nIPv4 address space and CPE WAN Management Protocol (CWMP) GET /."},
+        "8888-http-get-full_ipv4": {"port": 8888, "subprotocol": "get", "protocol":
+        "http", "name": "8888-http-get-full_ipv4", "details_url": "https://www.censys.io/api/v1/data/8888-http-get-full_ipv4",
+        "latest_result": {"timestamp": "20171210T223213", "name": "20171210T2232",
+        "details_url": "https://www.censys.io/api/v1/data/8888-http-get-full_ipv4/20171210T2232"},
+        "destination": "full_ipv4", "id": "8888-http-get-full_ipv4", "description":
+        null}}}'
+    http_version: 
+  recorded_at: Sun, 17 Dec 2017 13:29:17 GMT
+recorded_with: VCR 4.0.0
