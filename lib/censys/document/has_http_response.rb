@@ -6,7 +6,7 @@ module Censys
       #
       # HTTP reponse information.
       #
-      # @return [HTML]
+      # @return [HTTPResponse]
       #
       def http_response
         @http_reponse ||= HTTPResponse.new(@attributes.dig("80", "http"))
