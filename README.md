@@ -10,61 +10,109 @@
 
 Ruby API client to the [Censys] internet search engine.
 
-## Features
 
 ## Examples
 
 Initialize the API:
 
-    require 'censys'
-    api = Censys::API.new(uid,secret)
+```ruby
+require 'censys'
+api = Censys::API.new(uid, secret)
+```
 
 Initialize the API using `$CENSYS_ID` and `$CENSYS_SECRET` environment
 variables:
 
-    api = Censys::API.new
+```ruby
+api = Censys::API.new
+```
 
 Search for IPv4 addresses:
 
-    response = api.ipv4.search(query: 'dropbox.com')
+```ruby
+response = api.ipv4.search(query: 'dropbox.com')
+```
 
 Search for Websites:
 
-    response = api.websites.search(query: 'dropbox.com')
+```ruby
+response = api.websites.search(query: 'dropbox.com')
+```
 
 Search for Certificates:
 
-    response = api.certificates.search(query: 'dropbox.com')
+```ruby
+response = api.certificates.search(query: 'dropbox.com')
+```
 
 Enumerate through search results:
 
-    response.each_page do |page|
-      puts ">>> Page ##{page.metadata.page} / #{page.metadata.pages} ..."
-
-      page.each do |result|
+```ruby
+response.each_page do |page|
+    puts ">>> Page ##{page.metadata.page} / #{page.metadata.pages} ..."
+    page.each do |result|
         puts result
-      end
     end
+end
+```
+
+View for IPv4 addresses:
+
+```ruby
+view = api.ipv4["8.8.8.8"]
+```
+
+View for Websites:
+
+```ruby
+view = api.websites["google.com"]
+```
+
+View for Certificates:
+
+```ruby
+view = api.certificates["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59"]
+```
 
 Generate aggregate reports:
 
-    response = api.websites.report(
-      query: '80.http.get.headers.server: Apache',
-      field: 'location.country_code',
-      buckets: 100
-    )
+```ruby
+response = api.websites.report(
+    query: '80.http.get.headers.server: Apache',
+    field: 'location.country_code',
+    buckets: 100
+)
 
-    response.each do |country,count|
-      puts "#{country}: #{count}"
-    end
+response.each do |country,count|
+    puts "#{country}: #{count}"
+end
+```
+
+Combine Search and View API.
+
+```ruby
+api = Censys::API.new
+response = api.websites.search(query: "hoge")
+response.each_page do |page|
+  page.each do |result|
+    view = api.websites[result.domain]
+    p view.domain                 # => e.g. "nrc.nl"
+    p view.autonomous_system.name # => e.g. "NL-INTERMAX"
+    p view.location.country       # => e.g. "Netherlands"
+    p view.protocols              # => e.g. ["80/http", "0/lookup", "25/smtp", "443/https_www", "443/https", "80/http_www"]
+  end
+end
+```
 
 ## Requirements
 
-* [ruby] >= 2.0
+* [ruby] >= 2.4
 
 ## Install
 
-    $ gem install censu
+```bash
+% gem install censu
+```
 
 ## License
 
