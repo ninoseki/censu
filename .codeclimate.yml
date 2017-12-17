@@ -9,5 +9,4 @@ plugins:
     config:
       file: "alternate-rubocop-path.yml"
 exclude_patterns:
-  - "spec/"
-  - "!spec/support/helpers"
+  - "spec/**/*"
