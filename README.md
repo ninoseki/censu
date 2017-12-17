@@ -73,4 +73,4 @@ See {file:LICENSE.txt} for details.
 Note:: This gem is forked from [trailofbits/censys-ruby](https://github.com/trailofbits/censys-ruby).
 
 [ruby]: http://www.ruby-lang.org/
-[Cens:qys]: https://censys.io/
+[Censys]: https://censys.io/
