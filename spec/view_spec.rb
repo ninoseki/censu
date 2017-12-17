@@ -31,6 +31,12 @@ describe Censys::API do
         expect(view.domain).to eq("google.com")
         expect(view.to_s).to eq("google.com")
         expect(view.alexa_rank).to be_a(Integer)
+
+        expect(view.http_response).to be_a(Censys::HTTPResponse)
+        expect(view.http_response.body).to be_a(String)
+        expect(view.http_response.header).to be_a(Hash)
+        expect(view.http_response.status_code).to eq(200)
+        expect(view.http_response.title).to eq("Google")
       end
     end
 
