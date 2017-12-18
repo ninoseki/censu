@@ -173,16 +173,17 @@ module Censys
       series = params[:series]
       result = params[:result]
       type, path =
-        case
-        when (series && result.nil?); [:series, "/data/#{series}"]
-        when (series && result); [:result, "/data/#{series}/#{result}"]
-        else [:series_list, "/data"]
+        if series && result.nil? then [:series, "/data/#{series}"]
+        elsif series && result then [:result, "/data/#{series}/#{result}"]
+        else
+          [:series_list, "/data"]
         end
       get(path) do |response|
         case type
-        when :series; Data::Series.new(response)
-        when :result; Data::Result.new(response)
-        else Data::SeriesList.new(response)
+        when :series then Data::Series.new(response)
+        when :result then Data::Result.new(response)
+        else
+          Data::SeriesList.new(response)
         end
       end
     end

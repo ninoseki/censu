@@ -5,12 +5,11 @@ require 'censys/data/series'
 module Censys
   module Data
     class Response
-
       RESULTS = {
         series_list: SeriesList,
         series:      Series,
         result:      Result
-      }
+      }.freeze
 
       def initialize(result_type, response)
         unless (result_class = RESULTS[result_type])
