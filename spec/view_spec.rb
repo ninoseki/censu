@@ -16,6 +16,7 @@ describe Censys::API do
         expect(view.location).to be_a(Location)
         expect(view.ports).to be_a(Hash)
         expect(view.protocols).to be_a(Array)
+        expect(view["location.city"]).to eq("Mountain View")
         expect(view.dig("location", "city")).to eq("Mountain View")
 
         expect(view.ip).to eq("8.8.8.8")
@@ -31,6 +32,8 @@ describe Censys::API do
         expect(view.domain).to eq("google.com")
         expect(view.to_s).to eq("google.com")
         expect(view.alexa_rank).to be_a(Integer)
+
+        expect(view["80.http.get.body"]).to be_a(String)
 
         expect(view.http_response).to be_a(Censys::HTTPResponse)
         expect(view.http_response.body).to be_a(String)

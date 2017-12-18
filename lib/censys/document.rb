@@ -10,7 +10,22 @@ module Censys
     end
 
     #
+    # Provides arbitrary access to the attributes
+    #
+    # @param [String] name
+    #   The dot-separated field name.
+    #
+    # @return [Object]
+    #
+    def [](name)
+      keys = name.split(".")
+      dig(*keys)
+    end
+
+    #
     # Dig attributes
+    #
+    # @param [Array<String>] keys
     #
     # @return [Object]
     #
