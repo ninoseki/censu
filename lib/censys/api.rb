@@ -4,6 +4,7 @@ require 'censys/report'
 require 'censys/ipv4'
 require 'censys/website'
 require 'censys/certificate'
+require 'censys/data'
 
 require 'net/https'
 require 'json'
@@ -165,6 +166,25 @@ module Censys
 
       post("/report/#{resource}", params) do |response|
         Report::Response.new(response)
+      end
+    end
+
+    def data(params = {})
+      series = params[:series]
+      result = params[:result]
+      type, path =
+        if series && result.nil? then [:series, "/data/#{series}"]
+        elsif series && result then [:result, "/data/#{series}/#{result}"]
+        else
+          [:series_list, "/data"]
+        end
+      get(path) do |response|
+        case type
+        when :series then Data::Series.new(response)
+        when :result then Data::Result.new(response)
+        else
+          Data::SeriesList.new(response)
+        end
       end
     end
 

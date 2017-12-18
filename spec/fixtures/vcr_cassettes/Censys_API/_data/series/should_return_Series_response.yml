@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 6d1db0235792d0414f88b2a763333fd8
+      Date:
+      - Sun, 17 Dec 2017 23:06:44 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '12115'
+    body:
+      encoding: UTF-8
+      string: '{"protocol": "ssh", "description": "This dataset is composed of a ZMap
+        TCP SYN scan on port 22 and a ZGrab SSH Banner Grab\r\nfor the for responsive
+        hosts. The connection is terminated after a banner has been\r\nreceived. We
+        do not currently capture SSH host keys, but we are planning to add this\r\nfunctionality
+        in the future.", "destination": "full_ipv4", "results": {"historical": [{"timestamp":
+        "20150912T132919", "id": "20150912T1329", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20150912T1329"},
+        {"timestamp": "20150916T003327", "id": "20150916T0033", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20150916T0033"},
+        {"timestamp": "20150923T003330", "id": "20150923T0033", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20150923T0033"},
+        {"timestamp": "20150924T084359", "id": "20150924T0843", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20150924T0843"},
+        {"timestamp": "20150930T005634", "id": "20150930T0056", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20150930T0056"},
+        {"timestamp": "20151014T220421", "id": "20151014T2204", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20151014T2204"},
+        {"timestamp": "20151028T005728", "id": "20151028T0057", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20151028T0057"},
+        {"timestamp": "20151125T041417", "id": "20151125T0414", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20151125T0414"},
+        {"timestamp": "20151202T032212", "id": "20151202T0322", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20151202T0322"},
+        {"timestamp": "20151209T030107", "id": "20151209T0301", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20151209T0301"},
+        {"timestamp": "20151216T025441", "id": "20151216T0254", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20151216T0254"},
+        {"timestamp": "20151223T030549", "id": "20151223T0305", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20151223T0305"},
+        {"timestamp": "20160106T030212", "id": "20160106T0302", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160106T0302"},
+        {"timestamp": "20160113T034640", "id": "20160113T0346", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160113T0346"},
+        {"timestamp": "20160120T041018", "id": "20160120T0410", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160120T0410"},
+        {"timestamp": "20160127T041326", "id": "20160127T0413", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160127T0413"},
+        {"timestamp": "20160203T014336", "id": "20160203T0143", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160203T0143"},
+        {"timestamp": "20160210T004738", "id": "20160210T0047", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160210T0047"},
+        {"timestamp": "20160217T004700", "id": "20160217T0047", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160217T0047"},
+        {"timestamp": "20160224T004708", "id": "20160224T0047", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160224T0047"},
+        {"timestamp": "20160302T004632", "id": "20160302T0046", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160302T0046"},
+        {"timestamp": "20160316T131459", "id": "20160316T1314", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160316T1314"},
+        {"timestamp": "20160330T010518", "id": "20160330T0105", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160330T0105"},
+        {"timestamp": "20160406T004438", "id": "20160406T0044", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160406T0044"},
+        {"timestamp": "20160413T003753", "id": "20160413T0037", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160413T0037"},
+        {"timestamp": "20160420T000407", "id": "20160420T0004", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160420T0004"},
+        {"timestamp": "20160427T111650", "id": "20160427T1116", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160427T1116"},
+        {"timestamp": "20160504T015848", "id": "20160504T0158", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160504T0158"},
+        {"timestamp": "20160511T003739", "id": "20160511T0037", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160511T0037"},
+        {"timestamp": "20160518T010002", "id": "20160518T0100", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160518T0100"},
+        {"timestamp": "20160525T001742", "id": "20160525T0017", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160525T0017"},
+        {"timestamp": "20160601T003659", "id": "20160601T0036", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160601T0036"},
+        {"timestamp": "20160608T184521", "id": "20160608T1845", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160608T1845"},
+        {"timestamp": "20160615T100506", "id": "20160615T1005", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160615T1005"},
+        {"timestamp": "20160622T000402", "id": "20160622T0004", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160622T0004"},
+        {"timestamp": "20160629T000334", "id": "20160629T0003", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160629T0003"},
+        {"timestamp": "20160706T000219", "id": "20160706T0002", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160706T0002"},
+        {"timestamp": "20160720T001305", "id": "20160720T0013", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160720T0013"},
+        {"timestamp": "20160727T151020", "id": "20160727T1510", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160727T1510"},
+        {"timestamp": "20160803T001345", "id": "20160803T0013", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160803T0013"},
+        {"timestamp": "20160810T001337", "id": "20160810T0013", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160810T0013"},
+        {"timestamp": "20160817T000540", "id": "20160817T0005", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160817T0005"},
+        {"timestamp": "20160824T001410", "id": "20160824T0014", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160824T0014"},
+        {"timestamp": "20160831T001405", "id": "20160831T0014", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160831T0014"},
+        {"timestamp": "20160907T001107", "id": "20160907T0011", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160907T0011"},
+        {"timestamp": "20160914T184132", "id": "20160914T1841", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160914T1841"},
+        {"timestamp": "20160921T183603", "id": "20160921T1836", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20160921T1836"},
+        {"timestamp": "20161012T000817", "id": "20161012T0008", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161012T0008"},
+        {"timestamp": "20161019T001944", "id": "20161019T0019", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161019T0019"},
+        {"timestamp": "20161026T001324", "id": "20161026T0013", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161026T0013"},
+        {"timestamp": "20161102T001516", "id": "20161102T0015", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161102T0015"},
+        {"timestamp": "20161108T231501", "id": "20161108T2315", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161108T2315"},
+        {"timestamp": "20161116T001520", "id": "20161116T0015", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161116T0015"},
+        {"timestamp": "20161123T001319", "id": "20161123T0013", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161123T0013"},
+        {"timestamp": "20161130T001924", "id": "20161130T0019", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161130T0019"},
+        {"timestamp": "20161214T001941", "id": "20161214T0019", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161214T0019"},
+        {"timestamp": "20161221T001930", "id": "20161221T0019", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20161221T0019"},
+        {"timestamp": "20170125T001456", "id": "20170125T0014", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170125T0014"},
+        {"timestamp": "20170215T001530", "id": "20170215T0015", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170215T0015"},
+        {"timestamp": "20170222T001908", "id": "20170222T0019", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170222T0019"},
+        {"timestamp": "20170301T001908", "id": "20170301T0019", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170301T0019"},
+        {"timestamp": "20170315T201132", "id": "20170315T2011", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170315T2011"},
+        {"timestamp": "20170322T190113", "id": "20170322T1901", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170322T1901"},
+        {"timestamp": "20170329T191039", "id": "20170329T1910", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170329T1910"},
+        {"timestamp": "20170405T185945", "id": "20170405T1859", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170405T1859"},
+        {"timestamp": "20170412T191024", "id": "20170412T1910", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170412T1910"},
+        {"timestamp": "20170419T191027", "id": "20170419T1910", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170419T1910"},
+        {"timestamp": "20170426T191042", "id": "20170426T1910", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170426T1910"},
+        {"timestamp": "20170503T001502", "id": "20170503T0015", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170503T0015"},
+        {"timestamp": "20170510T001328", "id": "20170510T0013", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170510T0013"},
+        {"timestamp": "20170517T001511", "id": "20170517T0015", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170517T0015"},
+        {"timestamp": "20170524T001502", "id": "20170524T0015", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170524T0015"},
+        {"timestamp": "20170531T001328", "id": "20170531T0013", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170531T0013"},
+        {"timestamp": "20170607T001520", "id": "20170607T0015", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170607T0015"},
+        {"timestamp": "20170614T001525", "id": "20170614T0015", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170614T0015"},
+        {"timestamp": "20170621T001910", "id": "20170621T0019", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170621T0019"},
+        {"timestamp": "20170628T001925", "id": "20170628T0019", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170628T0019"},
+        {"timestamp": "20170705T001914", "id": "20170705T0019", "details_url": "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170705T0019"}],
+        "latest": {"timestamp": "20170705T001914", "id": "20170705T0019", "details_url":
+        "https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20170705T0019"}},
+        "port": 22, "subprotocol": "banner", "id": "22-ssh-banner-full_ipv4", "name":
+        "22-ssh-banner-full_ipv4"}'
+    http_version: 
+  recorded_at: Sun, 17 Dec 2017 23:06:45 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.censys.io/api/v1/data/22-ssh-banner-full_ipv4/20150930T0056
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 2e3f7e022d23e8360d35eb1ace04344f
+      Date:
+      - Sun, 17 Dec 2017 23:16:29 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '5739'
+    body:
+      encoding: UTF-8
+      string: '{"files": {"ztee-zgrab-updates": {"compressed_size": 0, "compressed_sha256_fingerprint":
+        null, "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-ztee-zgrab-updates.csv.lz4",
+        "sha256_fingerprint": "54343f2a45b30cf277346cfcafe8ef452ade80d007c3bdcb9bf51a0a3471718a",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-ztee-zgrab-updates.csv.lz4",
+        "file_type": "csv", "schema": null, "compression_type": "lz4", "size": 1},
+        "zgrab-metadata": {"compressed_size": 0, "compressed_sha256_fingerprint":
+        null, "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zgrab-metadata.json.lz4",
+        "sha256_fingerprint": "d28c74ee6799309e48b8d4a1e868c91a4550af08630966fb09682116666df532",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zgrab-metadata.json.lz4",
+        "file_type": "json", "schema": null, "compression_type": "lz4", "size": 0},
+        "zgrab-results": {"compressed_size": 1971, "compressed_sha256_fingerprint":
+        null, "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zgrab-results.json.lz4",
+        "sha256_fingerprint": "cdd962fe956674749ef5d40d59c423a0be77432a246bcd223c3346576c9479ff",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zgrab-results.json.lz4",
+        "file_type": "json", "schema": null, "compression_type": "lz4", "size": 21707},
+        "zmap-log": {"compressed_size": 0, "compressed_sha256_fingerprint": null,
+        "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zmap-log.log.lz4",
+        "sha256_fingerprint": "94084c5003ac2afd9056df57c7e9e100dea93b2d9105a2ab6d7d43faba79b01a",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zmap-log.log.lz4",
+        "file_type": "log", "schema": null, "compression_type": "lz4", "size": 0},
+        "zgrab-log": {"compressed_size": 386, "compressed_sha256_fingerprint": null,
+        "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zgrab-log.log.lz4",
+        "sha256_fingerprint": "19f453de32fccc1756b01b8b200fe9c85802efcf8f6034175d918a11fc4c0813",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zgrab-log.log.lz4",
+        "file_type": "log", "schema": null, "compression_type": "lz4", "size": 2659},
+        "ztag-metadata": {"compressed_size": 0, "compressed_sha256_fingerprint": null,
+        "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-ztag-metadata.json.lz4",
+        "sha256_fingerprint": "eb1dc7b9affe0fef7d8c933ff96657f9a97c561fe9cde439e4ad5bfe239db5c3",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-ztag-metadata.json.lz4",
+        "file_type": "json", "schema": null, "compression_type": "lz4", "size": 0},
+        "zmap-results": {"compressed_size": 211, "compressed_sha256_fingerprint":
+        null, "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zmap-results.csv.lz4",
+        "sha256_fingerprint": "693b6bdd6b954aed3981ca9d801bb1317bfdb19f560f968781823b9abef8eaa3",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zmap-results.csv.lz4",
+        "file_type": "csv", "schema": null, "compression_type": "lz4", "size": 304},
+        "ztee-zmap-updates": {"compressed_size": 0, "compressed_sha256_fingerprint":
+        null, "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-ztee-zmap-updates.csv.lz4",
+        "sha256_fingerprint": "e97fae9aaf878f58a2d030c938d6b9f52e3607b9a50ac8eed00960aeb61fd7d4",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-ztee-zmap-updates.csv.lz4",
+        "file_type": "csv", "schema": null, "compression_type": "lz4", "size": 1},
+        "zmap-metadata": {"compressed_size": 0, "compressed_sha256_fingerprint": null,
+        "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zmap-metadata.json.lz4",
+        "sha256_fingerprint": "76d22d5edd952bdcab1f5e217ee78463abe2353fa30682f6d548edef8e95a4ad",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zmap-metadata.json.lz4",
+        "file_type": "json", "schema": null, "compression_type": "lz4", "size": 0},
+        "ztag-log": {"compressed_size": 42, "compressed_sha256_fingerprint": null,
+        "compressed_download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-ztag-log.log.lz4",
+        "sha256_fingerprint": "ce56484153ad89d1926287040dcb77022a8599ce0876190c330bd9935c8292ac",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-ztag-log.log.lz4",
+        "file_type": "log", "schema": null, "compression_type": "lz4", "size": 469}},
+        "task_id": null, "series": {"id": "22-ssh-banner-full_ipv4", "name": "22-ssh-banner-full_ipv4"},
+        "primary_file": {"schema": null, "compressed_size": 1971, "compressed_download_path":
+        "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zgrab-results.json.lz4",
+        "sha256_fingerprint": "cdd962fe956674749ef5d40d59c423a0be77432a246bcd223c3346576c9479ff",
+        "download_path": "https://scans.io/zsearch/3j47m8n1enw5je0b-22-ssh-banner-full_ipv4-20150929T040000-zgrab-results.json.lz4",
+        "file_type": "json", "compressed_sha256_fingerprint": null, "compression_type":
+        "lz4", "size": 21707}, "timestamp": "20150930T005634", "id": "20150930T0056",
+        "metadata": null}'
+    http_version: 
+  recorded_at: Sun, 17 Dec 2017 23:16:29 GMT
+recorded_with: VCR 4.0.0
