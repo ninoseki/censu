@@ -7,13 +7,12 @@ module Censys
 
       attr_reader :files
 
+      attr_reader :timestamp
+
       def initialize(attributes)
         @id = attributes["id"]
         @files = attributes["files"]
-      end
-
-      def timestamp
-        @timestamp ||= Time.parse(attributes["timestamp"])
+        @timestamp = Time.parse(attributes["timestamp"])
       end
     end
   end

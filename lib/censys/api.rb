@@ -175,7 +175,7 @@ module Censys
       type, path =
         case
         when (series && result.nil?); [:series, "/data/#{series}"]
-        when (series && result); [:result, "data/#{series}/#{result}"]
+        when (series && result); [:result, "/data/#{series}/#{result}"]
         else [:series_list, "/data"]
         end
       get(path) do |response|
