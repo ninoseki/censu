@@ -27,21 +27,16 @@ variables:
 api = Censys::API.new
 ```
 
-Search for IPv4 addresses:
+Search:
 
 ```ruby
+# Search for IPv4 addresses:
 response = api.ipv4.search(query: 'dropbox.com')
-```
 
-Search for Websites:
-
-```ruby
+# Search for Websites:
 response = api.websites.search(query: 'dropbox.com')
-```
 
-Search for Certificates:
-
-```ruby
+# Search for Certificates:
 response = api.certificates.search(query: 'dropbox.com')
 ```
 
@@ -56,27 +51,23 @@ response.each_page do |page|
 end
 ```
 
-View for IPv4 addresses:
+View:
 
 ```ruby
+# View for IPv4 addresses:
 view = api.ipv4["8.8.8.8"]
-```
 
-View for Websites:
-
-```ruby
+# View for Websites:
 view = api.websites["google.com"]
-```
 
-View for Certificates:
-
-```ruby
+# View for Certificates:
 view = api.certificates["821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59"]
 ```
 
-Generate aggregate reports:
+Report:
 
 ```ruby
+# Generate aggregate reports:
 response = api.websites.report(
     query: '80.http.get.headers.server: Apache',
     field: 'location.country_code',
