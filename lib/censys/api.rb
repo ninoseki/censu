@@ -204,6 +204,25 @@ module Censys
     end
 
     #
+    # Return HTTPS options
+    #
+    # @return [Hash]
+    #
+    def https_options
+      if proxy = ENV["HTTPS_PROXY"]
+        uri = URI(proxy)
+        {
+          proxy_address:  uri.hostname,
+          proxy_port:     uri.port,
+          proxy_from_env: false,
+          use_ssl: true
+        }
+      else
+        { use_ssl: true }
+      end
+    end
+
+    #
     # Sends the HTTP request and handles the response.
     #
     # @param [Net::HTTP::Get, Net::HTTP::Post] req
@@ -220,7 +239,7 @@ module Censys
     #   raised.
     #
     def request(req)
-      Net::HTTP.start(HOST, 443, use_ssl: true) do |http|
+      Net::HTTP.start(HOST, 443, https_options) do |http|
         response = http.request(req)
 
         case response.code
