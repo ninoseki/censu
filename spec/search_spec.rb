@@ -13,6 +13,7 @@ describe Censys::API do
 
         expect(res.metadata).to be_a(Search::Metadata)
         expect(res.metadata.count).to be_a(Integer)
+        expect(res.metadata.query).to eq("dropbox.com")
 
         expect(res.each).to be_a(Enumerator)
         expect(res.pages).to be_a(Enumerator)
@@ -34,6 +35,7 @@ describe Censys::API do
 
         expect(res.metadata).to be_a(Search::Metadata)
         expect(res.metadata.count).to be_a(Integer)
+        expect(res.metadata.query).to eq("dropbox.com")
 
         first = res.results.first
         expect(first).to be_a(Search::Website)
@@ -46,6 +48,10 @@ describe Censys::API do
       it "should return Certificate response" do
         res = @api.certificates.search(query: "dropbox.com")
         expect(res).to be_a(Search::Response)
+
+        expect(res.metadata).to be_a(Search::Metadata)
+        expect(res.metadata.count).to be_a(Integer)
+        expect(res.metadata.query).to eq("dropbox.com")
 
         first = res.results.first
         expect(first).to be_a(Search::Certificate)
