@@ -50,6 +50,8 @@ module Censys
       @longitude = self['longitude']
     end
 
+    private
+
     def [](key)
       @attributes[key] || @attributes["location.#{key}"]
     end
