@@ -84,8 +84,8 @@ module Censys
     #   Censys - My Account
     #
     def initialize(id = ENV['CENSYS_ID'], secret = ENV['CENSYS_SECRET'])
-      raise(ArgumentError, "'id' argument required") if id.nil? || id.empty?
-      raise(ArgumentError, "'secret' argument required") if secret.nil? || secret.empty?
+      raise(ArgumentError, "'id' argument is required") if id.nil? || id.empty?
+      raise(ArgumentError, "'secret' argument is required") if secret.nil? || secret.empty?
 
       @id, @secret = id, secret
 

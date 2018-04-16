@@ -16,8 +16,7 @@ describe Censys::API do
         expect(view.location).to be_a(Location)
         expect(view.ports).to be_a(Hash)
         expect(view.protocols).to be_a(Array)
-        expect(view["location.city"]).to eq("Mountain View")
-        expect(view.dig("location", "city")).to eq("Mountain View")
+        expect(view.location.city).to eq("Mountain View")
 
         expect(view.ip).to eq("8.8.8.8")
         expect(view.to_s).to eq("8.8.8.8")

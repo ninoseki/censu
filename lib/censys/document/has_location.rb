@@ -9,7 +9,7 @@ module Censys
       # @return [Location]
       #
       def location
-        @location ||= Location.new(@attributes['location'])
+        @location ||= Location.new(@attributes['location'] || @attributes)
       end
     end
   end
