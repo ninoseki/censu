@@ -10,7 +10,6 @@
 
 Ruby API client to the [Censys] internet search engine.
 
-
 ## Examples
 
 Initialize the API:
@@ -107,9 +106,9 @@ end
 
 ## License
 
-See {file:LICENSE.txt} for details.
+MIT License.
 
-Note:: This gem is forked from [trailofbits/censys-ruby](https://github.com/trailofbits/censys-ruby).
+**Note:** This gem is forked from [trailofbits/censys-ruby](https://github.com/trailofbits/censys-ruby).
 
 [ruby]: http://www.ruby-lang.org/
 [Censys]: https://censys.io/
