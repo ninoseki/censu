@@ -36,19 +36,24 @@ module Censys
     # @param [Hash{String => Object}] attributes
     #
     def initialize(attributes)
-      @postal_code = attributes['postal_code']
-      @city        = attributes['city']
-      @province    = attributes['province']
-      @country     = attributes['country']
-      @continent   = attributes['continent']
+      @attributes = attributes
 
-      @registered_country      = attributes['registered_country']
-      @registered_country_code = attributes['registered_country_code']
+      @postal_code = self['postal_code']
+      @city        = self['city']
+      @province    = self['province']
+      @country     = self['country']
+      @continent   = self['continent']
+      @registered_country      = self['registered_country']
+      @registered_country_code = self['registered_country_code']
+      @timezone = self['timezone']
+      @latitude  = self['latitude']
+      @longitude = self['longitude']
+    end
 
-      @timezone = attributes['timezone']
+    private
 
-      @latitude  = attributes['latitude']
-      @longitude = attributes['longitude']
+    def [](key)
+      @attributes[key] || @attributes["location.#{key}"]
     end
   end
 end

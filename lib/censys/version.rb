@@ -1,4 +1,4 @@
 module Censys
   # censys version
-  VERSION = "0.1.4".freeze
+  VERSION = "0.1.5".freeze
 end

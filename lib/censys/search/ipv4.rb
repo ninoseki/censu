@@ -1,8 +1,11 @@
 require 'censys/search/result'
+require 'censys/document/has_location'
 
 module Censys
   module Search
     class IPv4 < Result
+      include Censys::Document::HasLocation
+
       def ip
         @attributes['ip']
       end
