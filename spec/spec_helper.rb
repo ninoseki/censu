@@ -3,6 +3,9 @@ require 'rspec'
 require 'vcr'
 require 'censys'
 
+require 'coveralls'
+Coveralls.wear!
+
 include Censys
 
 def authorization_field

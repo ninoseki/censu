@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ninoseki/censu.svg?branch=master)](https://travis-ci.org/ninoseki/censu)
 [![Maintainability](https://api.codeclimate.com/v1/badges/39e77d63ce6a7d89b4dc/maintainability)](https://codeclimate.com/github/ninoseki/censu/maintainability)
+[![Coverage Status](https://coveralls.io/repos/github/ninoseki/censu/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/censu?branch=master)
 
 * [Homepage](https://github.com/ninoseki/censu)
 * [Issues](https://github.com/ninoseki/censu/issues)
@@ -19,8 +20,7 @@ require 'censys'
 api = Censys::API.new(uid, secret)
 ```
 
-Initialize the API using `$CENSYS_ID` and `$CENSYS_SECRET` environment
-variables:
+Initialize the API using `$CENSYS_ID` and `$CENSYS_SECRET` environment variables:
 
 ```ruby
 api = Censys::API.new
