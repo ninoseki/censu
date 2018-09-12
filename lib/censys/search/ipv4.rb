@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'censys/search/result'
 require 'censys/document/has_location'
 

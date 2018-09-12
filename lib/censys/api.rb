@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'censys/exceptions'
 require 'censys/search'
 require 'censys/report'
@@ -12,8 +14,8 @@ require 'json'
 module Censys
   class API
     VERSION = 1
-    HOST = 'www.censys.io'.freeze
-    URL = "https://#{HOST}/api/v#{VERSION}".freeze
+    HOST = 'www.censys.io'
+    URL = "https://#{HOST}/api/v#{VERSION}"
 
     class Resource
       def initialize(type, api)

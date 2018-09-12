@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Censys
   class AutonomousSystem
     # @return [String]

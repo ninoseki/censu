@@ -1,12 +1,12 @@
+# frozen_string_literal: true
+
 require 'time'
 
 module Censys
   module Data
     class Result
       attr_reader :id
-
       attr_reader :files
-
       attr_reader :timestamp
 
       def initialize(attributes)

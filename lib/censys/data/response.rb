@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'censys/data/result'
 require 'censys/data/series_list'
 require 'censys/data/series'
