@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'censys/autonomous_system'
 
 module Censys

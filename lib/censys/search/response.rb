@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'censys/search/metadata'
 require 'censys/search/ipv4'
 require 'censys/search/website'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'censys/http_response'
 
 module Censys
@@ -9,7 +11,7 @@ module Censys
       # @return [HTTPResponse]
       #
       def http_response
-        @http_reponse ||= HTTPResponse.new(@attributes.dig("80", "http"))
+        @http_response ||= HTTPResponse.new(@attributes.dig("80", "http"))
       end
     end
   end

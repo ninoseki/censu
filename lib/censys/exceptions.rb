@@ -1,16 +1,13 @@
+# frozen_string_literal: true
+
 module Censys
-  class ResponseError < RuntimeError
-  end
+  class ResponseError < StandardError; end
 
-  class AuthenticationError < ResponseError
-  end
+  class AuthenticationError < ResponseError; end
 
-  class NotFound < ResponseError
-  end
+  class NotFound < ResponseError; end
 
-  class RateLimited < ResponseError
-  end
+  class RateLimited < ResponseError; end
 
-  class InternalServerError < ResponseError
-  end
+  class InternalServerError < ResponseError; end
 end
