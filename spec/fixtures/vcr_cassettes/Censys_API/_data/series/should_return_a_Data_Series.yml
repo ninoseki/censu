@@ -29,9 +29,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Cloud-Trace-Context:
-      - d1759ae764b769ff3cf39d98462d11ce
+      - 035b8117ea7de4a4776adc8e4f8c6d00
       Date:
-      - Wed, 12 Sep 2018 23:14:30 GMT
+      - Thu, 13 Sep 2018 11:25:57 GMT
       Server:
       - Google Frontend
       Content-Length:
@@ -49,5 +49,5 @@ http_interactions:
         "port": 22, "subprotocol": "banner", "id": "22-ssh-banner-full_ipv4", "name":
         "22-ssh-banner-full_ipv4"}'
     http_version: 
-  recorded_at: Wed, 12 Sep 2018 23:14:30 GMT
+  recorded_at: Thu, 13 Sep 2018 11:25:57 GMT
 recorded_with: VCR 4.0.0

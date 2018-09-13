@@ -31,22 +31,22 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Cloud-Trace-Context:
-      - 81c5d73df2e96db07276b9a9e9fe5bcf
+      - 6b73ec31cc1778299b866c5ffcc56f40
       Date:
-      - Wed, 12 Sep 2018 23:14:19 GMT
+      - Thu, 13 Sep 2018 11:26:06 GMT
       Server:
       - Google Frontend
       Content-Length:
       - '505'
     body:
       encoding: UTF-8
-      string: '{"status": "ok", "results": [{"key": 80, "doc_count": 5000}, {"key":
-        8080, "doc_count": 3356}, {"key": 443, "doc_count": 1944}, {"key": 8888, "doc_count":
-        870}, {"key": 7547, "doc_count": 619}, {"key": 22, "doc_count": 552}, {"key":
-        53, "doc_count": 343}, {"key": 21, "doc_count": 154}, {"key": 23, "doc_count":
-        154}, {"key": 47808, "doc_count": 99}], "metadata": {"count": 8120, "backend_time":
-        123, "nonnull_count": 13695, "other_result_count": 604, "buckets": 10, "error_bound":
+      string: '{"status": "ok", "results": [{"key": 80, "doc_count": 3699}, {"key":
+        8080, "doc_count": 3343}, {"key": 443, "doc_count": 2022}, {"key": 8888, "doc_count":
+        774}, {"key": 7547, "doc_count": 588}, {"key": 22, "doc_count": 486}, {"key":
+        53, "doc_count": 349}, {"key": 21, "doc_count": 154}, {"key": 23, "doc_count":
+        112}, {"key": 47808, "doc_count": 100}], "metadata": {"count": 6876, "backend_time":
+        50, "nonnull_count": 12219, "other_result_count": 592, "buckets": 10, "error_bound":
         0, "query": "8.8.8.8"}}'
     http_version: 
-  recorded_at: Wed, 12 Sep 2018 23:14:19 GMT
+  recorded_at: Thu, 13 Sep 2018 11:26:06 GMT
 recorded_with: VCR 4.0.0

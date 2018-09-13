@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe Censys::API do
   before(:context) do
     @api = Censys::API.new
@@ -9,7 +7,7 @@ describe Censys::API do
 
   describe "#report", :vcr do
     context "ipv4" do
-      it "should return ipv4 response" do
+      it "should return an ipv4 response" do
         params = {
           query: "8.8.8.8",
           field: "ports",
@@ -32,7 +30,7 @@ describe Censys::API do
     end
 
     context "websites" do
-      it "should return website response" do
+      it "should return a website response" do
         params = {
           query: "google.com",
           field: "ports",
@@ -46,7 +44,7 @@ describe Censys::API do
     end
 
     context "certificates" do
-      it "should return certificate response" do
+      it "should return a certificate response" do
         params = {
           query: "google.com",
           field: "precert",

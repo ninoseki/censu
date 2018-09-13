@@ -29,9 +29,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Cloud-Trace-Context:
-      - ddf49d75c9e56d52e2a1ae10ac94dd0d
+      - 5529ddd177949331ace67af24f234430
       Date:
-      - Wed, 12 Sep 2018 23:14:29 GMT
+      - Thu, 13 Sep 2018 11:26:00 GMT
       Server:
       - Google Frontend
       Content-Length:
@@ -218,15 +218,15 @@ http_interactions:
         null}, "993-imaps-dhe_export-full_ipv4": {"port": 993, "subprotocol": "dhe_export",
         "protocol": "imaps", "name": "993-imaps-dhe_export-full_ipv4", "details_url":
         "https://www.censys.io/api/v1/data/993-imaps-dhe_export-full_ipv4", "latest_result":
-        {"timestamp": "20180813T041509", "name": "20180813T0415", "details_url": "https://www.censys.io/api/v1/data/993-imaps-dhe_export-full_ipv4/20180813T0415"},
+        {"timestamp": "20180814T041501", "name": "20180814T0415", "details_url": "https://www.censys.io/api/v1/data/993-imaps-dhe_export-full_ipv4/20180814T0415"},
         "destination": "full_ipv4", "id": "993-imaps-dhe_export-full_ipv4", "description":
         "This dataset is composed of a ZMap TCP SYN scan on port 993 against the public\r\nIPv4
         address space and TLS handshake with responsive hosts in which we only\r\noffer
         Diffie-Hellman export cipher suites."}, "443-https-dhe_export-alexa_top1mil":
         {"port": 443, "subprotocol": "dhe_export", "protocol": "https", "name": "443-https-dhe_export-alexa_top1mil",
         "details_url": "https://www.censys.io/api/v1/data/443-https-dhe_export-alexa_top1mil",
-        "latest_result": {"timestamp": "20180813T110751", "name": "20180813T1107",
-        "details_url": "https://www.censys.io/api/v1/data/443-https-dhe_export-alexa_top1mil/20180813T1107"},
+        "latest_result": {"timestamp": "20180814T111128", "name": "20180814T1111",
+        "details_url": "https://www.censys.io/api/v1/data/443-https-dhe_export-alexa_top1mil/20180814T1111"},
         "destination": "alexa_top1mil", "id": "443-https-dhe_export-alexa_top1mil",
         "description": "This dataset is composed of the DNS lookups for each domain
         on the Alexa Top\r\nMillion and a TLS handshake with responsive hosts that
@@ -443,7 +443,7 @@ http_interactions:
         null}, "443-https-tls-alexa_top1mil": {"port": 443, "subprotocol": "tls",
         "protocol": "https", "name": "443-https-tls-alexa_top1mil", "details_url":
         "https://www.censys.io/api/v1/data/443-https-tls-alexa_top1mil", "latest_result":
-        {"timestamp": "20180813T103238", "name": "20180813T1032", "details_url": "https://www.censys.io/api/v1/data/443-https-tls-alexa_top1mil/20180813T1032"},
+        {"timestamp": "20180814T103207", "name": "20180814T1032", "details_url": "https://www.censys.io/api/v1/data/443-https-tls-alexa_top1mil/20180814T1032"},
         "destination": "alexa_top1mil", "id": "443-https-tls-alexa_top1mil", "description":
         "This dataset is composed of the DNS lookups for each domain on the Alexa
         Top\r\nMillion and a typical looking TLS handshake that offers Chrome cipher
@@ -467,5 +467,5 @@ http_interactions:
         "destination": "full_ipv4", "id": "8888-http-get-full_ipv4", "description":
         null}}}'
     http_version: 
-  recorded_at: Wed, 12 Sep 2018 23:14:30 GMT
+  recorded_at: Thu, 13 Sep 2018 11:26:00 GMT
 recorded_with: VCR 4.0.0
