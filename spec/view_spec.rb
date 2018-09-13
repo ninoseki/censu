@@ -19,7 +19,7 @@ describe Censys::API do
         expect(view.autonomous_system.routed_prefix).to eq("8.8.8.0/24")
 
         expect(view.location).to be_a(Location)
-        expect(view.location.city).to eq("Mountain View")
+        expect(view.location.country).to eq("United States")
 
         expect(view.ports).to be_a(Hash)
         expect(view.protocols).to be_a(Array)
@@ -55,7 +55,7 @@ describe Censys::API do
         expect(view).to be_a(Censys::Certificate)
         expect(view.raw).to be_a(String)
         expect(view.parsed).to be_a(Hash)
-        expect(view.valid_nss).to eq(true)
+        expect(view.valid_nss).to eq(false)
       end
     end
   end

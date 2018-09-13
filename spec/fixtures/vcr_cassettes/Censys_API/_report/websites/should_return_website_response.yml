@@ -29,21 +29,21 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
-      - max-age=15768000; includeSubDomains; preload
+      - max-age=31536000; includeSubDomains; preload
       X-Cloud-Trace-Context:
-      - 4bd9f1d55b58ea31c5b5fec3abeb51eb
+      - 32f3cce8eb8c4091e65bfb1038a8a56f
       Date:
-      - Sat, 16 Dec 2017 04:00:31 GMT
+      - Wed, 12 Sep 2018 23:14:12 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '316'
+      - '283'
     body:
       encoding: UTF-8
-      string: '{"status": "ok", "results": [{"key": 80, "doc_count": 21259}, {"key":
-        443, "doc_count": 19443}, {"key": 0, "doc_count": 18119}, {"key": 25, "doc_count":
-        13823}], "metadata": {"count": 21329, "backend_time": 413, "nonnull_count":
-        72644, "other_result_count": 0, "buckets": 4, "error_bound": 0, "query": "google.com"}}'
+      string: '{"status": "ok", "results": [{"key": 80, "doc_count": 27146}, {"key":
+        443, "doc_count": 19927}, {"key": 25, "doc_count": 16705}], "metadata": {"count":
+        27182, "backend_time": 76, "nonnull_count": 63778, "other_result_count": 0,
+        "buckets": 3, "error_bound": 0, "query": "google.com"}}'
     http_version: 
-  recorded_at: Sat, 16 Dec 2017 04:00:31 GMT
+  recorded_at: Wed, 12 Sep 2018 23:14:12 GMT
 recorded_with: VCR 4.0.0
