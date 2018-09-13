@@ -96,6 +96,6 @@ http_interactions:
         "file_type": "json", "compressed_sha256_fingerprint": null, "compression_type":
         "lz4", "size": 21707}, "timestamp": "20150930T005634", "id": "20150930T0056",
         "metadata": null}'
-    http_version: 
+    http_version:
   recorded_at: Sun, 17 Dec 2017 23:16:29 GMT
 recorded_with: VCR 4.0.0

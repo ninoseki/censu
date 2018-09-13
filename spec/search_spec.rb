@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe Censys::API do
   before(:context) do
     @api = Censys::API.new
