@@ -7,6 +7,7 @@ require 'censys/ipv4'
 require 'censys/website'
 require 'censys/certificate'
 require 'censys/data'
+require 'censys/account'
 
 require 'net/https'
 require 'json'
@@ -187,6 +188,12 @@ module Censys
         else
           Data::SeriesList.new(response)
         end
+      end
+    end
+
+    def account
+      get("/account") do |response|
+        Account.new(response)
       end
     end
 
