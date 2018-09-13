@@ -8,7 +8,9 @@ require 'censys'
 require 'coveralls'
 Coveralls.wear!
 
-include Censys
+RSpec.configure do |_|
+  include Censys
+end
 
 def authorization_field
   require 'base64'
@@ -21,4 +23,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.configure_rspec_metadata!
   config.filter_sensitive_data("<CENSORED>") { authorization_field }
+  %w(CENSYS_ID CENSYS_SECRET CENSYS_EMAIL CENSYS_LOGIN).each do |key|
+    config.filter_sensitive_data("<CENSORED>") { ENV[key] }
+  end
 end
