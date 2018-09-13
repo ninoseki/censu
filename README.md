@@ -20,7 +20,7 @@ require 'censys'
 api = Censys::API.new(uid, secret)
 ```
 
-Initialize the API using `$CENSYS_ID` and `$CENSYS_SECRET` environment variables:
+Initialize the API by using `$CENSYS_ID` and `$CENSYS_SECRET` environment variables:
 
 ```ruby
 api = Censys::API.new
@@ -96,7 +96,7 @@ end
 
 ## Requirements
 
-* [ruby] >= 2.4
+- Ruby 2.4 / 2.5
 
 ## Install
 
