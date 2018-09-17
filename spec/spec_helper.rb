@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
+require 'coveralls'
+Coveralls.wear!
+
 require 'dotenv/load'
 require 'rspec'
 require 'vcr'
 require 'censys'
-
-require 'coveralls'
-Coveralls.wear!
 
 RSpec.configure do |_|
   include Censys
