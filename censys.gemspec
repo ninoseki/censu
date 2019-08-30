@@ -24,8 +24,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'dotenv', '~> 2.7'
   gem.add_development_dependency 'rake', '~> 12.3'
   gem.add_development_dependency 'rspec', '~> 3.8'
-  gem.add_development_dependency 'rubygems-tasks', '~> 0.2'
-  gem.add_development_dependency 'vcr', '~> 4.0'
-  gem.add_development_dependency 'webmock', '~> 3.5'
+  gem.add_development_dependency 'vcr', '~> 5.0'
+  gem.add_development_dependency 'webmock', '~> 3.7'
   gem.add_development_dependency 'yard', '~> 0.9'
 end
