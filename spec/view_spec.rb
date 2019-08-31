@@ -2,12 +2,12 @@
 
 describe Censys::API do
   before(:context) do
-    @api = Censys::API.new
+    @api = described_class.new
   end
 
   describe "#view", :vcr do
     context "ipv4" do
-      it "should return an IPv4 response" do
+      it "returns an IPv4 response" do
         view = @api.view(:ipv4, "8.8.8.8")
         expect(view).to be_a(Censys::IPv4)
         expect(view.tags).to be_a(Array)
@@ -29,7 +29,7 @@ describe Censys::API do
     end
 
     context "websites" do
-      it "should return a Website response" do
+      it "returns a Website response" do
         view = @api.view(:websites, "google.com")
         expect(view).to be_a(Censys::Website)
         expect(view.domain).to eq("google.com")
@@ -47,7 +47,7 @@ describe Censys::API do
     end
 
     context "certificates" do
-      it "should return a Certificate response" do
+      it "returns a Certificate response" do
         sha256 = "821a712a29d8e25915f66a9771519746c5aa73a45321fd4ca7ef644e1cadda59"
         view = @api.view(:certificates, sha256)
         expect(view).to be_a(Censys::Certificate)

@@ -2,12 +2,12 @@
 
 describe Censys::API do
   before(:context) do
-    @api = Censys::API.new
+    @api = described_class.new
   end
 
   describe "#search", :vcr do
     context "ipv4" do
-      it "should return IPv4 response" do
+      it "returns IPv4 response" do
         res = @api.ipv4.search(query: "dropbox.com")
         expect(res).to be_a(Search::Response)
 
@@ -29,7 +29,7 @@ describe Censys::API do
     end
 
     context "websites" do
-      it "should return Website response" do
+      it "returns Website response" do
         res = @api.websites.search(query: "dropbox.com")
         expect(res).to be_a(Search::Response)
 
@@ -45,7 +45,7 @@ describe Censys::API do
     end
 
     context "certificates" do
-      it "should return Certificate response" do
+      it "returns Certificate response" do
         res = @api.certificates.search(query: "dropbox.com")
         expect(res).to be_a(Search::Response)
 

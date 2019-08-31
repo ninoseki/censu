@@ -29,19 +29,18 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Cloud-Trace-Context:
-      - e081ed1fa61c81d0125383286c993e2b
+      - 5392dfec819fd886eb650963ee4a14c7
       Date:
-      - Thu, 13 Sep 2018 11:26:14 GMT
+      - Sat, 31 Aug 2019 08:22:41 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '311'
+      - '212'
     body:
       encoding: UTF-8
-      string: '{"api_secret": "<CENSORED>", "first_login": "2018-03-02 03:45:39",
-        "quota": {"used": 44, "resets_at": "2018-10-02 03:19:37", "allowance": 250},
-        "api_id": "<CENSORED>", "last_login": "2018-09-13 11:26:14.014084", "login":
-        "<CENSORED>", "email": "<CENSORED>"}'
+      string: '{"login": "<CENSORED>", "first_login": "2018-03-02 03:45:39", "last_login":
+        "2019-08-31 08:22:41.170216", "email": "<CENSORED>", "quota": {"used": 127,
+        "resets_at": "2019-09-02 03:19:37", "allowance": 250}}'
     http_version: 
-  recorded_at: Thu, 13 Sep 2018 11:26:14 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Sat, 31 Aug 2019 08:22:41 GMT
+recorded_with: VCR 5.0.0

@@ -27,7 +27,7 @@ module Censys
         @count = metadata['count']
         @query = metadata['query']
         @backend_time = metadata['backend_time']
-        @page  = metadata['page']
+        @page = metadata['page']
         @pages = metadata['pages']
       end
     end

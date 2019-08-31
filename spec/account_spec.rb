@@ -2,11 +2,11 @@
 
 describe Censys::API do
   before(:context) do
-    @api = Censys::API.new
+    @api = described_class.new
   end
 
   describe "#account", :vcr do
-    it "should return an Account" do
+    it "returns an Account" do
       account = @api.account
       expect(account).to be_a(Censys::Account)
       expect(account.quota).to be_a(Censys::Account::Quota)

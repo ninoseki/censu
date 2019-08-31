@@ -1,0 +1,379 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.censys.io/api/v1/search/certificates
+    body:
+      encoding: UTF-8
+      string: '{"query":"dropbox.com"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 19832a439f330fae2b54a38a9814b9a5
+      Date:
+      - Sat, 31 Aug 2019 08:15:45 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '29744'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "results": [{"parsed.fingerprint_sha256": "73dcb14923dc8551ddb434c4328b866326e8499e89840fffcf2fbaf56b2c44a3",
+        "parsed.subject_dn": "C=US, ST=California, L=San Francisco, O=Dropbox, Inc,
+        OU=Dropbox Ops, CN=api.dropboxapi.com", "parsed.issuer_dn": "C=US, O=DigiCert
+        Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256":
+        "3f556808232d2d9b92c1ced119ee1c465e98d1429aea517614cd32730816d5c5", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=api.dropboxapi.com",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256": "0ae701036c9fb9c7de2f0988d07d637617b2f989fd271a04ce7b19f00357a4a7",
+        "parsed.subject_dn": "C=US, ST=California, L=San Francisco, O=Dropbox, Inc,
+        OU=Dropbox Ops, CN=api.dropboxapi.com", "parsed.issuer_dn": "C=US, O=DigiCert
+        Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256":
+        "75d2fce7d0d971e32bca8278df9c4cfa14a1e6a5450ccc31053d427109898e8b", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=api.dropboxapi.com",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256": "226730cd3a77468b1584700128d427023f7c90da5077d0e6284972606dff009b",
+        "parsed.subject_dn": "CN=descargar-dropbox.com", "parsed.issuer_dn": "C=US,
+        ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc. Certification Authority"},
+        {"parsed.fingerprint_sha256": "e6ddf792835fc1cdf0d1d5834e6ea2a69c720d33e013d5fac679f67f20ac6402",
+        "parsed.subject_dn": "CN=descargar-dropbox.com", "parsed.issuer_dn": "C=US,
+        ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc. Certification Authority"},
+        {"parsed.fingerprint_sha256": "970520a713f03bccd16bd1260c52ade2757f8d0143ee4c848efd7661c26af666",
+        "parsed.subject_dn": "C=US, ST=California, L=San Francisco, O=Dropbox, Inc,
+        OU=Dropbox Ops, CN=api.dropboxapi.com", "parsed.issuer_dn": "C=US, O=DigiCert
+        Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256":
+        "b0973f50fa66b1a6a674184f50bad6acf91ee1f0a6495fa06f4a5e6569b91121", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=*.previews.dropboxusercontent.com",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256": "eb8cee761472d4fceb14cec7e5bcba153628b32d45f2f98933c59ece3cc01990",
+        "parsed.subject_dn": "CN=descargar-dropbox.com", "parsed.issuer_dn": "C=US,
+        ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc. Certification Authority"},
+        {"parsed.fingerprint_sha256": "7050368f557d40777966a95fe7ad6964500de819a839559c127a4d626792e523",
+        "parsed.subject_dn": "C=US, ST=California, L=San Francisco, O=Dropbox, Inc,
+        OU=Dropbox Ops, CN=content.dropboxapi.com", "parsed.issuer_dn": "C=US, O=DigiCert
+        Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256":
+        "502582a5c6cea68c0b75397eb0195e580fed53c8ffb7dc70555d717c3159ad74", "parsed.subject_dn":
+        "CN=upload.secure-dropbox.com", "parsed.issuer_dn": "C=US, O=Amazon, OU=Server
+        CA 1B, CN=Amazon"}, {"parsed.fingerprint_sha256": "6dbf8e8950ec435d0edadb34e1594740ac2b671063f4acc052feb50a08755d69",
+        "parsed.subject_dn": "C=US, ST=California, L=San Francisco, O=Dropbox, Inc,
+        OU=Dropbox Ops, CN=api.dropboxapi.com", "parsed.issuer_dn": "C=US, O=DigiCert
+        Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256":
+        "2fe39df6b79af67a3e9bdf1dc4a62c0f416c8efde10375f38d274e42e30dafa6", "parsed.subject_dn":
+        "CN=webmail.h-dropbox.com", "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s
+        Encrypt Authority X3"}, {"parsed.fingerprint_sha256": "f5bd5bb0029a2807fa272200e46771943d54f804715a4fe2cf9a3dab0485366d",
+        "parsed.subject_dn": "C=US, ST=California, L=San Francisco, O=Dropbox, Inc,
+        OU=Dropbox Ops, CN=photos-1.dropbox.com", "parsed.issuer_dn": "C=US, O=DigiCert
+        Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256":
+        "ee401d804cda552b2907585d24c51a393fdeab82cfea341963e2ff8329ae5f3a", "parsed.subject_dn":
+        "CN=descargar-dropbox.com", "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel,
+        Inc., CN=cPanel, Inc. Certification Authority"}, {"parsed.fingerprint_sha256":
+        "81e13680fecd79fccc4ea55ab2535d145c07d93b5caa754b55fee4ed8b32c8f5", "parsed.subject_dn":
+        "CN=webmail.h-dropbox.com", "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s
+        Encrypt Authority X3"}, {"parsed.fingerprint_sha256": "347c047b1394351193e406a1cd031b2a3efb8abd00903fb708782c6bd45e2351",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=secure-live-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "7aedb1a7ffcbb2c51f1315266e5a584edf9dac1dbc065f971906490c5a6daf66",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=login-1ive-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "b8086ae9a4c5fe22e50bf3d49fb94642026ee6abe58b81405b59e8d09cc93c04",
+        "parsed.subject_dn": "CN=webmail.h-dropbox.com", "parsed.issuer_dn": "C=US,
+        O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "626c0cdcda27e73b17b0e841fbf4bb20553ac9cc6bc71aac947592ea78768d94", "parsed.subject_dn":
+        "OU=Domain Control Validated, CN=secure-login-dropbox.com", "parsed.issuer_dn":
+        "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/,
+        CN=Go Daddy Secure Certificate Authority - G2"}, {"parsed.fingerprint_sha256":
+        "38dc7111d7587ded3b1fdaa5e70654e126dab37010a0ba75909d265964fb1445", "parsed.subject_dn":
+        "OU=Domain Control Validated, CN=www.lead-dropbox.com", "parsed.issuer_dn":
+        "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/,
+        CN=Go Daddy Secure Certificate Authority - G2"}, {"parsed.fingerprint_sha256":
+        "9ec07f8df3627af8b12327744fc1d45a88c9b7abfc246c74dfe5af60a92a9b17", "parsed.subject_dn":
+        "CN=content-dropbox.com", "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s
+        Encrypt Authority X3"}, {"parsed.fingerprint_sha256": "ceaabbd2538a250c48135282fd0536d30cfcded06ad8db99ce1453d88573e918",
+        "parsed.subject_dn": "CN=hermanmiller-dropbox.com", "parsed.issuer_dn": "C=US,
+        O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "51262b766ab20f4fb9830a9ed9faeb1d8080df88f931465713372e9fef52277a", "parsed.subject_dn":
+        "OU=Domain Control Validated, CN=3-login-dropbox.com", "parsed.issuer_dn":
+        "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/,
+        CN=Go Daddy Secure Certificate Authority - G2"}, {"parsed.fingerprint_sha256":
+        "cc62b4fba2812fdf91c1d5f56f17a173e8cc42ab5f527628f00a9d4fe16ffb41", "parsed.subject_dn":
+        "CN=dl-dropbox.com", "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com,
+        CN=Encryption Everywhere DV TLS CA - G2"}, {"parsed.fingerprint_sha256": "7556a9a471eaee6f714fe6db02fa782cfc6891f1fa7a12651942ec4d664490e4",
+        "parsed.subject_dn": "C=US, ST=California, L=San Francisco, O=Dropbox, Inc,
+        OU=Dropbox Ops, CN=photos-1.dropbox.com", "parsed.issuer_dn": "C=US, O=DigiCert
+        Inc, OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256":
+        "bf94ae34bd159288d10b9220e00d4c4b8d5fe80eff87abfc1f4714ffeb0fb389", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=*.previews.dropboxusercontent.com",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256": "5ec2f33fb9b514def07150e52404320083b67eb649d7eac53384c727badca7e0",
+        "parsed.subject_dn": "CN=www.drop-dropbox.com", "parsed.issuer_dn": "C=US,
+        O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "d9c5df72563fd0134ceb0f7be4b5f3ad04caa21f4af39d3facb6303fa36e9b6a", "parsed.subject_dn":
+        "CN=content-dropbox.com", "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s
+        Encrypt Authority X3"}, {"parsed.fingerprint_sha256": "857386a80f63ed275b958384b8de92f3df39bfedb22c1981bfa28a6e75672519",
+        "parsed.subject_dn": "CN=dropbox.com-sign-in-view.file-dropbox.com.iessrj.com.br",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}, {"parsed.fingerprint_sha256": "e1422d5b98291411f40d3228715c0e7bc059c36917ded2b8e851ecd556051e66",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=1-logln-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "37e3349010a76b6647828b6297cd3f118a91624a8b1a194597648f22ea2b048a",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=l0gln-1ive-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "72ebcfe107178d4d0d7cc3bb84c594122d0ce3f05ecf56136c1386cb11249818",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=login-secure-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "27e501c941d106c0c07756d612e077dbfc79cf8f4401aaf1ce3cfd8256006b72",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=0-login-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "85facdd81e9dbcbee1f835b05a503cff48d6ca021e40b82c8cb3e80c7a8a3efa",
+        "parsed.subject_dn": "CN=webmail.h-dropbox.com", "parsed.issuer_dn": "C=US,
+        O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "382841f8947b6a0391869c0318165f988aaa1b3ae696c5f813d05cc25f2b90f1", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=*.previews.dropboxusercontent.com",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256": "dfce334feded50440a7fac26532fa5fe5a93122229b9a685c0e4692eea32a9e7",
+        "parsed.subject_dn": "CN=www.drop-dropbox.com", "parsed.issuer_dn": "C=US,
+        O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "579736975a0184d8a7780f1cf69410b3885f78407440fdb7a3ab951bac1b7532", "parsed.subject_dn":
+        "C=US, ST=California, L=San Francisco, O=Dropbox, Inc, OU=Dropbox Ops, CN=*.dropbox.com",
+        "parsed.issuer_dn": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert
+        SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256": "509bedbf2069b4b030496a6e429ae13234a06c5b95b05538c0979f023e8b38d9",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=login-live-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "ce837e4f772c6f2c2fc896ad29dda30dc84ec002cc4b9663b88bd60f629d2322",
+        "parsed.subject_dn": "CN=dropbox.com-securefile-signin-sppn-php-doc.com.mob-rail.com.br",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"},
+        {"parsed.fingerprint_sha256": "3254252c84192eab527fdc49a471a3b083d7dd15f94ac24961d69837ca2eee53",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=1-login-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "f39112fe9bdab3945a9d6c60d191931374493964234d7d74b8e7b2140a8f6ddb",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=l0gin-1ive-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "e1865033d02a303c1404db7114ffc47a6eeaef8b0b8a6d7a526f2325a3a46cd6",
+        "parsed.subject_dn": "CN=hermanmiller-dropbox.com", "parsed.issuer_dn": "C=US,
+        O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "f5ed82bf2a0537b5a3531e458dc85f4f0bdf723707c3d4d138160a2de07312d3", "parsed.subject_dn":
+        "OU=Domain Control Validated, CN=logln-llve-dropbox.com", "parsed.issuer_dn":
+        "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc., OU=http://certs.godaddy.com/repository/,
+        CN=Go Daddy Secure Certificate Authority - G2"}, {"parsed.fingerprint_sha256":
+        "bd444e06110150960be138ff0fa5e292fb535bcd175f2890d5ddac96ae8c66a0", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL, CN=www.d-dropbox.com", "parsed.issuer_dn":
+        "C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA
+        Domain Validation Secure Server CA"}, {"parsed.fingerprint_sha256": "a3e003d2851f710abf64db9dfc934f48c2ce90a1c81b5337bfbb8ef24f55c1d7",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=app-document-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "573b4dea80dfc4bac3df2f325cecedb01fc9e3a71c0e1c77003b30382323a37d",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=app-live-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "1b6e9d1c8611443ddba5c87ba9b99413293cfb02374748f05a8b00845051cca2",
+        "parsed.subject_dn": "C=US, ST=CA, L=San Francisco, O=CloudFlare, Inc., CN=sni.cloudflaressl.com",
+        "parsed.issuer_dn": "C=US, ST=CA, L=San Francisco, O=CloudFlare, Inc., CN=CloudFlare
+        Inc ECC CA-2"}, {"parsed.fingerprint_sha256": "fa76953cdafd673872b2eea1ab0db0745d5b6d7243d06c1adc1bdbba69351bdb",
+        "parsed.subject_dn": "CN=upload.secure-dropbox.com", "parsed.issuer_dn": "C=US,
+        O=Amazon, OU=Server CA 1B, CN=Amazon"}, {"parsed.fingerprint_sha256": "55ae9c46859c40e8ded1bb1e23f63fe3c8913f41407a5460c8f10ca8376db853",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=document-offlce-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "fd4529a7ba6fada59d4bd99c9c5018e14f412036cdf6e9d54a5fe8a343e8ad97",
+        "parsed.subject_dn": "CN=dropbox.com-secure-sign-inconnect-document.com.vociferousmag.com",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"},
+        {"parsed.fingerprint_sha256": "420c8d820577ca475cfa49f11ebd03adaeb101bb50dfe735e6a0655a0e906103",
+        "parsed.subject_dn": "CN=dropbox.com.365.mail.navemunck.com.br", "parsed.issuer_dn":
+        "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "7db2a5003c10a9c43b4d9e709ef009c1b5a756b71a46d9feaa108cb305aeb7cb", "parsed.subject_dn":
+        "CN=dropbox.com-secure-files.susankrollsmith.com", "parsed.issuer_dn": "C=US,
+        ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc. Certification Authority"},
+        {"parsed.fingerprint_sha256": "ae5509d615bd1cb0b5a15d2f14119da868e31c9e42c65297098988311d639ce2",
+        "parsed.subject_dn": "CN=dropbox.com-secure-files.susankrollsmith.com", "parsed.issuer_dn":
+        "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc. Certification Authority"},
+        {"parsed.fingerprint_sha256": "49ca1ddfd4b45b73cb6b0f8db3ecf9c37fa92a57d784709541ec514c24eec9fe",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=secure-login-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "f37364cf9e81cb70290ce2f501b6507d8d69f05210ec1634e6fc0f4e504e2af4",
+        "parsed.subject_dn": "C=US, ST=California, L=San Francisco, O=Dropbox, Inc,
+        OU=Dropbox Ops, CN=*.dropbox.com", "parsed.issuer_dn": "C=US, O=DigiCert Inc,
+        OU=www.digicert.com, CN=DigiCert SHA2 High Assurance Server CA"}, {"parsed.fingerprint_sha256":
+        "48706c39fd9d98e6f3ab7ab71e93f35369ba0739a33e1021d46d3b25c3242784", "parsed.subject_dn":
+        "CN=dropbox.com.365.mail.navemunck.com.br", "parsed.issuer_dn": "C=US, O=Let''s
+        Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256": "9cbcf5f1570d179f649781847ac5bb5b72f0282ecf6f990ca90d458c1baf1344",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=sni221543.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "143dde3864a190d88561f18af3ffeaf3e9e015e33ff2bd5726593e5bd2722cbe",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=sni111148.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "0df5cb92bf19aba4498cddaf6008480e61c340cfd5096e198382640b8af98d00",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=sni221543.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "cb0c5d45ddeaad8080d64359738d47faafe4f38518ed8572b3ba4bd07936957d",
+        "parsed.subject_dn": "CN=digital-dropbox.com", "parsed.issuer_dn": "C=US,
+        O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "c39c2a2735cd9ff0d8b1703e525808429a01e479b069220b87a5abac365d5d61", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=ssl375072.cloudflaressl.com",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO RSA Domain Validation Secure Server CA 2"}, {"parsed.fingerprint_sha256":
+        "2fa812971763036637097886fd8694777f438054ec11f4b6a17c3eaff66cd4da", "parsed.subject_dn":
+        "CN=www.digital-dropbox.com", "parsed.issuer_dn": "C=US, O=Let''s Encrypt,
+        CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256": "3d4081ba4c4ee794e51f7fe7f77e17644d27a7b9d738e850e20ba44bbe115ec1",
+        "parsed.subject_dn": "OU=Domain Control Validated, CN=www.lead-dropbox.com",
+        "parsed.issuer_dn": "C=US, ST=Arizona, L=Scottsdale, O=GoDaddy.com, Inc.,
+        OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority
+        - G2"}, {"parsed.fingerprint_sha256": "0182913ec386ee9959940a116eb7169002d2668ad75f4d87fec17055aaa9d015",
+        "parsed.subject_dn": "CN=dropbox.com.365.mail.navemunck.com.br", "parsed.issuer_dn":
+        "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "30cbcd1f401c56519607b39363369a395e015413d9ed42e619e338b06d3e00f2", "parsed.subject_dn":
+        "CN=dropbox.com-files.info.cmaz.de", "parsed.issuer_dn": "C=US, O=Let''s Encrypt,
+        CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256": "e2f9a1b457197f9927eb21412af95655bc6e2c61fa5b332800ecfee7e012df90",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL, CN=www.d-dropbox.com",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited,
+        CN=Sectigo RSA Domain Validation Secure Server CA"}, {"parsed.fingerprint_sha256":
+        "06cf622c22475c57bc946f67605659f5efb8e045cb6c4df24ad72332a69d96a4", "parsed.subject_dn":
+        "CN=www.digital-dropbox.com", "parsed.issuer_dn": "C=US, O=Let''s Encrypt,
+        CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256": "eeaf3908826d4283bb09d535f6418261e16cccfcc938301903e77dbf31ac013f",
+        "parsed.subject_dn": "CN=dropbox.com-secure-sign-inconnect-document.com.vociferousmag.com",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"},
+        {"parsed.fingerprint_sha256": "b192dabe9664f5a97d026c7d468040b5b4f03071a96f0200cce4f1232cf1b9b4",
+        "parsed.subject_dn": "CN=dropbox.com-files.info.cmaz.de", "parsed.issuer_dn":
+        "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "0183a85796d457263ec87a8c347bd6068e97785f1193db190aa0bc60dd6382fd", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni111148.cloudflaressl.com",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2"}, {"parsed.fingerprint_sha256":
+        "c54db24e7104f3dda1219774db92f6ea3ec98c4779c6229a59ed66fc0932da16", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni221543.cloudflaressl.com",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2"}, {"parsed.fingerprint_sha256":
+        "486c21edd51f06fc39253c89021fcabf091227ddc9b7d6355446eece46f64cac", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=ssl375073.cloudflaressl.com",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2"}, {"parsed.fingerprint_sha256":
+        "2bcf1280363256ce0ee827a110602f72f0769cff6f92271f5b64f664681b85b3", "parsed.subject_dn":
+        "CN=dropbox.com-sign-in-view.file-dropbox.com.iessrj.com.br", "parsed.issuer_dn":
+        "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc. Certification Authority"},
+        {"parsed.fingerprint_sha256": "d88405e89ffcd6c6b80e8905ca10456e2c438bb26198f489edeeaa8eff8d0e5f",
+        "parsed.subject_dn": "CN=dropbox.com-securefile-signin-sppn-php-doc.com.mob-rail.com.br",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"},
+        {"parsed.fingerprint_sha256": "d546dcdc78be040c3ba676a5fd2dd0816585fdcec3ee36bf32c852daffedc496",
+        "parsed.subject_dn": "CN=dropbox.com-viewfile.com-logon.aspx.sldesigns.com.sg",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}, {"parsed.fingerprint_sha256": "4719ae9e5691aaff8085097a16bf68bf709074f250b1966c43c5455414899370",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=ssl375072.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO RSA Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "f694a53ff345943e157022c8a286900e2654b805075697eb9b81909679421c28",
+        "parsed.subject_dn": "CN=dropbox.com-securefile-signin-snr-php-doc.com.capt.site",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}, {"parsed.fingerprint_sha256": "2365ab0dd129816b85f60d07c7a3b641a402c35f9e6ae3534d57d93943788ffd",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=ssl375073.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "56c20a912c5b691d11feb5f6731af2eb259d2084935f4d43621f3fd80a6267dd",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=sni221543.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "c9110f360310a36a4ea1e8a5f0aa3167b7bdf28148d05be9b67cdca5e0d1d0d5",
+        "parsed.subject_dn": "CN=dropbox.com-sign-in-mails-cpssfile.broadwayscrocodile.co.kr",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}, {"parsed.fingerprint_sha256": "e78b1917792bd2fa95c84c7278a14b588753b04801f32b07ab42a7b7e52f7b92",
+        "parsed.subject_dn": "CN=dropbox.com-secure-files.susankrollsmith.com", "parsed.issuer_dn":
+        "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc. Certification Authority"},
+        {"parsed.fingerprint_sha256": "2b05c41f7a80411d6e08d63c3347bc99e61bafa3a32865ddf253dfe0c10be9b7",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=sni221543.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "1411589901b93434e4142e23ee32b22b2f2ab1705a9f52456edd63cffb3421bf",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=sni221543.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "d4e3943c98f32a2227c9ec81554887f009190aeda9e85c632085e081f9296b85",
+        "parsed.subject_dn": "CN=dropbox.com-securefile-signin-snr-php-doc.com.capt.site",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}, {"parsed.fingerprint_sha256": "06a38184c022481e57f33e0a3595b224ff20964c2df1fc0b3c5f080ccf605faf",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=ssl375072.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO RSA Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "c9f66393824b04508445ae2bd7040dcfcd7060fb00699b77972ca6bb893353c5",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=sni221543.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "43df627a7c6867a7992bde7faa3a09fbafb7311cfb25a9cf98838f8f0c58bac9",
+        "parsed.subject_dn": "CN=dropbox.com-viewfile.com-logon.aspx.sldesigns.com.sg",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}, {"parsed.fingerprint_sha256": "a1b72bb8355f6ab72739d69213e4eae6fec0e9fe453d18979717a6a45647cbdb",
+        "parsed.subject_dn": "CN=dropbox.com-secure-files.susankrollsmith.com", "parsed.issuer_dn":
+        "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc. Certification Authority"},
+        {"parsed.fingerprint_sha256": "25b3834d4b54028c390af53f08451a2670e12c94d80cf146c91bb8c1eb9252e1",
+        "parsed.subject_dn": "CN=dropbox.com-securefile-signin-sppn-php-doc.com.mob-rail.com.br",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"},
+        {"parsed.fingerprint_sha256": "9b5c14a9048e5fc301d7892aeebd1fad3acadd898d1dd7e1e10fc5eaf573a2bd",
+        "parsed.subject_dn": "CN=dropbox.com-sign-in-mails-cpssfile.broadwayscrocodile.co.kr",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}, {"parsed.fingerprint_sha256": "b8d80c55b7cb120c9830876590b2c9f988ce1a46d190a3a4dc786b5f748b32f8",
+        "parsed.subject_dn": "CN=dropbox.com-securefile-signin-sppn-php-doc.com.mob-rail.com.br",
+        "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"},
+        {"parsed.fingerprint_sha256": "3fa03695084521d703c606ba72e8f91a4525e8cd3a74d748d07de66aabafd92e",
+        "parsed.subject_dn": "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain,
+        CN=sni221543.cloudflaressl.com", "parsed.issuer_dn": "C=GB, ST=Greater Manchester,
+        L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server
+        CA 2"}, {"parsed.fingerprint_sha256": "5436e92371d16cae763760906a305835a66d3df49a130c3d04b5021fb26739ee",
+        "parsed.subject_dn": "CN=dropbox.com.365.mail.navemunck.com.br", "parsed.issuer_dn":
+        "C=US, O=Let''s Encrypt, CN=Let''s Encrypt Authority X3"}, {"parsed.fingerprint_sha256":
+        "dc88a445289cfd4dc98f71c9895f4cfde608121efb92b37df1dc2432d4eddf22", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni221543.cloudflaressl.com",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2"}, {"parsed.fingerprint_sha256":
+        "1562a3a99e46c77196c4a6f9ae2f3a4fd41585053624eb62ce849d63ec1db696", "parsed.subject_dn":
+        "OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni111148.cloudflaressl.com",
+        "parsed.issuer_dn": "C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited,
+        CN=COMODO ECC Domain Validation Secure Server CA 2"}, {"parsed.fingerprint_sha256":
+        "43aba1356fa2fd8943c796c13fcb37eb31e2a205086ff7c72fc7248615347daf", "parsed.subject_dn":
+        "CN=digital-dropbox.com", "parsed.issuer_dn": "C=US, O=Let''s Encrypt, CN=Let''s
+        Encrypt Authority X3"}, {"parsed.fingerprint_sha256": "bf5999b03e1153196c88eaeb171f73bc44628c86bc254b143a7aa7aea7be6a21",
+        "parsed.subject_dn": "CN=dropbox.com-securefile-signin-snr-php-doc.com.capt.site",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}, {"parsed.fingerprint_sha256": "4ff329426a528aebb543afbe7182f2cf16bed579891f15729de0c3a3be53c6e5",
+        "parsed.subject_dn": "CN=dropbox.com-sign-in-view.file-dropbox.com.iessrj.com.br",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}, {"parsed.fingerprint_sha256": "51a6f770e381c7017b4c5eb01226eee29d4578040816d0a1cd9c592365c3c16f",
+        "parsed.subject_dn": "CN=dropbox.com-cgi-shared-you-pdf-document.paediatric-rx.com",
+        "parsed.issuer_dn": "C=US, ST=TX, L=Houston, O=cPanel, Inc., CN=cPanel, Inc.
+        Certification Authority"}], "metadata": {"count": 1608, "query": "dropbox.com",
+        "backend_time": 1116, "page": 1, "pages": 17}}'
+    http_version: 
+  recorded_at: Sat, 31 Aug 2019 08:15:45 GMT
+recorded_with: VCR 5.0.0
