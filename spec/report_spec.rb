@@ -2,12 +2,12 @@
 
 describe Censys::API do
   before(:context) do
-    @api = Censys::API.new
+    @api = described_class.new
   end
 
   describe "#report", :vcr do
     context "ipv4" do
-      it "should return an ipv4 response" do
+      it "returns an ipv4 response" do
         params = {
           query: "8.8.8.8",
           field: "ports",
@@ -16,7 +16,7 @@ describe Censys::API do
         report = @api.report(:ipv4, params)
         expect(report).to be_a(Report::Response)
         expect(report.status).to eq("ok")
-        expect(report.ok?).to be_truthy
+        expect(report).to be_ok
         expect(report.results).to be_a(Hash)
         expect(report.metadata).to be_a(Report::Metadata)
         expect(report.metadata.count).to be_a(Integer)
@@ -30,7 +30,7 @@ describe Censys::API do
     end
 
     context "websites" do
-      it "should return a website response" do
+      it "returns a website response" do
         params = {
           query: "google.com",
           field: "ports",
@@ -44,7 +44,7 @@ describe Censys::API do
     end
 
     context "certificates" do
-      it "should return a certificate response" do
+      it "returns a certificate response" do
         params = {
           query: "google.com",
           field: "precert",

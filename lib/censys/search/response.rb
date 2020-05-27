@@ -11,8 +11,8 @@ module Censys
       include Enumerable
 
       RESULTS = {
-        ipv4:         IPv4,
-        websites:     Website,
+        ipv4: IPv4,
+        websites: Website,
         certificates: Certificate
       }.freeze
 

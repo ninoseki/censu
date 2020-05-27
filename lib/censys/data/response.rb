@@ -9,8 +9,8 @@ module Censys
     class Response
       RESULTS = {
         series_list: SeriesList,
-        series:      Series,
-        result:      Result
+        series: Series,
+        result: Result
       }.freeze
 
       def initialize(result_type, response)

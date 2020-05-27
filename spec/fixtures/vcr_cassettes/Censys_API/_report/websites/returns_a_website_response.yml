@@ -31,19 +31,19 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Cloud-Trace-Context:
-      - 12e4a97d58af6c613c95545f8e5c277d
+      - 39fa2c8f59582c18740c5d8bddd45ca9
       Date:
-      - Thu, 13 Sep 2018 11:26:10 GMT
+      - Sat, 31 Aug 2019 08:15:41 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '283'
+      - '282'
     body:
       encoding: UTF-8
-      string: '{"status": "ok", "results": [{"key": 80, "doc_count": 17493}, {"key":
-        443, "doc_count": 15875}, {"key": 25, "doc_count": 11724}], "metadata": {"count":
-        17651, "backend_time": 96, "nonnull_count": 45092, "other_result_count": 0,
+      string: '{"status": "ok", "results": [{"key": 80, "doc_count": 10648}, {"key":
+        443, "doc_count": 10053}, {"key": 25, "doc_count": 7657}], "metadata": {"count":
+        10830, "backend_time": 54, "nonnull_count": 28358, "other_result_count": 0,
         "buckets": 3, "error_bound": 0, "query": "google.com"}}'
     http_version: 
-  recorded_at: Thu, 13 Sep 2018 11:26:11 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Sat, 31 Aug 2019 08:15:41 GMT
+recorded_with: VCR 5.0.0

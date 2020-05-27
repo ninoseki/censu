@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.censys.io/api/v1/data
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 36078cc6bf04392a8a6dfb1865b0005c
+      Date:
+      - Sat, 31 Aug 2019 08:26:55 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '3152'
+    body:
+      encoding: UTF-8
+      string: '{"primary_series": {"Alexa Top 1 Million Snapshots (Deprecated Format)":
+        {"description": "The Censys Websites dataset provides data about the common
+        services (e.g., HTTP, HTTPS, SMTP) running on the Alexa Top Million domains.
+        This data series is produced by our older data infrastructure and is deprecated.",
+        "details_url": "https://www.censys.io/api/v1/data/domain", "latest_result":
+        null, "id": "domain", "name": "Alexa Top 1 Million Snapshots (Deprecated Format)"},
+        "Alexa Top 1 Million Snapshots": {"description": "The Censys Websites dataset
+        provides data about the common services (e.g., HTTP, HTTPS, SMTP) running
+        on the Alexa Top Million domains. This data series is produced by our newer
+        data infrastructure and will replace the (deprecated) ''domain'' series.",
+        "details_url": "https://www.censys.io/api/v1/data/domain_2018", "latest_result":
+        null, "id": "domain_2018", "name": "Alexa Top 1 Million Snapshots"}, "All
+        X.509 Certificates (Deprecated Format)": {"description": "The Censys Certificates
+        dataset contains parsed data about known X.509 certificates. This data series
+        is produced by our older datainfrastructure and is deprecated.", "details_url":
+        "https://www.censys.io/api/v1/data/certificates", "latest_result": null, "id":
+        "certificates", "name": "All X.509 Certificates (Deprecated Format)"}, "IPv4
+        Snapshots (Deprecated Format)": {"description": "The Censys IPv4 dataset provides
+        data about the services (e.g., HTTP, SMTP, MySQL) running on all publicly-accessible
+        IPv4 hosts. This data series is produced by our older data infrastructure
+        and is deprecated.", "details_url": "https://www.censys.io/api/v1/data/ipv4",
+        "latest_result": null, "id": "ipv4", "name": "IPv4 Snapshots (Deprecated Format)"},
+        "IPv4 Snapshots": {"description": "The Censys IPv4 dataset provides data about
+        the services (e.g., HTTP, SMTP, MySQL) running on all publicly-accessible
+        IPv4 hosts. This data series is produced by our newer data infrastructure
+        and will replace the (deprecated) ''ipv4'' series.", "details_url": "https://www.censys.io/api/v1/data/ipv4_2018",
+        "latest_result": null, "id": "ipv4_2018", "name": "IPv4 Snapshots"}, "All
+        X.509 Certificates": {"description": "The Censys Certificates dataset contains
+        parsed data about known X.509 certificates. This data series is produced by
+        our newer data infrastructure and will replace the (deprecated) ''certificates''
+        series.", "details_url": "https://www.censys.io/api/v1/data/certificates_2018",
+        "latest_result": null, "id": "certificates_2018", "name": "All X.509 Certificates"},
+        "IPv4 Banners Snapshots": {"description": "The Censys IPv4 Banners dataset
+        provides data about the services (e.g., HTTP, SMTP, MySQL) running on all
+        publicly-accessible IPv4 hosts.", "details_url": "https://www.censys.io/api/v1/data/ipv4-banners",
+        "latest_result": null, "id": "ipv4-banners", "name": "IPv4 Banners Snapshots"},
+        "Certificates by Date Added": {"description": "All X.509 certificates segmented
+        by date added", "details_url": "https://www.censys.io/api/v1/data/certificates-daily-added",
+        "latest_result": null, "id": "certificates-daily-added", "name": "Certificates
+        by Date Added"}}, "raw_series": {}}'
+    http_version: 
+  recorded_at: Sat, 31 Aug 2019 08:26:55 GMT
+recorded_with: VCR 5.0.0

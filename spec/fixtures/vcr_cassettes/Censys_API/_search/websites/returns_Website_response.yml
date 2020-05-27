@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.censys.io/api/v1/search/websites
+    body:
+      encoding: UTF-8
+      string: '{"query":"dropbox.com"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 8c21b05ea86edeb4044bd7bc204e1256
+      Date:
+      - Sat, 31 Aug 2019 08:15:42 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '5391'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "results": [{"domain": "dropbox.com", "alexa_rank":
+        54}, {"domain": "ravelry.com", "alexa_rank": 10894}, {"domain": "activationkeys.co",
+        "alexa_rank": 15812}, {"domain": "ifanqiang.com", "alexa_rank": 22877}, {"domain":
+        "wponlinesupport.com", "alexa_rank": 29734}, {"domain": "videojs.com", "alexa_rank":
+        41156}, {"domain": "dropboxforum.com", "alexa_rank": 44178}, {"domain": "websitelist.in",
+        "alexa_rank": 47343}, {"domain": "skywalker.gr", "alexa_rank": 57141}, {"domain":
+        "onthe.io", "alexa_rank": 63332}, {"domain": "dropbox.jp", "alexa_rank": 73709},
+        {"domain": "cloudhq.net", "alexa_rank": 84547}, {"domain": "draggo.com", "alexa_rank":
+        87991}, {"domain": "isitdownrightnow.com", "alexa_rank": 90546}, {"domain":
+        "barracudacentral.org", "alexa_rank": 90937}, {"domain": "karaoke.od.ua",
+        "alexa_rank": 94215}, {"domain": "bitpage.de", "alexa_rank": 102395}, {"domain":
+        "grabfrom.com", "alexa_rank": 107799}, {"domain": "gpsvisualizer.com", "alexa_rank":
+        111042}, {"domain": "activationkey.net", "alexa_rank": 122699}, {"domain":
+        "subtraction.com", "alexa_rank": 123350}, {"domain": "michellhilton.com",
+        "alexa_rank": 124423}, {"domain": "campusvirtualabogados.cr", "alexa_rank":
+        140509}, {"domain": "textio.com", "alexa_rank": 146125}, {"domain": "amwalalghad.com",
+        "alexa_rank": 148388}, {"domain": "dropboxer.net", "alexa_rank": 166758},
+        {"domain": "keroseed.com", "alexa_rank": 172826}, {"domain": "urokicd.ru",
+        "alexa_rank": 178243}, {"domain": "prettier.io", "alexa_rank": 187545}, {"domain":
+        "bbq-helden.nl", "alexa_rank": 194666}, {"domain": "almapets.com", "alexa_rank":
+        196326}, {"domain": "nascompares.com", "alexa_rank": 201919}, {"domain": "powerhousemarine.com",
+        "alexa_rank": 222407}, {"domain": "belaefeliz.biz", "alexa_rank": 226715},
+        {"domain": "careersitemanager.com", "alexa_rank": 228765}, {"domain": "damaruta.com",
+        "alexa_rank": 230766}, {"domain": "seeacareerwithus.com", "alexa_rank": 240632},
+        {"domain": "notopening.com", "alexa_rank": 245701}, {"domain": "mybrowserpage.com",
+        "alexa_rank": 257289}, {"domain": "tips4pc.com", "alexa_rank": 271528}, {"domain":
+        "tampabayice.com", "alexa_rank": 277200}, {"domain": "reviewmaster.com", "alexa_rank":
+        277353}, {"domain": "idcopy.net", "alexa_rank": 287323}, {"domain": "websitedetection.com",
+        "alexa_rank": 291364}, {"domain": "diskfast.ru", "alexa_rank": 308708}, {"domain":
+        "9thwonder.com", "alexa_rank": 320647}, {"domain": "coorpacademy.com", "alexa_rank":
+        321231}, {"domain": "english-zone.com", "alexa_rank": 334916}, {"domain":
+        "huntingtoningalls.com", "alexa_rank": 341893}, {"domain": "lindal.com", "alexa_rank":
+        346933}, {"domain": "sipapp.io", "alexa_rank": 351048}, {"domain": "websitelists.in",
+        "alexa_rank": 383266}, {"domain": "cvmail.com.au", "alexa_rank": 393833},
+        {"domain": "trangnhat.net", "alexa_rank": 394982}, {"domain": "yesviz.com",
+        "alexa_rank": 399581}, {"domain": "simpsonsua.tv", "alexa_rank": 405852},
+        {"domain": "vutienblog.com", "alexa_rank": 406813}, {"domain": "csplague.com",
+        "alexa_rank": 408831}, {"domain": "getlinkaz.com", "alexa_rank": 440969},
+        {"domain": "tutorialspage.com", "alexa_rank": 441008}, {"domain": "commando.com.ua",
+        "alexa_rank": 442899}, {"domain": "choicemetalbuildings.com", "alexa_rank":
+        443934}, {"domain": "iotechnologies.com", "alexa_rank": 445784}, {"domain":
+        "simpsons-fan.net", "alexa_rank": 450767}, {"domain": "envir.ee", "alexa_rank":
+        462805}, {"domain": "sm.ee", "alexa_rank": 462891}, {"domain": "americaninternetmatrix.com",
+        "alexa_rank": 463672}, {"domain": "blogbooker.com", "alexa_rank": 464603},
+        {"domain": "watchwrestlingfor.com", "alexa_rank": 468401}, {"domain": "dnacademy.com",
+        "alexa_rank": 480971}, {"domain": "abooali.ir", "alexa_rank": 496802}, {"domain":
+        "mbuke.blogspot.com", "alexa_rank": 498456}, {"domain": "officecrack.net",
+        "alexa_rank": 503069}, {"domain": "courses4u.info", "alexa_rank": 517617},
+        {"domain": "farmhousemagz.com", "alexa_rank": 531447}, {"domain": "mobileswall.com",
+        "alexa_rank": 535022}, {"domain": "homedecormagz.com", "alexa_rank": 535628},
+        {"domain": "html-editor-for-gmail.com", "alexa_rank": 535991}, {"domain":
+        "kidmagz.com", "alexa_rank": 539490}, {"domain": "referralrecruit.com", "alexa_rank":
+        541535}, {"domain": "eoperasi.blogspot.com", "alexa_rank": 554078}, {"domain":
+        "tutorialzonepdf.blogspot.com", "alexa_rank": 558273}, {"domain": "umstrategies.com",
+        "alexa_rank": 558565}, {"domain": "africanstand.com", "alexa_rank": 575531},
+        {"domain": "wwwwwwwwwwwwww.net", "alexa_rank": 578194}, {"domain": "cnttqn.com",
+        "alexa_rank": 606681}, {"domain": "bwit.blog", "alexa_rank": 621577}, {"domain":
+        "dailytimespend.blogspot.com", "alexa_rank": 622108}, {"domain": "apopkamarine.com",
+        "alexa_rank": 634609}, {"domain": "solup.blogspot.com", "alexa_rank": 642248},
+        {"domain": "ploi.io", "alexa_rank": 653578}, {"domain": "teruskan.com", "alexa_rank":
+        663005}, {"domain": "pannative.blogspot.com", "alexa_rank": 679600}, {"domain":
+        "djiphotoacademy.com", "alexa_rank": 709027}, {"domain": "broadlink.vn", "alexa_rank":
+        709665}, {"domain": "myhotelshop.com", "alexa_rank": 715851}, {"domain": "partpetrokala.com",
+        "alexa_rank": 717316}, {"domain": "techerator.com", "alexa_rank": 721289},
+        {"domain": "gsoft.com.vn", "alexa_rank": 732148}, {"domain": "launch.chat",
+        "alexa_rank": 733530}], "metadata": {"count": 121, "query": "dropbox.com",
+        "backend_time": 54, "page": 1, "pages": 2}}'
+    http_version: 
+  recorded_at: Sat, 31 Aug 2019 08:15:42 GMT
+recorded_with: VCR 5.0.0

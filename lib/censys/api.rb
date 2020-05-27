@@ -123,8 +123,8 @@ module Censys
     end
 
     DOCUMENTS = {
-      ipv4:         IPv4,
-      websites:     Website,
+      ipv4: IPv4,
+      websites: Website,
       certificates: Certificate
     }.freeze
 
@@ -221,8 +221,8 @@ module Censys
       if proxy = ENV["HTTPS_PROXY"]
         uri = URI(proxy)
         {
-          proxy_address:  uri.hostname,
-          proxy_port:     uri.port,
+          proxy_address: uri.hostname,
+          proxy_port: uri.port,
           proxy_from_env: false,
           use_ssl: true
         }
