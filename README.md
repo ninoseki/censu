@@ -1,6 +1,6 @@
 # Censu
 
-[![Build Status](https://travis-ci.org/ninoseki/censu.svg?branch=master)](https://travis-ci.org/ninoseki/censu)
+[![Build Status](https://travis-ci.com/ninoseki/censu.svg?branch=master)](https://travis-ci.com/ninoseki/censu)
 [![Maintainability](https://api.codeclimate.com/v1/badges/39e77d63ce6a7d89b4dc/maintainability)](https://codeclimate.com/github/ninoseki/censu/maintainability)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/censu/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/censu?branch=master)
 
